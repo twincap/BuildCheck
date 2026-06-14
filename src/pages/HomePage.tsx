@@ -3,10 +3,11 @@ import visual from "../assets/compat-board.svg";
 import { BuildSummary } from "../components/BuildSummary";
 import { CompatibilityReport } from "../components/CompatibilityReport";
 import { PartSelector } from "../components/PartSelector";
-import { danawaCategoryUrls, initialSelection, type Category, type Selection } from "../constants/data";
+import { categories, initialSelection, type Category, type Selection } from "../constants/data";
 
 export function HomePage() {
   const [selection, setSelection] = useState<Selection>(initialSelection);
+  const [activeCategory, setActiveCategory] = useState<Category>("cpu");
 
   function handleSelect(category: Category, id: string) {
     setSelection((current) => ({ ...current, [category]: id }));
@@ -22,19 +23,26 @@ export function HomePage() {
             다나와 카테고리 기준으로 확장한 부품 데이터를 검색하고, 소켓·RAM 규격·GPU VRAM·파워·케이스
             장착 공간을 즉시 비교하는 React 견적 화면입니다.
           </p>
-          <div className="source-strip" aria-label="다나와 데이터 카테고리">
-            {Object.entries(danawaCategoryUrls).map(([category, url]) => (
-              <a href={url} key={category} rel="noreferrer" target="_blank">
-                {category}
-              </a>
-            ))}
-          </div>
         </div>
         <img src={visual} alt="PC 부품 호환성 보드 일러스트" />
       </section>
 
+      <div className="category-tabs" aria-label="부품 카테고리 선택">
+        {categories.map((category) => (
+          <button
+            aria-pressed={activeCategory === category.id}
+            className={activeCategory === category.id ? "is-active" : ""}
+            key={category.id}
+            onClick={() => setActiveCategory(category.id)}
+            type="button"
+          >
+            {category.id.toUpperCase()}
+          </button>
+        ))}
+      </div>
+
       <div className="workspace">
-        <PartSelector selection={selection} onSelect={handleSelect} />
+        <PartSelector activeCategory={activeCategory} selection={selection} onSelect={handleSelect} />
         <div className="side-stack">
           <BuildSummary selection={selection} />
           <CompatibilityReport selection={selection} />

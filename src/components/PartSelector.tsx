@@ -9,11 +9,12 @@ import {
 } from "../constants/data";
 
 type Props = {
+  activeCategory: Category;
   selection: Selection;
   onSelect: (category: Category, id: string) => void;
 };
 
-export function PartSelector({ selection, onSelect }: Props) {
+export function PartSelector({ activeCategory, selection, onSelect }: Props) {
   const [queries, setQueries] = useState<Record<Category, string>>({
     cpu: "",
     motherboard: "",
@@ -36,9 +37,11 @@ export function PartSelector({ selection, onSelect }: Props) {
     ) as Record<Category, ReturnType<typeof getPartsByCategory>>;
   }, [queries]);
 
+  const visibleCategories = categories.filter((category) => category.id === activeCategory);
+
   return (
     <section className="part-selector" aria-label="부품 선택">
-      {categories.map((category) => (
+      {visibleCategories.map((category) => (
         <div className="part-group" key={category.id}>
           <div className="group-heading">
             <strong>{category.label}</strong>
