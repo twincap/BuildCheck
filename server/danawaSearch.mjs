@@ -106,6 +106,108 @@ function numberOf(text, patterns, fallback) {
   return fallback;
 }
 
+function positive(value) {
+  const parsed = Number(String(value).replace(/,/g, ""));
+  return Number.isFinite(parsed) && parsed > 0 ? parsed : undefined;
+}
+
+function dimensionLine(text) {
+  return text.replace(/[×＊*]/g, "x").replace(/㎜/g, "mm");
+}
+
+function labelledDimension(text, labels) {
+  const labelPattern = labels.join("|");
+  const patterns = [
+    new RegExp(`(?:${labelPattern})\\s*(?:\\([^)]*\\))?\\s*[:：]?\\s*(\\d+(?:\\.\\d+)?)\\s*mm`, "i"),
+    new RegExp(`(?:${labelPattern})\\s*(?:\\([^)]*\\))?\\s*[:：]?\\s*(\\d+(?:\\.\\d+)?)`, "i")
+  ];
+
+  for (const pattern of patterns) {
+    const value = positive(text.match(pattern)?.[1]);
+    if (value) return value;
+  }
+
+  return undefined;
+}
+
+function tripleDimensions(text) {
+  const normalized = dimensionLine(text);
+  const found = normalized.match(
+    /(?:크기|제품크기|외형|사이즈|규격|dimension|size)?\s*(?:[:：])?\s*(\d+(?:\.\d+)?)\s*(?:mm)?\s*x\s*(\d+(?:\.\d+)?)\s*(?:mm)?\s*x\s*(\d+(?:\.\d+)?)\s*mm/i
+  );
+  if (!found) return null;
+
+  const [width, height, depth] = found.slice(1).map((value) => Math.round(Number(value)));
+  return width && height && depth ? { width, height, depth } : null;
+}
+
+function gpuSlotDepth(text) {
+  const slots = positive(text.match(/(\d+(?:\.\d+)?)\s*슬롯/i)?.[1]);
+  return slots ? Math.round(slots * 20) : undefined;
+}
+
+function fallbackDimensions(category, text) {
+  if (category === "cpu") return { width: 40, height: 40, depth: 7 };
+  if (category === "motherboard") {
+    if (formFactorOf(text) === "ATX") return { width: 305, height: 244, depth: 35 };
+    if (formFactorOf(text) === "M-ITX") return { width: 170, height: 170, depth: 30 };
+    return { width: 244, height: 244, depth: 35 };
+  }
+  if (category === "memory") return memoryModuleTypeOf(text) === "노트북용" ? { width: 70, height: 30, depth: 4 } : { width: 133, height: 32, depth: 8 };
+  if (category === "gpu") {
+    const model = gpuModelPower(text);
+    return { width: model.length, height: 120, depth: gpuSlotDepth(text) ?? 45 };
+  }
+  if (category === "psu") return { width: 150, height: 86, depth: 150 };
+  return { width: 210, height: 455, depth: 430 };
+}
+
+function dimensionsOf(category, text, overrides = {}) {
+  const normalized = dimensionLine(text);
+  const triple = tripleDimensions(normalized);
+  const fallback = fallbackDimensions(category, normalized);
+
+  const width =
+    overrides.width ??
+    labelledDimension(normalized, ["가로", "폭", "너비", "Width"]) ??
+    (category === "gpu" ? numberOf(normalized, [/VGA\s*길이\s*:?\s*(\d+)\s*mm/i, /길이\)?\s*:?\s*(\d+)\s*mm/i], triple?.width ?? fallback.width) : triple?.width) ??
+    fallback.width;
+  const height =
+    overrides.height ??
+    labelledDimension(normalized, ["세로", "높이", "Height"]) ??
+    triple?.height ??
+    fallback.height;
+  const depth =
+    overrides.depth ??
+    labelledDimension(normalized, ["깊이", "두께", "Depth"]) ??
+    (category === "gpu" ? gpuSlotDepth(normalized) : undefined) ??
+    triple?.depth ??
+    fallback.depth;
+
+  const safeDimensions = {
+    width: Math.round(width),
+    height: Math.round(height),
+    depth: Math.round(depth)
+  };
+
+  if (category === "case") {
+    if (safeDimensions.width < 120) safeDimensions.width = fallback.width;
+    if (safeDimensions.height < 250) safeDimensions.height = fallback.height;
+    if (safeDimensions.depth < 250) safeDimensions.depth = fallback.depth;
+  }
+
+  return safeDimensions;
+}
+
+function dimensionSpec(dimensions) {
+  return `${dimensions.width}x${dimensions.height}x${dimensions.depth}mm`;
+}
+
+function specsWithDimensions(specs, dimensions) {
+  const label = dimensionSpec(dimensions);
+  return [label, ...specs.filter((spec) => !/\d+(?:\.\d+)?\s*x\s*\d+(?:\.\d+)?\s*x\s*\d+(?:\.\d+)?\s*mm/i.test(dimensionLine(spec)))].slice(0, 4);
+}
+
 function socketOf(text) {
   if (/AM4|소켓\s*AM4/i.test(text)) return "AM4";
   if (/LGA\s*1851|소켓\s*1851|1851/i.test(text)) return "LGA1851";
@@ -183,9 +285,11 @@ function normalize(item, index) {
   if (item.category === "cpu") {
     const cores = numberOf(text, [/(\d+)\s*코어/i], 6);
     const tdp = numberOf(text, [/TDP\s*:?\s*(\d+)\s*W?/i, /PPT\s*:?\s*(\d+)\s*W?/i], 88);
+    const dimensionsMm = dimensionsOf("cpu", text);
     return {
-      ...base(item, index, rawSpecs(item, [socketOf(text), memoryTypeOf(text), `${cores}코어`])),
+      ...base(item, index, specsWithDimensions(rawSpecs(item, [socketOf(text), memoryTypeOf(text), `${cores}코어`]), dimensionsMm)),
       category: "cpu",
+      dimensionsMm,
       watts: tdp,
       socket: socketOf(text),
       memoryType: memoryTypeOf(text),
@@ -197,9 +301,11 @@ function normalize(item, index) {
   }
 
   if (item.category === "motherboard") {
+    const dimensionsMm = dimensionsOf("motherboard", text);
     return {
-      ...base(item, index, rawSpecs(item, [socketOf(text), memoryTypeOf(text), formFactorOf(text)])),
+      ...base(item, index, specsWithDimensions(rawSpecs(item, [socketOf(text), memoryTypeOf(text), formFactorOf(text)]), dimensionsMm)),
       category: "motherboard",
+      dimensionsMm,
       watts: 42,
       socket: socketOf(text),
       memoryType: memoryTypeOf(text),
@@ -216,10 +322,12 @@ function normalize(item, index) {
     const speed = numberOf(text, [/DDR[45]-?(\d{4})/i, /(\d{4})\s*MHz/i], memoryTypeOf(text) === "DDR5" ? 5600 : 3200);
     const moduleType = memoryModuleTypeOf(text);
     const specs = rawSpecs(item, [moduleType, memoryTypeOf(text), `${capacity}GB`, `${speed}MHz`]);
+    const dimensionsMm = dimensionsOf("memory", text);
     const normalizedSpecs = [moduleType, ...specs.filter((spec) => !/노트북|데스크탑|데스크톱|PC용|SO-?DIMM|SODIMM/i.test(spec))].slice(0, 4);
     return {
-      ...base(item, index, normalizedSpecs),
+      ...base(item, index, specsWithDimensions(normalizedSpecs, dimensionsMm)),
       category: "memory",
+      dimensionsMm,
       watts: Math.max(6, Math.round(capacity / 4)),
       memoryType: memoryTypeOf(text),
       moduleType,
@@ -234,12 +342,14 @@ function normalize(item, index) {
     const vram = numberOf(text, [/D[DR]?\d?\s*(\d+)\s*GB/i, /(\d+)\s*GB/i], /5090/i.test(text) ? 32 : 12);
     const length = numberOf(text, [/VGA\s*길이\s*:?\s*(\d+)\s*mm/i, /길이\)?\s*:?\s*(\d+)\s*mm/i], model.length);
     const connector = gpuConnectorOf(text);
+    const dimensionsMm = dimensionsOf("gpu", text, { width: length });
     return {
-      ...base(item, index, rawSpecs(item, [`${vram}GB VRAM`, `${length}mm`, `권장 ${model.psu}W`, connector])),
+      ...base(item, index, specsWithDimensions(rawSpecs(item, [`${vram}GB VRAM`, `${length}mm`, `권장 ${model.psu}W`, connector]), dimensionsMm)),
       category: "gpu",
+      dimensionsMm,
       watts: numberOf(text, [/사용전력\s*:?\s*(\d+)\s*W/i, /소비전력\s*:?\s*(\d+)\s*W/i], model.watts),
       vramGb: vram,
-      lengthMm: length,
+      lengthMm: dimensionsMm.width,
       recommendedPsuWatts: numberOf(text, [/권장(?:파워| 정격)?\s*:?\s*(\d+)\s*W/i, /정격파워\s*:?\s*(\d+)\s*W/i], model.psu),
       connector,
       interface: /PCIe\s*5|RTX\s*50/i.test(text) ? "PCIe 5.0" : "PCIe 4.0"
@@ -250,13 +360,16 @@ function normalize(item, index) {
     const capacity = numberOf(text, [/(\d{3,4})\s*W/i], 700);
     const pcie5Ready = /ATX\s*3|PCIe\s*5|12V-2x6|12V2x6|12VHPWR|16핀/i.test(text);
     const rating = /플래티넘|Platinum/i.test(text) ? "Platinum" : /골드|Gold/i.test(text) ? "Gold" : "Bronze";
+    const fallbackDepth = numberOf(text, [/깊이\(D\)\s*:?\s*(\d+)\s*mm/i, /길이\s*:?\s*(\d+)\s*mm/i], 150);
+    const dimensionsMm = dimensionsOf("psu", text, { depth: fallbackDepth });
     return {
-      ...base(item, index, rawSpecs(item, [`${capacity}W`, rating, pcie5Ready ? "PCIe 5.0" : "8pin"])),
+      ...base(item, index, specsWithDimensions(rawSpecs(item, [`${capacity}W`, rating, pcie5Ready ? "PCIe 5.0" : "8pin"]), dimensionsMm)),
       category: "psu",
+      dimensionsMm,
       capacityWatts: capacity,
       rating,
       formFactor: /SFX/i.test(text) ? "SFX" : "ATX",
-      depthMm: numberOf(text, [/깊이\(D\)\s*:?\s*(\d+)\s*mm/i, /길이\s*:?\s*(\d+)\s*mm/i], 150),
+      depthMm: dimensionsMm.depth,
       pcie5Ready
     };
   }
@@ -265,15 +378,40 @@ function normalize(item, index) {
   if (/ATX/i.test(text)) boards.push("ATX");
   if (/M-ATX|Micro-ATX/i.test(text)) boards.push("M-ATX");
   if (/M-ITX|ITX/i.test(text)) boards.push("M-ITX");
+  const gpuClearanceMm = numberOf(text, [/VGA\s*길이\s*:?\s*(\d+)\s*mm/i, /그래픽카드\s*장착\s*길이\s*:?\s*(\d+)\s*mm/i], 360);
+  const psuClearanceMm = numberOf(text, [/파워\s*장착\s*길이\s*:?\s*(\d+)(?:~\d+)?\s*mm/i], 180);
+  const cpuCoolerClearanceMm = numberOf(text, [/CPU쿨러\s*높이\s*:?\s*(\d+)\s*mm/i], 165);
+  const parsedCaseDimensions = dimensionsOf("case", text);
+  const dimensionsMm = {
+    ...parsedCaseDimensions,
+    depth: Math.max(parsedCaseDimensions.depth, gpuClearanceMm + 40)
+  };
   return {
-    ...base(item, index, rawSpecs(item, ["케이스", "VGA 공간", "파워 공간"])),
+    ...base(item, index, specsWithDimensions(rawSpecs(item, ["케이스", "VGA 공간", "파워 공간"]), dimensionsMm)),
     category: "case",
+    dimensionsMm,
     supportedBoards: boards.length ? boards : ["ATX", "M-ATX", "M-ITX"],
-    gpuClearanceMm: numberOf(text, [/VGA\s*길이\s*:?\s*(\d+)\s*mm/i, /그래픽카드\s*장착\s*길이\s*:?\s*(\d+)\s*mm/i], 360),
-    psuClearanceMm: numberOf(text, [/파워\s*장착\s*길이\s*:?\s*(\d+)(?:~\d+)?\s*mm/i], 180),
-    cpuCoolerClearanceMm: numberOf(text, [/CPU쿨러\s*높이\s*:?\s*(\d+)\s*mm/i], 165),
+    gpuClearanceMm,
+    psuClearanceMm,
+    cpuCoolerClearanceMm,
     airflow: /메쉬|mesh|쿨링팬\s*:\s*총[5-9]/i.test(text) ? "high" : /쿨링팬|팬/i.test(text) ? "mesh" : "basic"
   };
+}
+
+function isLikelyCategory(category, item) {
+  const text = `${item.name} ${item.spec} ${item.rawText}`;
+
+  if (category === "cpu") return /CPU|라이젠|Ryzen|인텔|Intel|AMD|코어|Core|소켓|AM4|AM5|LGA/i.test(text);
+  if (category === "motherboard") return /메인보드|mainboard|motherboard|B\d{3}|Z\d{3}|A\d{3}|H\d{3}|X\d{3}|AM4|AM5|LGA|M-ATX|ATX/i.test(text);
+  if (category === "memory") return /메모리|RAM|DDR[45]|DIMM|SO-?DIMM|노트북용|데스크탑용/i.test(text);
+  if (category === "gpu") return /그래픽|VGA|지포스|GeForce|RTX|GTX|라데온|Radeon|RX\s?\d/i.test(text);
+  if (category === "psu") return /파워|PSU|80\s*PLUS|80PLUS|ATX\s*3|SFX|정격|W\b/i.test(text);
+  if (category === "case") {
+    if (/보호필름|필름|자동차|계기판|휴대폰|스마트폰|LCD\s*화면|강화 유리 보호/i.test(text)) return false;
+    return /PC케이스|케이스|미들타워|빅타워|미니타워|쿨링팬|CPU쿨러|VGA\s*길이|그래픽카드\s*장착|파워\s*장착|ATX|M-ATX|ITX/i.test(text);
+  }
+
+  return true;
 }
 
 function uniqueItems(items) {
@@ -298,7 +436,7 @@ export async function searchDanawa({ category, query, pages = 3, limit = 120 }) 
   );
 
   const htmls = await Promise.all(urls.map((url) => fetchHtml(url)));
-  const rawItems = htmls.flatMap((html) => parseProducts(html, category));
+  const rawItems = htmls.flatMap((html) => parseProducts(html, category)).filter((item) => isLikelyCategory(category, item));
   return uniqueItems(rawItems.map((item, index) => normalize(item, index))).slice(0, Math.max(1, Math.min(limit, 200)));
 }
 

@@ -15,6 +15,11 @@ type BasePart = {
   name: string;
   price: number;
   watts: number;
+  dimensionsMm?: {
+    width: number;
+    height: number;
+    depth: number;
+  };
   tone: "mint" | "rose" | "sky" | "amber" | "violet" | "slate";
   specs: string[];
   keywords: string[];
