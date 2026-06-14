@@ -17,7 +17,7 @@ export function CompatibilityReport({ selection }: Props) {
       <div className="report-list">
         {report.map((item) => (
           <article className={`report-card ${item.status}`} key={item.title}>
-            <span>{item.status === "good" ? "OK" : "!"}</span>
+            <span>{item.status === "good" ? "OK" : item.status === "warn" ? "!" : "i"}</span>
             <div>
               <strong>{item.title}</strong>
               <p>{item.detail}</p>

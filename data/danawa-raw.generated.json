@@ -1,0 +1,1166 @@
+{
+  "fetchedAt": "2026-06-14T11:31:42.735Z",
+  "note": "Danawa category list snapshot. Use as raw candidate source, then normalize into src/constants/data.ts before production use.",
+  "categories": {
+    "cpu": "https://prod.danawa.com/list/?cate=112747",
+    "motherboard": "https://prod.danawa.com/list/?cate=112751",
+    "memory": "https://prod.danawa.com/list/?cate=112752",
+    "gpu": "https://prod.danawa.com/list/?cate=112753",
+    "psu": "https://prod.danawa.com/list/?cate=112777",
+    "case": "https://prod.danawa.com/list/?cate=112775"
+  },
+  "items": [
+    {
+      "category": "cpu",
+      "name": "AMD 라이젠7-6세대 9800X3D (그래니트 릿지) (멀티팩 정품)",
+      "spec": "AMD(소켓AM5) / 8코어 / 메모리 규격: DDR5 / 탑재 / 최대 클럭: 5.2GHz / TDP: 120 / PCIe5.0 / 시네벤치R23(싱글): 2073 / 시네벤치R23(멀티): 23334",
+      "price": null,
+      "link": "https://prod.danawa.com/info/?pcode=70531547&cate=112747&adinflow=Y",
+      "rawText": "동영상 재생 이미지보기 AMD 라이젠7-6세대 9800X3D (그래니트 릿지) (멀티팩 정품) AMD(소켓AM5) / 8코어 / 메모리 규격: DDR5 / 탑재 / 최대 클럭: 5.2GHz / TDP: 120 / PCIe5.0 / 시네벤치R23(싱글): 2073 / 시네벤치R23(멀티): 23334 더보기 AMD(소켓AM5) / 8코어 / 16스레드 / 메모리 규격 : DDR5 / 탑재 / 6세대(Zen5) / TSMC 4nm / 기본 클럭 : 4.7GHz / 최대 클럭 : 5.2GHz / L2 캐시 : 8MB / L3 캐시 : 96MB / TDP : 120 / PCIe5.0 / 5600MHz / AMD 라데온 그래픽 / 기술 지원: SMT(하이퍼스레딩) , AMD Ryzen Master, AMD 3D V캐시 / 쿨러 : 미포함 / 시네벤치R23(싱글) : 2073 / 시네벤치R23(멀티) : 23334 / 출시가: 479달러(VAT별도) 닫기 24.11. 등록 관심 297몰 VS상"
+    },
+    {
+      "category": "cpu",
+      "name": "인텔 코어 울트라7 시리즈2 270K Plus (애로우레이크 리프레시) (정품)",
+      "spec": "인텔(소켓1851) / P8+E16코어 / 메모리 규격: DDR5 / 탑재 / 최대 클럭: 5.5GHz / PBP-MTP: 125-250W / PCIe5.0, 4.0",
+      "price": null,
+      "link": "https://prod.danawa.com/info/?pcode=108424286&cate=112747&adinflow=Y",
+      "rawText": "이미지보기 인텔 코어 울트라7 시리즈2 270K Plus (애로우레이크 리프레시) (정품) 인텔(소켓1851) / P8+E16코어 / 메모리 규격: DDR5 / 탑재 / 최대 클럭: 5.5GHz / PBP-MTP: 125-250W / PCIe5.0, 4.0 더보기 인텔(소켓1851) / P8+E16코어 / 24스레드 / 메모리 규격 : DDR5 / 탑재 / TSMC 3nm / 기본 클럭 : 3.7GHz / 최대 클럭 : 5.5GHz / L2 캐시 : 40MB / L3 캐시 : 36MB / PBP-MTP : 125-250W / PCIe5.0, 4.0 / 7200MHz / 인텔 그래픽스(Xe LPG) / 기술 지원: 인텔 XTU , 인텔 퀵싱크, 인텔 딥러닝부스트 / 쿨러 : 미포함 닫기 26.03. 등록 관심 131몰 VS상품비교 510,030 원 가격정보 더보기"
+    },
+    {
+      "category": "cpu",
+      "name": "AMD 라이젠7-5세대 7800X3D (라파엘) (멀티팩 정품)",
+      "spec": "AMD(소켓AM5) / 8코어 / 메모리 규격: DDR5 / 탑재 / 최대 클럭: 5.0GHz / TDP: 120 / PPT: 162 / PCIe5.0 / 시네벤치R23(싱글): 1788 / 시네벤치R23(멀티): 18208",
+      "price": null,
+      "link": "https://prod.danawa.com/info/?pcode=19627934&cate=112747&adinflow=Y",
+      "rawText": "이미지보기 AMD 라이젠7-5세대 7800X3D (라파엘) (멀티팩 정품) AMD(소켓AM5) / 8코어 / 메모리 규격: DDR5 / 탑재 / 최대 클럭: 5.0GHz / TDP: 120 / PPT: 162 / PCIe5.0 / 시네벤치R23(싱글): 1788 / 시네벤치R23(멀티): 18208 더보기 AMD(소켓AM5) / 8코어 / 16스레드 / 메모리 규격 : DDR5 / 탑재 / 5세대(Zen4) / 5nm / 기본 클럭 : 4.2GHz / 최대 클럭 : 5.0GHz / L2 캐시 : 8MB / L3 캐시 : 96MB / TDP : 120 / PPT : 162 / PCIe5.0 / 5200MHz / AMD 라데온 그래픽 / 기술 지원: SMT(하이퍼스레딩) , AMD Ryzen Master, AMD 3D V캐시 / 쿨러 : 미포함 / 시네벤치R23(싱글) : 1788 / 시네벤치R23(멀티) : 18208 닫기 23.04. 등록 관심 231몰 VS상품비교 402,340 원"
+    },
+    {
+      "category": "cpu",
+      "name": "인텔 코어 울트라5 시리즈2 250K Plus (애로우레이크 리프레시) (정품)",
+      "spec": "인텔(소켓1851) / P6+E12코어 / 메모리 규격: DDR5 / 탑재 / 최대 클럭: 5.3GHz / PBP-MTP: 125-159W / PCIe5.0, 4.0",
+      "price": null,
+      "link": "https://prod.danawa.com/info/?pcode=108424451&cate=112747&adinflow=Y",
+      "rawText": "이미지보기 인텔 코어 울트라5 시리즈2 250K Plus (애로우레이크 리프레시) (정품) 인텔(소켓1851) / P6+E12코어 / 메모리 규격: DDR5 / 탑재 / 최대 클럭: 5.3GHz / PBP-MTP: 125-159W / PCIe5.0, 4.0 더보기 인텔(소켓1851) / P6+E12코어 / 18스레드 / 메모리 규격 : DDR5 / 탑재 / TSMC 3nm / 기본 클럭 : 4.2GHz / 최대 클럭 : 5.3GHz / L2 캐시 : 30MB / L3 캐시 : 30MB / PBP-MTP : 125-159W / PCIe5.0, 4.0 / 7200MHz / 인텔 그래픽스(Xe LPG) / 기술 지원: 인텔 XTU , 인텔 퀵싱크, 인텔 딥러닝부스트 / 쿨러 : 미포함 닫기 26.03. 등록 관심 135몰 VS상품비교 357,670 원 가격정보 더보기"
+    },
+    {
+      "category": "cpu",
+      "name": "AMD 라이젠7-6세대 9800X3D (그래니트 릿지)",
+      "spec": "AMD(소켓AM5) / 8코어 / 메모리 규격 : DDR5 / 탑재 / 최대 클럭 : 5.2GHz / TDP : 120 / PCIe5.0 / 시네벤치R23(싱글) : 2073 / 시네벤치R23(멀티) : 23334 / 출시가: 479달러(VAT별도)",
+      "price": null,
+      "link": "https://prod.danawa.com/info/?pcode=70531547&cate=112747",
+      "rawText": "이미지보기 동영상 재생 인기 순위 1 AMD 라이젠7-6세대 9800X3D (그래니트 릿지) [6월 2주차] AMD CPU 중 가장 많이 조회된 상품이에요 AMD(소켓AM5) / 8코어 / 메모리 규격 : DDR5 / 탑재 / 최대 클럭 : 5.2GHz / TDP : 120 / PCIe5.0 / 시네벤치R23(싱글) : 2073 / 시네벤치R23(멀티) : 23334 / 출시가: 479달러(VAT별도) 더보기 AMD(소켓AM5) / 8코어 / 16스레드 / 메모리 규격 : DDR5 / 탑재 / 6세대(Zen5) / TSMC 4nm / 기본 클럭 : 4.7GHz / 최대 클럭 : 5.2GHz / L2 캐시 : 8MB / L3 캐시 : 96MB / TDP : 120 / PCIe5.0 / 5600MHz / AMD 라데온 그래픽 / 기술 지원: SMT(하이퍼스레딩) , AMD Ryzen Master, AMD 3D V캐시 / 쿨러 : 미포함 / 시네벤치R23(싱글) : 2073 / 시네벤치R"
+    },
+    {
+      "category": "cpu",
+      "name": "AMD 라이젠7-5세대 7800X3D (라파엘)",
+      "spec": "AMD(소켓AM5) / 8코어 / 메모리 규격 : DDR5 / 탑재 / 최대 클럭 : 5.0GHz / TDP : 120 / PPT : 162 / PCIe5.0 / 시네벤치R23(싱글) : 1788 / 시네벤치R23(멀티) : 18208",
+      "price": null,
+      "link": "https://prod.danawa.com/info/?pcode=19627934&cate=112747",
+      "rawText": "이미지보기 인기 순위 2 AMD 라이젠7-5세대 7800X3D (라파엘) [6월 2주차] CPU 중 VS검색에 두번째로 많이 선택된 상품이에요 AMD(소켓AM5) / 8코어 / 메모리 규격 : DDR5 / 탑재 / 최대 클럭 : 5.0GHz / TDP : 120 / PPT : 162 / PCIe5.0 / 시네벤치R23(싱글) : 1788 / 시네벤치R23(멀티) : 18208 더보기 AMD(소켓AM5) / 8코어 / 16스레드 / 메모리 규격 : DDR5 / 탑재 / 5세대(Zen4) / 5nm / 기본 클럭 : 4.2GHz / 최대 클럭 : 5.0GHz / L2 캐시 : 8MB / L3 캐시 : 96MB / TDP : 120 / PPT : 162 / PCIe5.0 / 5200MHz / AMD 라데온 그래픽 / 기술 지원: SMT(하이퍼스레딩) , AMD Ryzen Master, AMD 3D V캐시 / 쿨러 : 미포함 / 시네벤치R23(싱글) : 1788 / 시네벤치R23(멀티) :"
+    },
+    {
+      "category": "cpu",
+      "name": "인텔 코어 울트라7 시리즈2 270K Plus (애로우레이크 리프레시)",
+      "spec": "인텔(소켓1851) / P8+E16코어 / 메모리 규격 : DDR5 / 탑재 / 최대 클럭 : 5.5GHz / PBP-MTP : 125-250W / PCIe5.0, 4.0",
+      "price": null,
+      "link": "https://prod.danawa.com/info/?pcode=108424286&cate=112747",
+      "rawText": "이미지보기 인기 순위 3 인텔 코어 울트라7 시리즈2 270K Plus (애로우레이크 리프레시) [6월 2주차] 인텔 CPU 중 가장 많이 조회된 상품이에요 인텔(소켓1851) / P8+E16코어 / 메모리 규격 : DDR5 / 탑재 / 최대 클럭 : 5.5GHz / PBP-MTP : 125-250W / PCIe5.0, 4.0 더보기 인텔(소켓1851) / P8+E16코어 / 24스레드 / 메모리 규격 : DDR5 / 탑재 / TSMC 3nm / 기본 클럭 : 3.7GHz / 최대 클럭 : 5.5GHz / L2 캐시 : 40MB / L3 캐시 : 36MB / PBP-MTP : 125-250W / PCIe5.0, 4.0 / 7200MHz / 인텔 그래픽스(Xe LPG) / 기술 지원: 인텔 XTU , 인텔 퀵싱크, 인텔 딥러닝부스트 / 쿨러 : 미포함 닫기 혜택 최저가 484,000원 [G마켓] 삼성카드 / 무이자 최대 24개월 26.03. 등록 관심 대량구매 --> 131몰 VS상품"
+    },
+    {
+      "category": "cpu",
+      "name": "AMD 라이젠5-5세대 7500F (라파엘)",
+      "spec": "AMD(소켓AM5) / 6코어 / 메모리 규격 : DDR5 / 내장그래픽:미탑재 / 최대 클럭 : 5.0GHz / TDP : 65W / PPT : 88W / PCIe5.0 / 시네벤치R23(싱글) : 1824 / 시네벤치R23(멀티) : 13824 / 출시가: 179달러(VAT별도)",
+      "price": null,
+      "link": "https://prod.danawa.com/info/?pcode=21694499&cate=112747",
+      "rawText": "이미지보기 인기 순위 4 AMD 라이젠5-5세대 7500F (라파엘) AMD(소켓AM5) / 6코어 / 메모리 규격 : DDR5 / 내장그래픽:미탑재 / 최대 클럭 : 5.0GHz / TDP : 65W / PPT : 88W / PCIe5.0 / 시네벤치R23(싱글) : 1824 / 시네벤치R23(멀티) : 13824 / 출시가: 179달러(VAT별도) 더보기 AMD(소켓AM5) / 6코어 / 12스레드 / 메모리 규격 : DDR5 / 내장그래픽:미탑재 / 5세대(Zen4) / 5nm / 기본 클럭 : 3.7GHz / 최대 클럭 : 5.0GHz / L2 캐시 : 6MB / L3 캐시 : 32MB / TDP : 65W / PPT : 88W / PCIe5.0 / 5200MHz / 기술 지원: SMT(하이퍼스레딩) / 쿨러 : Wraith Stealth 포함 / 시네벤치R23(싱글) : 1824 / 시네벤치R23(멀티) : 13824 / 출시가: 179달러(VAT별도) 닫기 혜택 최저가 1"
+    },
+    {
+      "category": "cpu",
+      "name": "인텔 코어 울트라5 시리즈2 250K Plus (애로우레이크 리프레시)",
+      "spec": "인텔(소켓1851) / P6+E12코어 / 메모리 규격 : DDR5 / 탑재 / 최대 클럭 : 5.3GHz / PBP-MTP : 125-159W / PCIe5.0, 4.0",
+      "price": null,
+      "link": "https://prod.danawa.com/info/?pcode=108424451&cate=112747",
+      "rawText": "이미지보기 인기 순위 5 인텔 코어 울트라5 시리즈2 250K Plus (애로우레이크 리프레시) 인텔(소켓1851) / P6+E12코어 / 메모리 규격 : DDR5 / 탑재 / 최대 클럭 : 5.3GHz / PBP-MTP : 125-159W / PCIe5.0, 4.0 더보기 인텔(소켓1851) / P6+E12코어 / 18스레드 / 메모리 규격 : DDR5 / 탑재 / TSMC 3nm / 기본 클럭 : 4.2GHz / 최대 클럭 : 5.3GHz / L2 캐시 : 30MB / L3 캐시 : 30MB / PBP-MTP : 125-159W / PCIe5.0, 4.0 / 7200MHz / 인텔 그래픽스(Xe LPG) / 기술 지원: 인텔 XTU , 인텔 퀵싱크, 인텔 딥러닝부스트 / 쿨러 : 미포함 닫기 혜택 최저가 339,000원 [G마켓] 삼성카드 / 무이자 최대 24개월 26.03. 등록 관심 대량구매 --> 135몰 VS상품비교 357,670 원 가격정보 더보기 1위 정품"
+    },
+    {
+      "category": "cpu",
+      "name": "AMD 라이젠5-5세대 7500F (라파엘) (멀티팩 정품)",
+      "spec": "AMD(소켓AM5) / 6코어 / 메모리 규격: DDR5 / 내장그래픽:미탑재 / 최대 클럭: 5.0GHz / TDP: 65W / PPT: 88W / PCIe5.0 / 시네벤치R23(싱글): 1824 / 시네벤치R23(멀티): 13824",
+      "price": null,
+      "link": "https://prod.danawa.com/info/?pcode=21694499&cate=112747",
+      "rawText": "이미지보기 AMD 라이젠5-5세대 7500F (라파엘) (멀티팩 정품) AMD(소켓AM5) / 6코어 / 메모리 규격: DDR5 / 내장그래픽:미탑재 / 최대 클럭: 5.0GHz / TDP: 65W / PPT: 88W / PCIe5.0 / 시네벤치R23(싱글): 1824 / 시네벤치R23(멀티): 13824 더보기 AMD(소켓AM5) / 6코어 / 12스레드 / 메모리 규격 : DDR5 / 내장그래픽:미탑재 / 5세대(Zen4) / 5nm / 기본 클럭 : 3.7GHz / 최대 클럭 : 5.0GHz / L2 캐시 : 6MB / L3 캐시 : 32MB / TDP : 65W / PPT : 88W / PCIe5.0 / 5200MHz / 기술 지원: SMT(하이퍼스레딩) / 쿨러 : Wraith Stealth 포함 / 시네벤치R23(싱글) : 1824 / 시네벤치R23(멀티) : 13824 / 출시가: 179달러(VAT별도) 닫기 23.07. 등록 관심 229몰 VS상품비교 177,670 "
+    },
+    {
+      "category": "cpu",
+      "name": "AMD 라이젠5-4세대 5500GT (세잔)",
+      "spec": "AMD(소켓AM4) / 6코어 / 메모리 규격 : DDR4 / 내장그래픽:탑재 / 최대 클럭 : 4.4GHz / TDP : 65W / PCIe3.0 / 시네벤치R23(멀티) : 6905",
+      "price": null,
+      "link": "https://prod.danawa.com/info/?pcode=54218171&cate=112747",
+      "rawText": "이미지보기 인기 순위 6 AMD 라이젠5-4세대 5500GT (세잔) AMD(소켓AM4) / 6코어 / 메모리 규격 : DDR4 / 내장그래픽:탑재 / 최대 클럭 : 4.4GHz / TDP : 65W / PCIe3.0 / 시네벤치R23(멀티) : 6905 더보기 AMD(소켓AM4) / 6코어 / 12스레드 / 메모리 규격 : DDR4 / 내장그래픽:탑재 / 4세대(Zen3) / 7nm / 기본 클럭 : 3.6GHz / 최대 클럭 : 4.4GHz / L2 캐시 : 3MB / L3 캐시 : 16MB / TDP : 65W / PCIe3.0 / 3200MHz / AMD 라데온 그래픽 / 기술 지원: SMT(하이퍼스레딩) , SenseMI , AMD Ryzen Master / 쿨러 : Wraith Stealth 포함 / 시네벤치R23(멀티) : 6905 닫기 혜택 최저가 178,123원 [이마트몰] 롯데카드 / 무이자 최대 3개월 24.01. 등록 관심 대량구매 --> 161몰 VS상품비교 "
+    },
+    {
+      "category": "cpu",
+      "name": "AMD 라이젠5-4세대 5600 (버미어)",
+      "spec": "AMD(소켓AM4) / 6코어 / 메모리 규격 : DDR4 / 내장그래픽:미탑재 / 최대 클럭 : 4.4GHz / TDP : 65W / PCIe4.0 / 시네벤치R23(싱글) : 1460 / 시네벤치R23(멀티) : 10906 / 출시가: 199달러(VAT별도)",
+      "price": null,
+      "link": "https://prod.danawa.com/info/?pcode=16741211&cate=112747",
+      "rawText": "이미지보기 인기 순위 7 AMD 라이젠5-4세대 5600 (버미어) AMD(소켓AM4) / 6코어 / 메모리 규격 : DDR4 / 내장그래픽:미탑재 / 최대 클럭 : 4.4GHz / TDP : 65W / PCIe4.0 / 시네벤치R23(싱글) : 1460 / 시네벤치R23(멀티) : 10906 / 출시가: 199달러(VAT별도) 더보기 AMD(소켓AM4) / 6코어 / 12스레드 / 메모리 규격 : DDR4 / 내장그래픽:미탑재 / 4세대(Zen3) / 7nm / 기본 클럭 : 3.5GHz / 최대 클럭 : 4.4GHz / L2 캐시 : 3MB / L3 캐시 : 32MB / TDP : 65W / PCIe4.0 / 3200MHz / 기술 지원: SMT(하이퍼스레딩) , StoreMI , AMD Ryzen Master, VR Ready 프리미엄 / 쿨러 : Wraith Stealth 포함 / 시네벤치R23(싱글) : 1460 / 시네벤치R23(멀티) : 10906 / 출시가: 199달러"
+    },
+    {
+      "category": "cpu",
+      "name": "AMD 라이젠7-6세대 9850X3D (그래니트 릿지)",
+      "spec": "AMD(소켓AM5) / 8코어 / 메모리 규격 : DDR5 / 내장그래픽:탑재 / 최대 클럭 : 5.6GHz / TDP : 120W / PCIe5.0",
+      "price": null,
+      "link": "https://prod.danawa.com/info/?pcode=104627873&cate=112747",
+      "rawText": "이미지보기 동영상 재생 인기 순위 8 AMD 라이젠7-6세대 9850X3D (그래니트 릿지) AMD(소켓AM5) / 8코어 / 메모리 규격 : DDR5 / 내장그래픽:탑재 / 최대 클럭 : 5.6GHz / TDP : 120W / PCIe5.0 더보기 AMD(소켓AM5) / 8코어 / 16스레드 / 메모리 규격 : DDR5 / 내장그래픽:탑재 / 6세대(Zen5) / TSMC 4nm / 기본 클럭 : 4.7GHz / 최대 클럭 : 5.6GHz / L2 캐시 : 8MB / L3 캐시 : 96MB / TDP : 120W / PCIe5.0 / 5600MHz / AMD 라데온 그래픽 / 기술 지원: SMT(하이퍼스레딩) , AMD Ryzen Master, AMD 3D V캐시 / 쿨러 : 미포함 닫기 혜택 최저가 686,500원 [이마트몰] NH농협카드 / 무이자 최대 3개월 26.01. 등록 관심 대량구매 --> 139몰 VS상품비교 731,490 원 가격정보 더보기 1위 멀티팩 정품"
+    },
+    {
+      "category": "cpu",
+      "name": "AMD 라이젠5-6세대 9500F (그래니트 릿지)",
+      "spec": "AMD(소켓AM5) / 6코어 / 메모리 규격 : DDR5 / 내장그래픽:미탑재 / 최대 클럭 : 5.0GHz / TDP : 65W / PPT : 88W / PCIe5.0 / 시네벤치R23(싱글) : 1689 / 시네벤치R23(멀티) : 12803",
+      "price": null,
+      "link": "https://prod.danawa.com/info/?pcode=97704881&cate=112747",
+      "rawText": "이미지보기 동영상 재생 인기 순위 9 AMD 라이젠5-6세대 9500F (그래니트 릿지) AMD(소켓AM5) / 6코어 / 메모리 규격 : DDR5 / 내장그래픽:미탑재 / 최대 클럭 : 5.0GHz / TDP : 65W / PPT : 88W / PCIe5.0 / 시네벤치R23(싱글) : 1689 / 시네벤치R23(멀티) : 12803 더보기 AMD(소켓AM5) / 6코어 / 12스레드 / 메모리 규격 : DDR5 / 내장그래픽:미탑재 / 6세대(Zen5) / TSMC 4nm / 기본 클럭 : 3.8GHz / 최대 클럭 : 5.0GHz / L2 캐시 : 6MB / L3 캐시 : 32MB / TDP : 65W / PPT : 88W / PCIe5.0 / 5600MHz / 기술 지원: SMT(하이퍼스레딩) / 쿨러 : Wraith Stealth 포함 / 시네벤치R23(싱글) : 1689 / 시네벤치R23(멀티) : 12803 닫기 25.09. 등록 관심 대량구매 --> 67몰 VS상품비교"
+    },
+    {
+      "category": "cpu",
+      "name": "인텔 코어i5-14세대 14400F (랩터레이크 리프레시)",
+      "spec": "인텔(소켓1700) / P6+E4코어 / 메모리 규격 : DDR5, DDR4 / 내장그래픽:미탑재 / 최대 클럭 : 4.7GHz / PBP-MTP : 65-148W / PCIe5.0, 4.0 / 시네벤치R23(싱글) : 1790 / 시네벤치R23(멀티) : 17804",
+      "price": null,
+      "link": "https://prod.danawa.com/info/?pcode=76555634&cate=112747",
+      "rawText": "이미지보기 인기 순위 10 인텔 코어i5-14세대 14400F (랩터레이크 리프레시) 인텔(소켓1700) / P6+E4코어 / 메모리 규격 : DDR5, DDR4 / 내장그래픽:미탑재 / 최대 클럭 : 4.7GHz / PBP-MTP : 65-148W / PCIe5.0, 4.0 / 시네벤치R23(싱글) : 1790 / 시네벤치R23(멀티) : 17804 더보기 인텔(소켓1700) / P6+E4코어 / 12+4스레드 / 메모리 규격 : DDR5, DDR4 / 내장그래픽:미탑재 / 10nm(인텔7) / 기본 클럭 : 2.5GHz / 최대 클럭 : 4.7GHz / L2 캐시 : 9.5MB / L3 캐시 : 20MB / PBP-MTP : 65-148W / PCIe5.0, 4.0 / 4800, 3200MHz / 기술 지원: SMT(하이퍼스레딩) , 인텔 딥러닝부스트 / 쿨러 : 인텔 기본쿨러 포함 / 시네벤치R23(싱글) : 1790 / 시네벤치R23(멀티) : 17804 닫기 혜택 최저가 2"
+    },
+    {
+      "category": "cpu",
+      "name": "AMD 라이젠9-6세대 9950X3D2 (그래니트 릿지)",
+      "spec": "AMD(소켓AM5) / 16코어 / 메모리 규격 : DDR5 / 탑재 / 최대 클럭 : 5.6GHz / TDP : 200 / PCIe5.0",
+      "price": null,
+      "link": "https://prod.danawa.com/info/?pcode=122634011&cate=112747",
+      "rawText": "이미지보기 인기 순위 11 AMD 라이젠9-6세대 9950X3D2 (그래니트 릿지) AMD(소켓AM5) / 16코어 / 메모리 규격 : DDR5 / 탑재 / 최대 클럭 : 5.6GHz / TDP : 200 / PCIe5.0 더보기 AMD(소켓AM5) / 16코어 / 32스레드 / 메모리 규격 : DDR5 / 탑재 / 6세대(Zen5) / TSMC 4nm / 기본 클럭 : 4.3GHz / 최대 클럭 : 5.6GHz / L2 캐시 : 16MB / L3 캐시 : 192MB / TDP : 200 / PCIe5.0 / 5600MHz / AMD 라데온 그래픽 / 기술 지원: SMT(하이퍼스레딩) , AMD Ryzen Master, AMD 3D V캐시 / 쿨러 : 미포함 닫기 혜택 최저가 1,394,630원 [G마켓] 삼성카드 / 무이자 최대 24개월 26.04. 등록 관심 대량구매 --> 155몰 VS상품비교 1,442,500 원 가격정보 더보기 1위 멀티팩 정품"
+    },
+    {
+      "category": "cpu",
+      "name": "AMD 라이젠5-6세대 9600X (그래니트 릿지)",
+      "spec": "AMD(소켓AM5) / 6코어 / 메모리 규격 : DDR5 / 내장그래픽:탑재 / 최대 클럭 : 5.4GHz / TDP : 65W / PPT : 88W / PCIe5.0 / 시네벤치R23(싱글) : 2223 / 시네벤치R23(멀티) : 16998 / 출시가: 279달러(VAT별도)",
+      "price": null,
+      "link": "https://prod.danawa.com/info/?pcode=62794079&cate=112747",
+      "rawText": "이미지보기 인기 순위 12 AMD 라이젠5-6세대 9600X (그래니트 릿지) AMD(소켓AM5) / 6코어 / 메모리 규격 : DDR5 / 내장그래픽:탑재 / 최대 클럭 : 5.4GHz / TDP : 65W / PPT : 88W / PCIe5.0 / 시네벤치R23(싱글) : 2223 / 시네벤치R23(멀티) : 16998 / 출시가: 279달러(VAT별도) 더보기 AMD(소켓AM5) / 6코어 / 12스레드 / 메모리 규격 : DDR5 / 내장그래픽:탑재 / 6세대(Zen5) / TSMC 4nm / 기본 클럭 : 3.9GHz / 최대 클럭 : 5.4GHz / L2 캐시 : 6MB / L3 캐시 : 32MB / TDP : 65W / PPT : 88W / PCIe5.0 / 5600MHz / AMD 라데온 그래픽 / 기술 지원: SMT(하이퍼스레딩) / 쿨러 : Wraith Stealth 포함 / 시네벤치R23(싱글) : 2223 / 시네벤치R23(멀티) : 16998 / 출시가: 27"
+    },
+    {
+      "category": "cpu",
+      "name": "인텔 코어i5-14세대 14400 (랩터레이크 리프레시)",
+      "spec": "인텔(소켓1700) / P6+E4코어 / 메모리 규격 : DDR5, DDR4 / 내장그래픽:탑재 / 최대 클럭 : 4.7GHz / PBP-MTP : 65-148W / PCIe5.0, 4.0 / 시네벤치R23(싱글) : 1796 / 시네벤치R23(멀티) : 17802 / 출시가: 221달러 (VAT별도)",
+      "price": null,
+      "link": "https://prod.danawa.com/info/?pcode=32038580&cate=112747",
+      "rawText": "이미지보기 인기 순위 13 인텔 코어i5-14세대 14400 (랩터레이크 리프레시) 인텔(소켓1700) / P6+E4코어 / 메모리 규격 : DDR5, DDR4 / 내장그래픽:탑재 / 최대 클럭 : 4.7GHz / PBP-MTP : 65-148W / PCIe5.0, 4.0 / 시네벤치R23(싱글) : 1796 / 시네벤치R23(멀티) : 17802 / 출시가: 221달러 (VAT별도) 더보기 인텔(소켓1700) / P6+E4코어 / 12+4스레드 / 메모리 규격 : DDR5, DDR4 / 내장그래픽:탑재 / 10nm(인텔7) / 기본 클럭 : 2.5GHz / 최대 클럭 : 4.7GHz / L2 캐시 : 9.5MB / L3 캐시 : 20MB / PBP-MTP : 65-148W / PCIe5.0, 4.0 / 4800, 3200MHz / 인텔 UHD 730 / 기술 지원: SMT(하이퍼스레딩) , 인텔 퀵싱크, 인텔 딥러닝부스트 / 쿨러 : 인텔 기본쿨러 포함 / 시네벤치R23(싱글) :"
+    },
+    {
+      "category": "cpu",
+      "name": "AMD 라이젠9-6세대 9950X3D (그래니트 릿지)",
+      "spec": "AMD(소켓AM5) / 16코어 / 메모리 규격 : DDR5 / 내장그래픽:탑재 / 최대 클럭 : 5.7GHz / TDP : 170W / PCIe5.0 / 시네벤치R23(싱글) : 2242 / 시네벤치R23(멀티) : 42377 / 출시가: 699달러(VAT별도)",
+      "price": null,
+      "link": "https://prod.danawa.com/info/?pcode=77790914&cate=112747",
+      "rawText": "이미지보기 인기 순위 14 AMD 라이젠9-6세대 9950X3D (그래니트 릿지) AMD(소켓AM5) / 16코어 / 메모리 규격 : DDR5 / 내장그래픽:탑재 / 최대 클럭 : 5.7GHz / TDP : 170W / PCIe5.0 / 시네벤치R23(싱글) : 2242 / 시네벤치R23(멀티) : 42377 / 출시가: 699달러(VAT별도) 더보기 AMD(소켓AM5) / 16코어 / 32스레드 / 메모리 규격 : DDR5 / 내장그래픽:탑재 / 6세대(Zen5) / TSMC 4nm / 기본 클럭 : 4.3GHz / 최대 클럭 : 5.7GHz / L2 캐시 : 16MB / L3 캐시 : 128MB / TDP : 170W / PCIe5.0 / 5600MHz / AMD 라데온 그래픽 / 기술 지원: SMT(하이퍼스레딩) , AMD Ryzen Master, AMD 3D V캐시 / 쿨러 : 미포함 / 시네벤치R23(싱글) : 2242 / 시네벤치R23(멀티) : 42377 / 출시가: 6"
+    },
+    {
+      "category": "cpu",
+      "name": "AMD 라이젠7-6세대 9700X (그래니트 릿지)",
+      "spec": "AMD(소켓AM5) / 8코어 / 메모리 규격 : DDR5 / 탑재 / 최대 클럭 : 5.5GHz / TDP : 65 / PPT : 88 / PCIe5.0 / 시네벤치R23(싱글) : 2260 / 시네벤치R23(멀티) : 21436 / 출시가: 359달러(VAT별도)",
+      "price": null,
+      "link": "https://prod.danawa.com/info/?pcode=62794082&cate=112747",
+      "rawText": "이미지보기 인기 순위 15 AMD 라이젠7-6세대 9700X (그래니트 릿지) AMD(소켓AM5) / 8코어 / 메모리 규격 : DDR5 / 탑재 / 최대 클럭 : 5.5GHz / TDP : 65 / PPT : 88 / PCIe5.0 / 시네벤치R23(싱글) : 2260 / 시네벤치R23(멀티) : 21436 / 출시가: 359달러(VAT별도) 더보기 AMD(소켓AM5) / 8코어 / 16스레드 / 메모리 규격 : DDR5 / 탑재 / 6세대(Zen5) / TSMC 4nm / 기본 클럭 : 3.8GHz / 최대 클럭 : 5.5GHz / L2 캐시 : 8MB / L3 캐시 : 32MB / TDP : 65 / PPT : 88 / PCIe5.0 / 5600MHz / AMD 라데온 그래픽 / 기술 지원: SMT(하이퍼스레딩) , AMD Ryzen Master / 쿨러 : Wraith Stealth 포함 / 시네벤치R23(싱글) : 2260 / 시네벤치R23(멀티) : 21436 / 출시가:"
+    },
+    {
+      "category": "cpu",
+      "name": "인텔 코어i5-14세대 14600K (랩터레이크 리프레시)",
+      "spec": "인텔(소켓1700) / P6+E8코어 / 메모리 규격 : DDR5, DDR4 / 내장그래픽:탑재 / 최대 클럭 : 5.3GHz / PBP-MTP : 125-181W / PCIe5.0, 4.0 / 시네벤치R23(싱글) : 2069 / 시네벤치R23(멀티) : 25159 / 출시가: 319달러 (VAT별도)",
+      "price": null,
+      "link": "https://prod.danawa.com/info/?pcode=28799654&cate=112747",
+      "rawText": "이미지보기 인기 순위 16 인텔 코어i5-14세대 14600K (랩터레이크 리프레시) 인텔(소켓1700) / P6+E8코어 / 메모리 규격 : DDR5, DDR4 / 내장그래픽:탑재 / 최대 클럭 : 5.3GHz / PBP-MTP : 125-181W / PCIe5.0, 4.0 / 시네벤치R23(싱글) : 2069 / 시네벤치R23(멀티) : 25159 / 출시가: 319달러 (VAT별도) 더보기 인텔(소켓1700) / P6+E8코어 / 12+8스레드 / 메모리 규격 : DDR5, DDR4 / 내장그래픽:탑재 / 10nm(인텔7) / 기본 클럭 : 3.5GHz / 최대 클럭 : 5.3GHz / L2 캐시 : 20MB / L3 캐시 : 24MB / PBP-MTP : 125-181W / PCIe5.0, 4.0 / 5600, 3200MHz / 인텔 UHD 770 / 기술 지원: SMT(하이퍼스레딩) , 인텔 XTU , 인텔 퀵싱크, 인텔 딥러닝부스트 / 쿨러 : 미포함 / 시네벤치R23(싱"
+    },
+    {
+      "category": "cpu",
+      "name": "AMD 라이젠7-4세대 5700X (버미어)",
+      "spec": "AMD(소켓AM4) / 8코어 / 메모리 규격 : DDR4 / 내장그래픽:미탑재 / 최대 클럭 : 4.6GHz / TDP : 65W / PCIe4.0 / 시네벤치R23(싱글) : 1527 / 시네벤치R23(멀티) : 13293 / 출시가: 299달러(VAT별도)",
+      "price": null,
+      "link": "https://prod.danawa.com/info/?pcode=16741349&cate=112747",
+      "rawText": "이미지보기 인기 순위 17 AMD 라이젠7-4세대 5700X (버미어) AMD(소켓AM4) / 8코어 / 메모리 규격 : DDR4 / 내장그래픽:미탑재 / 최대 클럭 : 4.6GHz / TDP : 65W / PCIe4.0 / 시네벤치R23(싱글) : 1527 / 시네벤치R23(멀티) : 13293 / 출시가: 299달러(VAT별도) 더보기 AMD(소켓AM4) / 8코어 / 16스레드 / 메모리 규격 : DDR4 / 내장그래픽:미탑재 / 4세대(Zen3) / 7nm / 기본 클럭 : 3.4GHz / 최대 클럭 : 4.6GHz / L2 캐시 : 4MB / L3 캐시 : 32MB / TDP : 65W / PCIe4.0 / 3200MHz / 기술 지원: SMT(하이퍼스레딩) , StoreMI , AMD Ryzen Master, VR Ready 프리미엄 / 쿨러 : 미포함 / 시네벤치R23(싱글) : 1527 / 시네벤치R23(멀티) : 13293 / 출시가: 299달러(VAT별도) 닫기 2"
+    },
+    {
+      "category": "cpu",
+      "name": "인텔 코어 울트라9 시리즈2 285K (애로우레이크)",
+      "spec": "인텔(소켓1851) / P8+E16코어 / 메모리 규격 : DDR5 / 내장그래픽:탑재 / 최대 클럭 : 5.7GHz / PBP-MTP : 125-250W / PCIe5.0, 4.0 / 시네벤치R23(싱글) : 2320 / 시네벤치R23(멀티) : 41558 / 출시가: 589달러(VAT별도)",
+      "price": null,
+      "link": "https://prod.danawa.com/info/?pcode=69059459&cate=112747",
+      "rawText": "이미지보기 동영상 재생 인기 순위 18 인텔 코어 울트라9 시리즈2 285K (애로우레이크) 인텔(소켓1851) / P8+E16코어 / 메모리 규격 : DDR5 / 내장그래픽:탑재 / 최대 클럭 : 5.7GHz / PBP-MTP : 125-250W / PCIe5.0, 4.0 / 시네벤치R23(싱글) : 2320 / 시네벤치R23(멀티) : 41558 / 출시가: 589달러(VAT별도) 더보기 인텔(소켓1851) / P8+E16코어 / 24스레드 / 메모리 규격 : DDR5 / 내장그래픽:탑재 / TSMC 3nm / 기본 클럭 : 3.7GHz / 최대 클럭 : 5.7GHz / L2 캐시 : 40MB / L3 캐시 : 36MB / PBP-MTP : 125-250W / PCIe5.0, 4.0 / 6400MHz / 인텔 그래픽스(Xe LPG) / 기술 지원: 인텔 XTU , 인텔 퀵싱크, 인텔 딥러닝부스트 / 쿨러 : 미포함 / 시네벤치R23(싱글) : 2320 / 시네벤치R23(멀티) :"
+    },
+    {
+      "category": "cpu",
+      "name": "AMD 라이젠9-6세대 9950X (그래니트 릿지)",
+      "spec": "AMD(소켓AM5) / 16코어 / 메모리 규격 : DDR5 / 내장그래픽:탑재 / 최대 클럭 : 5.7GHz / TDP : 170W / PPT : 230W / PCIe5.0 / 시네벤치R23(싱글) : 2243 / 시네벤치R23(멀티) : 42103 / 출시가: 649달러(VAT별도)",
+      "price": null,
+      "link": "https://prod.danawa.com/info/?pcode=63140417&cate=112747",
+      "rawText": "이미지보기 인기 순위 19 AMD 라이젠9-6세대 9950X (그래니트 릿지) AMD(소켓AM5) / 16코어 / 메모리 규격 : DDR5 / 내장그래픽:탑재 / 최대 클럭 : 5.7GHz / TDP : 170W / PPT : 230W / PCIe5.0 / 시네벤치R23(싱글) : 2243 / 시네벤치R23(멀티) : 42103 / 출시가: 649달러(VAT별도) 더보기 AMD(소켓AM5) / 16코어 / 32스레드 / 메모리 규격 : DDR5 / 내장그래픽:탑재 / 6세대(Zen5) / TSMC 4nm / 기본 클럭 : 4.3GHz / 최대 클럭 : 5.7GHz / L2 캐시 : 16MB / L3 캐시 : 64MB / TDP : 170W / PPT : 230W / PCIe5.0 / 5600MHz / AMD 라데온 그래픽 / 기술 지원: SMT(하이퍼스레딩) , AMD Ryzen Master / 쿨러 : 미포함 / 시네벤치R23(싱글) : 2243 / 시네벤치R23(멀티) : 421"
+    },
+    {
+      "category": "motherboard",
+      "name": "ASUS PRIME B860M-A-CSM 코잇",
+      "spec": "인텔 B860 / 인텔(소켓1851) / DDR5 / VGA 연결: PCIe5.0 x16 / M-ATX (24.4x24.4cm) / M.2: 2개 / USB A타입: 7개 / USB C타입: 1개 / 2.5Gbps / DrMOS / 전원부 방열판 / M.2 히트싱크 / 일체형IO실드 / UEFI",
+      "price": null,
+      "link": "https://prod.danawa.com/info/?pcode=74337680&cate=112751&adinflow=Y",
+      "rawText": "이미지보기 ASUS PRIME B860M-A-CSM 코잇 인텔 B860 / 인텔(소켓1851) / DDR5 / VGA 연결: PCIe5.0 x16 / M-ATX (24.4x24.4cm) / M.2: 2개 / USB A타입: 7개 / USB C타입: 1개 / 2.5Gbps / DrMOS / 전원부 방열판 / M.2 히트싱크 / 일체형IO실드 / UEFI 더보기 인텔 B860 / 인텔(소켓1851) / DDR5 / VGA 연결 : PCIe5.0 x16 / M-ATX (24.4x24.4cm) / 전원부 : 7+1+1+1페이즈 / 페이즈당80A / Vcore출력합계 : 560A / [메모리] 8400MHz (PC5-67200) / 4개 / 메모리 용량 : 최대 192GB / XMP / [확장슬롯] PCIe버전: PCIe5.0, PCIe4.0 / PCIex16 : 1개 / PCIex16(at x4): 1개 / PCIex1 : 1개 / [저장장치] M.2 : 2개 / SATA3 : 4개 / M"
+    },
+    {
+      "category": "motherboard",
+      "name": "GIGABYTE B650M K 제이씨현",
+      "spec": "AMD(소켓AM5) / AMD B650 / DDR5 / VGA 연결: PCIe4.0 x16 / M-ATX (24.4x24.4cm) / M.2: 2개 / USB A타입: 7개 / USB C타입: 1개 / 2.5Gbps / 전원부 방열판 / M.2 히트싱크 / UEFI",
+      "price": null,
+      "link": "https://prod.danawa.com/info/?pcode=20324882&cate=112751&adinflow=Y",
+      "rawText": "이미지보기 GIGABYTE B650M K 제이씨현 AMD(소켓AM5) / AMD B650 / DDR5 / VGA 연결: PCIe4.0 x16 / M-ATX (24.4x24.4cm) / M.2: 2개 / USB A타입: 7개 / USB C타입: 1개 / 2.5Gbps / 전원부 방열판 / M.2 히트싱크 / UEFI 더보기 AMD(소켓AM5) / AMD B650 / DDR5 / VGA 연결 : PCIe4.0 x16 / M-ATX (24.4x24.4cm) / 전원부 : 8+2+2페이즈 / 메모리 8000MHz (PC5-64000) / 4개 / 메모리 용량 : 최대 192GB / XMP3.0 / EXPO / 확장슬롯 PCIe버전: PCIe4.0, PCIe3.0 / PCIex16 : 1개 / PCIex1 : 1개 / 저장장치 SATA3 : 4개 / M.2 : 2개 / M.2 연결 : PCIe4.0, NVMe / 후면단자 HDMI / DP / USB3.x 10Gbps / USB3.x 5Gbp"
+    },
+    {
+      "category": "motherboard",
+      "name": "MSI MAG X870E 토마호크 WIFI",
+      "spec": "AMD(소켓AM5) / AMD X870E / DDR5 / VGA 연결: PCIe5.0 x16 / ATX (30.5x24.4cm) / M.2: 4개 / USB A타입: 9개 / USB C타입: 3개 / 5Gbps / 무선랜(Wi-Fi) / 블루투스 / SPS(DrMOS) / 전원부 방열판 / M.2 히트싱크 / 일체형IO실드 / UEFI",
+      "price": null,
+      "link": "https://prod.danawa.com/info/?pcode=75857021&cate=112751&adinflow=Y",
+      "rawText": "이미지보기 MSI MAG X870E 토마호크 WIFI AMD(소켓AM5) / AMD X870E / DDR5 / VGA 연결: PCIe5.0 x16 / ATX (30.5x24.4cm) / M.2: 4개 / USB A타입: 9개 / USB C타입: 3개 / 5Gbps / 무선랜(Wi-Fi) / 블루투스 / SPS(DrMOS) / 전원부 방열판 / M.2 히트싱크 / 일체형IO실드 / UEFI 더보기 AMD(소켓AM5) / AMD X870E / DDR5 / VGA 연결 : PCIe5.0 x16 / ATX (30.5x24.4cm) / 전원부 : 14+2+1페이즈 / 80A / Vcore출력합계 : 1120 / 메모리 8400MHz (PC5-67200) / 4개 / 메모리 용량 : 최대 256GB / XMP / EXPO / 확장슬롯 PCIe버전: PCIe5.0, PCIe4.0, PCIe3.0 / PCIex16 : 1개 / PCIex16(at x4): 1개 / PCIex16(at x1): 1개"
+    },
+    {
+      "category": "motherboard",
+      "name": "ASRock B850M Pro-A 에즈윈",
+      "spec": "AMD(소켓AM5) / AMD B850 / DDR5 / VGA 연결: PCIe5.0 x16 / M-ATX (24.4x24.4cm) / M.2: 3개 / USB A타입: 7개 / USB C타입: 1개 / 2.5Gbps / M.2 Key-E(모듈별매) / DrMOS / 전원부 방열판 / M.2 히트싱크 / UEFI",
+      "price": null,
+      "link": "https://prod.danawa.com/info/?pcode=74341163&cate=112751&adinflow=Y",
+      "rawText": "이미지보기 ASRock B850M Pro-A 에즈윈 AMD(소켓AM5) / AMD B850 / DDR5 / VGA 연결: PCIe5.0 x16 / M-ATX (24.4x24.4cm) / M.2: 3개 / USB A타입: 7개 / USB C타입: 1개 / 2.5Gbps / M.2 Key-E(모듈별매) / DrMOS / 전원부 방열판 / M.2 히트싱크 / UEFI 더보기 AMD(소켓AM5) / AMD B850 / DDR5 / VGA 연결 : PCIe5.0 x16 / M-ATX (24.4x24.4cm) / 전원부 : 8+2+1페이즈 / [메모리] 8000MHz (PC5-64000) / 4개 / 메모리 용량 : 최대 256GB / XMP / EXPO / [확장슬롯] PCIe버전: PCIe5.0, PCIe4.0 / PCIex16 : 1개 / PCIex4 : 1개 / [저장장치] M.2 : 3개 / SATA3 : 4개 / M.2 연결 : PCIe5.0, PCIe4.0, NVMe , PCIe "
+    },
+    {
+      "category": "motherboard",
+      "name": "GIGABYTE B650M K 제이씨현",
+      "spec": "AMD(소켓AM5) / AMD B650 / DDR5 / VGA 연결 : PCIe4.0 x16 / M-ATX (24.4x24.4cm) / M.2 : 2개 / USB A타입 : 7개 / USB C타입 : 1개 / 2.5Gbps / 전원부 방열판 / M.2 히트싱크 / UEFI / 23년 12월부로 Rev 1.1 변경(전원부, 메모리, ARGB헤더 변경)",
+      "price": null,
+      "link": "https://prod.danawa.com/info/?pcode=20324882&cate=112751",
+      "rawText": "이미지보기 인기 순위 1 GIGABYTE B650M K 제이씨현 AMD(소켓AM5) / AMD B650 / DDR5 / VGA 연결 : PCIe4.0 x16 / M-ATX (24.4x24.4cm) / M.2 : 2개 / USB A타입 : 7개 / USB C타입 : 1개 / 2.5Gbps / 전원부 방열판 / M.2 히트싱크 / UEFI / 23년 12월부로 Rev 1.1 변경(전원부, 메모리, ARGB헤더 변경) 더보기 AMD(소켓AM5) / AMD B650 / DDR5 / VGA 연결 : PCIe4.0 x16 / M-ATX (24.4x24.4cm) / 전원부 : 8+2+2페이즈 / 메모리 8000MHz (PC5-64000) / 4개 / 메모리 용량 : 최대 192GB / XMP3.0 / EXPO / 확장슬롯 PCIe버전: PCIe4.0, PCIe3.0 / PCIex16 : 1개 / PCIex1 : 1개 / 저장장치 SATA3 : 4개 / M.2 : 2개 / M.2 연결 : PCIe"
+    },
+    {
+      "category": "motherboard",
+      "name": "ASUS TUF Gaming B850-PLUS WIFI STCOM",
+      "spec": "AMD(소켓AM5) / AMD B850 / DDR5 / VGA 연결 : PCIe5.0 x16 / ATX (30.5x24.4cm) / M.2 : 3개 / USB A타입 : 9개 / USB C타입 : 1개 / 2.5Gbps / 무선랜(Wi-Fi) / 블루투스 / DrMOS / 전원부 방열판 / M.2 히트싱크 / 일체형IO실드 / LED라이트 / UEFI",
+      "price": null,
+      "link": "https://prod.danawa.com/info/?pcode=73884083&cate=112751",
+      "rawText": "이미지보기 인기 순위 2 ASUS TUF Gaming B850-PLUS WIFI STCOM AMD(소켓AM5) / AMD B850 / DDR5 / VGA 연결 : PCIe5.0 x16 / ATX (30.5x24.4cm) / M.2 : 3개 / USB A타입 : 9개 / USB C타입 : 1개 / 2.5Gbps / 무선랜(Wi-Fi) / 블루투스 / DrMOS / 전원부 방열판 / M.2 히트싱크 / 일체형IO실드 / LED라이트 / UEFI 더보기 AMD(소켓AM5) / AMD B850 / DDR5 / VGA 연결 : PCIe5.0 x16 / ATX (30.5x24.4cm) / 전원부 : 14+2+1페이즈 / 80A / Vcore출력합계 : 1120 / [메모리] 8000MHz (PC5-64000) / 4개 / 메모리 용량 : 최대 256GB / XMP / EXPO / [확장슬롯] PCIe버전: PCIe5.0, PCIe4.0 / PCIex16 : 1개 / PCIex16(at x4):"
+    },
+    {
+      "category": "motherboard",
+      "name": "MSI MAG B850M 박격포 WIFI",
+      "spec": "AMD(소켓AM5) / AMD B850 / DDR5 / VGA 연결 : PCIe5.0 x16 / M-ATX (24.4x24.4cm) / M.2 : 3개 / USB A타입 : 7개 / USB C타입 : 2개 / 5Gbps / 무선랜(Wi-Fi) / 블루투스 / SPS(DrMOS) / 전원부 방열판 / M.2 히트싱크 / 일체형IO실드 / UEFI",
+      "price": null,
+      "link": "https://prod.danawa.com/info/?pcode=79397648&cate=112751",
+      "rawText": "이미지보기 인기 순위 3 MSI MAG B850M 박격포 WIFI [6월 2주차] 메인보드 중 VS검색에 가장 많이 선택된 상품이에요 AMD(소켓AM5) / AMD B850 / DDR5 / VGA 연결 : PCIe5.0 x16 / M-ATX (24.4x24.4cm) / M.2 : 3개 / USB A타입 : 7개 / USB C타입 : 2개 / 5Gbps / 무선랜(Wi-Fi) / 블루투스 / SPS(DrMOS) / 전원부 방열판 / M.2 히트싱크 / 일체형IO실드 / UEFI 더보기 AMD(소켓AM5) / AMD B850 / DDR5 / VGA 연결 : PCIe5.0 x16 / M-ATX (24.4x24.4cm) / 전원부 : 12+2+1페이즈 / 60A / Vcore출력합계 : 720 / [메모리] 8200MHz (PC5-65600) / 4개 / 메모리 용량 : 최대 256GB / EXPO / [확장슬롯] PCIe버전: PCIe5.0 / PCIex16 : 1개 / PCIex4 : "
+    },
+    {
+      "category": "motherboard",
+      "name": "GIGABYTE B650M K 피씨디렉트",
+      "spec": "AMD(소켓AM5) / AMD B650 / DDR5 / VGA 연결 : PCIe4.0 x16 / M-ATX (24.4x24.4cm) / M.2 : 2개 / USB A타입 : 7개 / USB C타입 : 1개 / 2.5Gbps / M.2 히트싱크 / UEFI / 24년 1월부로 리비전 1.1 변경에 따른 전원부페이즈 수정 및 ARGB 헤더 1개 추가",
+      "price": null,
+      "link": "https://prod.danawa.com/info/?pcode=21727307&cate=112751",
+      "rawText": "이미지보기 인기 순위 4 GIGABYTE B650M K 피씨디렉트 AMD(소켓AM5) / AMD B650 / DDR5 / VGA 연결 : PCIe4.0 x16 / M-ATX (24.4x24.4cm) / M.2 : 2개 / USB A타입 : 7개 / USB C타입 : 1개 / 2.5Gbps / M.2 히트싱크 / UEFI / 24년 1월부로 리비전 1.1 변경에 따른 전원부페이즈 수정 및 ARGB 헤더 1개 추가 더보기 AMD(소켓AM5) / AMD B650 / DDR5 / VGA 연결 : PCIe4.0 x16 / M-ATX (24.4x24.4cm) / 전원부 : 8+2+2페이즈 / [메모리] 8000MHz (PC5-64000) / 4개 / 메모리 용량 : 최대 192GB / XMP3.0 / EXPO / [확장슬롯] PCIe버전: PCIe4.0, PCIe3.0 / PCIex16 : 1개 / PCIex1 : 1개 / [저장장치] M.2 : 2개 / SATA3 : 4개 / M.2 연결 :"
+    },
+    {
+      "category": "motherboard",
+      "name": "GIGABYTE B850M AORUS ELITE WIFI6E ICE 제이씨현",
+      "spec": "AMD(소켓AM5) / AMD B850 / DDR5 / VGA 연결 : PCIe5.0 x16 / M-ATX (24.4x24.4cm) / M.2 : 2개 / USB A타입 : 11개 / USB C타입 : 1개 / 2.5Gbps / 무선랜(Wi-Fi) / 블루투스 / DrMOS / 전원부 방열판 / M.2 히트싱크 / 일체형IO실드 / LED라이트 / UEFI",
+      "price": null,
+      "link": "https://prod.danawa.com/info/?pcode=73892423&cate=112751",
+      "rawText": "이미지보기 동영상 재생 인기 순위 5 GIGABYTE B850M AORUS ELITE WIFI6E ICE 제이씨현 [6월 2주차] 메인보드 중 가장 많이 조회된 상품이에요 AMD(소켓AM5) / AMD B850 / DDR5 / VGA 연결 : PCIe5.0 x16 / M-ATX (24.4x24.4cm) / M.2 : 2개 / USB A타입 : 11개 / USB C타입 : 1개 / 2.5Gbps / 무선랜(Wi-Fi) / 블루투스 / DrMOS / 전원부 방열판 / M.2 히트싱크 / 일체형IO실드 / LED라이트 / UEFI 더보기 AMD(소켓AM5) / AMD B850 / DDR5 / VGA 연결 : PCIe5.0 x16 / M-ATX (24.4x24.4cm) / 전원부 : 12+2+2페이즈 / 60A / Vcore출력합계 : 720 / 메모리 8200MHz (PC5-65600) / 4개 / 메모리 용량 : 최대 256GB / XMP3.0 / EXPO / 확장슬롯 PCIe버전: P"
+    },
+    {
+      "category": "motherboard",
+      "name": "MSI MAG B860M 박격포 WIFI",
+      "spec": "인텔(소켓1851) / 인텔 B860 / DDR5 / VGA 연결 : PCIe5.0 x16 / M-ATX (24.4x24.4cm) / M.2 : 3개 / USB A타입 : 7개 / USB C타입 : 2개 / 5Gbps / 무선랜(Wi-Fi) / 블루투스 / SPS(DrMOS) / 전원부 방열판 / M.2 히트싱크 / 일체형IO실드 / UEFI",
+      "price": null,
+      "link": "https://prod.danawa.com/info/?pcode=74340266&cate=112751",
+      "rawText": "이미지보기 동영상 재생 인기 순위 6 MSI MAG B860M 박격포 WIFI [6월 2주차] 메인보드 중 VS검색에 두번째로 많이 선택된 상품이에요 인텔(소켓1851) / 인텔 B860 / DDR5 / VGA 연결 : PCIe5.0 x16 / M-ATX (24.4x24.4cm) / M.2 : 3개 / USB A타입 : 7개 / USB C타입 : 2개 / 5Gbps / 무선랜(Wi-Fi) / 블루투스 / SPS(DrMOS) / 전원부 방열판 / M.2 히트싱크 / 일체형IO실드 / UEFI 더보기 인텔(소켓1851) / 인텔 B860 / DDR5 / VGA 연결 : PCIe5.0 x16 / M-ATX (24.4x24.4cm) / 전원부 : 12+1+1+1페이즈 / 60A / Vcore출력합계 : 720 / [메모리] 9200MHz (PC5-73600) / 4개 / 메모리 용량 : 최대 256GB / XMP3.0 / [확장슬롯] PCIe버전: PCIe5.0, PCIe4.0 / PCIe"
+    },
+    {
+      "category": "motherboard",
+      "name": "ASUS ROG STRIX B860-G GAMING WIFI 코잇",
+      "spec": "인텔(소켓1851) / 인텔 B860 / DDR5 / VGA 연결 : PCIe5.0 x16 / M-ATX (24.4x24.4cm) / M.2 : 4개 / USB A타입 : 8개 / USB C타입 : 2개 / 2.5Gbps / 무선랜(Wi-Fi) / 블루투스 / DrMOS / 전원부 방열판 / M.2 히트싱크 / 일체형IO실드 / UEFI",
+      "price": null,
+      "link": "https://prod.danawa.com/info/?pcode=74338115&cate=112751",
+      "rawText": "이미지보기 인기 순위 7 ASUS ROG STRIX B860-G GAMING WIFI 코잇 [6월 2주차] 메인보드 중 VS검색에 세번째로 많이 선택된 상품이에요 인텔(소켓1851) / 인텔 B860 / DDR5 / VGA 연결 : PCIe5.0 x16 / M-ATX (24.4x24.4cm) / M.2 : 4개 / USB A타입 : 8개 / USB C타입 : 2개 / 2.5Gbps / 무선랜(Wi-Fi) / 블루투스 / DrMOS / 전원부 방열판 / M.2 히트싱크 / 일체형IO실드 / UEFI 더보기 인텔(소켓1851) / 인텔 B860 / DDR5 / VGA 연결 : PCIe5.0 x16 / M-ATX (24.4x24.4cm) / 전원부 : 14+1+2+1페이즈 / 80A / Vcore출력합계 : 1120 / [메모리] 9066MHz (PC5-72500) / 4개 / 메모리 용량 : 최대 192GB / XMP / [확장슬롯] PCIe버전: PCIe5.0, PCIe4.0 / PC"
+    },
+    {
+      "category": "motherboard",
+      "name": "GIGABYTE B860M AORUS ELITE WIFI6E ICE 피씨디렉트",
+      "spec": "인텔(소켓1851) / 인텔 B860 / DDR5 / VGA 연결 : PCIe5.0 x16 / M-ATX (24.4x24.4cm) / M.2 : 3개 / USB A타입 : 10개 / USB C타입 : 1개 / 2.5Gbps / 무선랜(Wi-Fi) / 블루투스 / DrMOS / 전원부 방열판 / M.2 히트싱크 / 일체형IO실드 / LED라이트 / UEFI",
+      "price": null,
+      "link": "https://prod.danawa.com/info/?pcode=74255387&cate=112751",
+      "rawText": "이미지보기 인기 순위 8 GIGABYTE B860M AORUS ELITE WIFI6E ICE 피씨디렉트 인텔(소켓1851) / 인텔 B860 / DDR5 / VGA 연결 : PCIe5.0 x16 / M-ATX (24.4x24.4cm) / M.2 : 3개 / USB A타입 : 10개 / USB C타입 : 1개 / 2.5Gbps / 무선랜(Wi-Fi) / 블루투스 / DrMOS / 전원부 방열판 / M.2 히트싱크 / 일체형IO실드 / LED라이트 / UEFI 더보기 인텔(소켓1851) / 인텔 B860 / DDR5 / VGA 연결 : PCIe5.0 x16 / M-ATX (24.4x24.4cm) / 전원부 : 12+1+2페이즈 / 60A / Vcore출력합계 : 720 / [메모리] 9200MHz (PC5-73600) / 4개 / 메모리 용량 : 최대 256GB / XMP / [확장슬롯] PCIe버전: PCIe5.0, PCIe4.0 / PCIex16 : 1개 / PCIex16(at x4"
+    },
+    {
+      "category": "motherboard",
+      "name": "MSI PRO B760M-A DDR4 II",
+      "spec": "인텔 B760 / 인텔(소켓1700) / DDR4 / VGA 연결 : PCIe4.0 x16 / M-ATX (24.4x24.4cm) / M.2 : 2개 / USB A타입 : 6개 / 2.5Gbps / 전원부 방열판 / M.2 히트싱크 / UEFI",
+      "price": null,
+      "link": "https://prod.danawa.com/info/?pcode=27474755&cate=112751",
+      "rawText": "이미지보기 인기 순위 9 MSI PRO B760M-A DDR4 II 인텔 B760 / 인텔(소켓1700) / DDR4 / VGA 연결 : PCIe4.0 x16 / M-ATX (24.4x24.4cm) / M.2 : 2개 / USB A타입 : 6개 / 2.5Gbps / 전원부 방열판 / M.2 히트싱크 / UEFI 더보기 인텔 B760 / 인텔(소켓1700) / DDR4 / VGA 연결 : PCIe4.0 x16 / M-ATX (24.4x24.4cm) / 전원부 : 14페이즈 / [메모리] 5333MHz (PC4-42600) / 4개 / 메모리 용량 : 최대 128GB / XMP / [확장슬롯] PCIe버전: PCIe4.0, PCIe3.0 / PCIex16 : 1개 / PCIex16(at x4): 1개 / PCIex1 : 1개 / [저장장치] M.2 : 2개 / SATA3 : 4개 / M.2 연결 : PCIe4.0, PCIe , SATA , SATA 레인공유 / [후면단자] HDMI / "
+    },
+    {
+      "category": "motherboard",
+      "name": "ASUS PRIME B860M-A-CSM 코잇",
+      "spec": "인텔 B860 / 인텔(소켓1851) / DDR5 / VGA 연결 : PCIe5.0 x16 / M-ATX (24.4x24.4cm) / M.2 : 2개 / USB A타입 : 7개 / USB C타입 : 1개 / 2.5Gbps / DrMOS / 전원부 방열판 / M.2 히트싱크 / 일체형IO실드 / UEFI",
+      "price": null,
+      "link": "https://prod.danawa.com/info/?pcode=74337680&cate=112751",
+      "rawText": "이미지보기 인기 순위 10 ASUS PRIME B860M-A-CSM 코잇 인텔 B860 / 인텔(소켓1851) / DDR5 / VGA 연결 : PCIe5.0 x16 / M-ATX (24.4x24.4cm) / M.2 : 2개 / USB A타입 : 7개 / USB C타입 : 1개 / 2.5Gbps / DrMOS / 전원부 방열판 / M.2 히트싱크 / 일체형IO실드 / UEFI 더보기 인텔 B860 / 인텔(소켓1851) / DDR5 / VGA 연결 : PCIe5.0 x16 / M-ATX (24.4x24.4cm) / 전원부 : 7+1+1+1페이즈 / 페이즈당80A / Vcore출력합계 : 560A / [메모리] 8400MHz (PC5-67200) / 4개 / 메모리 용량 : 최대 192GB / XMP / [확장슬롯] PCIe버전: PCIe5.0, PCIe4.0 / PCIex16 : 1개 / PCIex16(at x4): 1개 / PCIex1 : 1개 / [저장장치] M.2 : 2개 / S"
+    },
+    {
+      "category": "motherboard",
+      "name": "ASUS PRIME A520M-A II 대원씨티에스",
+      "spec": "AMD(소켓AM4) / AMD A520 / DDR4 / VGA 연결 : PCIe3.0 x16 / M-ATX (24.4x24.4cm) / M.2 : 1개 / USB A타입 : 6개 / 1Gbps / UEFI",
+      "price": null,
+      "link": "https://prod.danawa.com/info/?pcode=16284179&cate=112751",
+      "rawText": "이미지보기 인기 순위 11 ASUS PRIME A520M-A II 대원씨티에스 AMD(소켓AM4) / AMD A520 / DDR4 / VGA 연결 : PCIe3.0 x16 / M-ATX (24.4x24.4cm) / M.2 : 1개 / USB A타입 : 6개 / 1Gbps / UEFI 더보기 AMD(소켓AM4) / AMD A520 / DDR4 / VGA 연결 : PCIe3.0 x16 / M-ATX (24.4x24.4cm) / 전원부 : 4+2페이즈 / 메모리 4866MHz (PC4-38900) / 4개 / 확장슬롯 PCIe버전: PCIe3.0, PCIe / PCIex16 : 1개 / PCIex1 : 2개 / 저장장치 SATA3 : 4개 / M.2 : 1개 / M.2 연결 : PCIe , NVMe , SATA / 후면단자 HDMI / DP / D-SUB / USB3.x 5Gbps / USB 2.0 / RJ-45 / 오디오잭 / PS/2 / USB A타입 : 6개 / 랜/오디오 유선랜 칩"
+    },
+    {
+      "category": "motherboard",
+      "name": "ASUS TUF Gaming B550M-PLUS STCOM",
+      "spec": "AMD(소켓AM4) / AMD B550 / DDR4 / VGA 연결 : PCIe4.0 x16 / M-ATX (24.4x24.4cm) / M.2 : 2개 / USB A타입 : 7개 / USB C타입 : 1개 / 2.5Gbps / DrMOS / M.2 히트싱크 / LED라이트 / UEFI",
+      "price": null,
+      "link": "https://prod.danawa.com/info/?pcode=11571368&cate=112751",
+      "rawText": "이미지보기 동영상 재생 인기 순위 12 ASUS TUF Gaming B550M-PLUS STCOM AMD(소켓AM4) / AMD B550 / DDR4 / VGA 연결 : PCIe4.0 x16 / M-ATX (24.4x24.4cm) / M.2 : 2개 / USB A타입 : 7개 / USB C타입 : 1개 / 2.5Gbps / DrMOS / M.2 히트싱크 / LED라이트 / UEFI 더보기 AMD(소켓AM4) / AMD B550 / DDR4 / VGA 연결 : PCIe4.0 x16 / M-ATX (24.4x24.4cm) / 전원부 : 8+2페이즈 / 50A / Vcore출력합계 : 400 / 메모리 4800MHz (PC4-38400) / 4개 / 메모리 용량 : 최대 128GB / 확장슬롯 PCIe버전: PCIe4.0, PCIe3.0 / PCIex16 : 1개 / PCIex16(at x4): 1개 / PCIex1 : 1개 / CrossFire X / 저장장치 SATA3 : 4개 / M"
+    },
+    {
+      "category": "motherboard",
+      "name": "GIGABYTE A520M K V2 피씨디렉트",
+      "spec": "AMD(소켓AM4) / AMD A520 / DDR4 / VGA 연결 : PCIe3.0 x16 / M-ATX (23.3x19.8cm) / M.2 : 1개 / USB A타입 : 6개 / 1Gbps / UEFI",
+      "price": null,
+      "link": "https://prod.danawa.com/info/?pcode=19431530&cate=112751",
+      "rawText": "이미지보기 인기 순위 13 GIGABYTE A520M K V2 피씨디렉트 AMD(소켓AM4) / AMD A520 / DDR4 / VGA 연결 : PCIe3.0 x16 / M-ATX (23.3x19.8cm) / M.2 : 1개 / USB A타입 : 6개 / 1Gbps / UEFI 더보기 AMD(소켓AM4) / AMD A520 / DDR4 / VGA 연결 : PCIe3.0 x16 / M-ATX (23.3x19.8cm) / [메모리] 5100MHz (PC4-40800) / 2개 / 메모리 용량 : 최대 64GB / XMP / [확장슬롯] PCIe버전: PCIe3.0 / PCIex16 : 1개 / PCIex1 : 1개 / [저장장치] M.2 : 1개 / SATA3 : 4개 / M.2 연결 : PCIe , NVMe , SATA / [후면단자] HDMI / D-SUB / USB3.x 5Gbps / USB 2.0 / RJ-45 / 오디오잭 / PS/2 / USB A타입 : 6개 / [랜/오디오]"
+    },
+    {
+      "category": "motherboard",
+      "name": "ASUS TUF Gaming B650EM-E WIFI 대원씨티에스",
+      "spec": "AMD(소켓AM5) / AMD B650 / DDR5 / VGA 연결 : PCIe5.0 x16 / M-ATX (24.4x24.4cm) / M.2 : 3개 / USB A타입 : 7개 / USB C타입 : 1개 / 2.5Gbps / 무선랜(Wi-Fi) / 블루투스 / DrMOS / 전원부 방열판 / M.2 히트싱크 / 일체형IO실드 / UEFI",
+      "price": null,
+      "link": "https://prod.danawa.com/info/?pcode=93703418&cate=112751",
+      "rawText": "이미지보기 인기 순위 14 ASUS TUF Gaming B650EM-E WIFI 대원씨티에스 AMD(소켓AM5) / AMD B650 / DDR5 / VGA 연결 : PCIe5.0 x16 / M-ATX (24.4x24.4cm) / M.2 : 3개 / USB A타입 : 7개 / USB C타입 : 1개 / 2.5Gbps / 무선랜(Wi-Fi) / 블루투스 / DrMOS / 전원부 방열판 / M.2 히트싱크 / 일체형IO실드 / UEFI 더보기 AMD(소켓AM5) / AMD B650 / DDR5 / VGA 연결 : PCIe5.0 x16 / M-ATX (24.4x24.4cm) / 전원부 : 8+2+1페이즈 / 페이즈당80A / Vcore출력합계 : 640A / [메모리] 8000MHz (PC5-64000) / 4개 / 메모리 용량 : 최대 256GB / EXPO / [확장슬롯] PCIe버전: PCIe5.0, PCIe4.0 / PCIex16 : 1개 / PCIex1 : 1개 / [저장장치] M"
+    },
+    {
+      "category": "motherboard",
+      "name": "ASUS TUF Gaming B850M-PLUS WIFI7 STCOM",
+      "spec": "AMD(소켓AM5) / AMD B850 / DDR5 / VGA 연결 : PCIe5.0 x16 / M-ATX (24.4x24.4cm) / M.2 : 3개 / USB A타입 : 11개 / USB C타입 : 1개 / 2.5Gbps / 무선랜(Wi-Fi) / 블루투스 / DrMOS / 전원부 방열판 / M.2 히트싱크 / 일체형IO실드 / LED라이트 / UEFI",
+      "price": null,
+      "link": "https://prod.danawa.com/info/?pcode=95988710&cate=112751",
+      "rawText": "이미지보기 인기 순위 15 ASUS TUF Gaming B850M-PLUS WIFI7 STCOM AMD(소켓AM5) / AMD B850 / DDR5 / VGA 연결 : PCIe5.0 x16 / M-ATX (24.4x24.4cm) / M.2 : 3개 / USB A타입 : 11개 / USB C타입 : 1개 / 2.5Gbps / 무선랜(Wi-Fi) / 블루투스 / DrMOS / 전원부 방열판 / M.2 히트싱크 / 일체형IO실드 / LED라이트 / UEFI 더보기 AMD(소켓AM5) / AMD B850 / DDR5 / VGA 연결 : PCIe5.0 x16 / M-ATX (24.4x24.4cm) / 전원부 : 14+2+1페이즈 / 80A / Vcore출력합계 : 1120 / [메모리] 8000MHz (PC5-64000) / 4개 / 메모리 용량 : 최대 256GB / EXPO / [확장슬롯] PCIe버전: PCIe5.0, PCIe4.0 / PCIex16 : 1개 / PCIex1 : 1개 /"
+    },
+    {
+      "category": "motherboard",
+      "name": "ASUS TUF Gaming B850M-PLUS II STCOM",
+      "spec": "AMD(소켓AM5) / AMD B850 / DDR5 / VGA 연결 : PCIe5.0 x16 / M-ATX (24.4x24.4cm) / M.2 : 3개 / USB A타입 : 11개 / USB C타입 : 1개 / 2.5Gbps / DrMOS / 전원부 방열판 / M.2 히트싱크 / 일체형IO실드 / UEFI",
+      "price": null,
+      "link": "https://prod.danawa.com/info/?pcode=95988578&cate=112751",
+      "rawText": "이미지보기 인기 순위 16 ASUS TUF Gaming B850M-PLUS II STCOM AMD(소켓AM5) / AMD B850 / DDR5 / VGA 연결 : PCIe5.0 x16 / M-ATX (24.4x24.4cm) / M.2 : 3개 / USB A타입 : 11개 / USB C타입 : 1개 / 2.5Gbps / DrMOS / 전원부 방열판 / M.2 히트싱크 / 일체형IO실드 / UEFI 더보기 AMD(소켓AM5) / AMD B850 / DDR5 / VGA 연결 : PCIe5.0 x16 / M-ATX (24.4x24.4cm) / 전원부 : 14+2+1페이즈 / 80A / Vcore출력합계 : 1120 / [메모리] 8000MHz (PC5-64000) / 4개 / 메모리 용량 : 최대 256GB / EXPO / [확장슬롯] PCIe버전: PCIe5.0, PCIe4.0 / PCIex16 : 1개 / PCIex1 : 1개 / [저장장치] SATA3 : 4개 / M.2 : 3개 / "
+    },
+    {
+      "category": "motherboard",
+      "name": "GIGABYTE B760M AORUS ELITE D4 GEN5 피씨디렉트",
+      "spec": "인텔 B760 / 인텔(소켓1700) / DDR4 / VGA 연결 : PCIe5.0 x16 / M-ATX (24.4x24.4cm) / M.2 : 2개 / USB A타입 : 8개 / USB C타입 : 1개 / 2.5Gbps / DrMOS / 전원부 방열판 / M.2 히트싱크 / 일체형IO실드 / LED라이트 / UEFI",
+      "price": null,
+      "link": "https://prod.danawa.com/info/?pcode=105813494&cate=112751",
+      "rawText": "이미지보기 인기 순위 17 GIGABYTE B760M AORUS ELITE D4 GEN5 피씨디렉트 인텔 B760 / 인텔(소켓1700) / DDR4 / VGA 연결 : PCIe5.0 x16 / M-ATX (24.4x24.4cm) / M.2 : 2개 / USB A타입 : 8개 / USB C타입 : 1개 / 2.5Gbps / DrMOS / 전원부 방열판 / M.2 히트싱크 / 일체형IO실드 / LED라이트 / UEFI 더보기 인텔 B760 / 인텔(소켓1700) / DDR4 / VGA 연결 : PCIe5.0 x16 / M-ATX (24.4x24.4cm) / 전원부 : 12+1+1페이즈 / 페이즈당60A / Vcore출력합계 : 720A / [메모리] 3200MHz (PC4-25600) / 4개 / 메모리 용량 : 최대 128GB / XMP / [확장슬롯] PCIe버전: PCIe5.0, PCIe4.0 / PCIex16 : 1개 / PCIex16(at x4): 1개 / [저장장치] M.2"
+    },
+    {
+      "category": "motherboard",
+      "name": "MSI MAG B850 토마호크 맥스 WIFI",
+      "spec": "AMD(소켓AM5) / AMD B850 / DDR5 / VGA 연결 : PCIe5.0 x16 / ATX (30.5x24.4cm) / M.2 : 4개 / USB A타입 : 7개 / USB C타입 : 3개 / 5Gbps / 무선랜(Wi-Fi) / 블루투스 / SPS(DrMOS) / 전원부 방열판 / M.2 히트싱크 / 일체형IO실드 / UEFI",
+      "price": null,
+      "link": "https://prod.danawa.com/info/?pcode=74814341&cate=112751",
+      "rawText": "이미지보기 인기 순위 18 MSI MAG B850 토마호크 맥스 WIFI AMD(소켓AM5) / AMD B850 / DDR5 / VGA 연결 : PCIe5.0 x16 / ATX (30.5x24.4cm) / M.2 : 4개 / USB A타입 : 7개 / USB C타입 : 3개 / 5Gbps / 무선랜(Wi-Fi) / 블루투스 / SPS(DrMOS) / 전원부 방열판 / M.2 히트싱크 / 일체형IO실드 / UEFI 더보기 AMD(소켓AM5) / AMD B850 / DDR5 / VGA 연결 : PCIe5.0 x16 / ATX (30.5x24.4cm) / 전원부 : 14+2+1페이즈 / 페이즈당80A / Vcore출력합계 : 1120A / [메모리] 8400MHz (PC5-67200) / 4개 / 메모리 용량 : 최대 256GB / EXPO / [확장슬롯] PCIe버전: PCIe5.0, PCIe4.0, PCIe3.0 / PCIex16 : 1개 / PCIex16(at x4): 1개 / PC"
+    },
+    {
+      "category": "motherboard",
+      "name": "GIGABYTE B550M AORUS ELITE 제이씨현",
+      "spec": "AMD(소켓AM4) / AMD B550 / DDR4 / VGA 연결 : PCIe4.0 x16 / M-ATX (24.4x24.4cm) / M.2 : 2개 / USB A타입 : 8개 / 1Gbps / UEFI",
+      "price": null,
+      "link": "https://prod.danawa.com/info/?pcode=11684576&cate=112751",
+      "rawText": "이미지보기 인기 순위 19 GIGABYTE B550M AORUS ELITE 제이씨현 AMD(소켓AM4) / AMD B550 / DDR4 / VGA 연결 : PCIe4.0 x16 / M-ATX (24.4x24.4cm) / M.2 : 2개 / USB A타입 : 8개 / 1Gbps / UEFI 더보기 AMD(소켓AM4) / AMD B550 / DDR4 / VGA 연결 : PCIe4.0 x16 / M-ATX (24.4x24.4cm) / 전원부 : 5+3페이즈 / 메모리 4733MHz (PC4-37800) / 4개 / 메모리 용량 : 최대 128GB / XMP / 확장슬롯 PCIe버전: PCIe4.0, PCIe3.0 / PCIex16 : 2개 / PCIex1 : 1개 / 저장장치 SATA3 : 4개 / M.2 : 2개 / M.2 연결 : PCIe , NVMe , SATA / 후면단자 HDMI / DVI / USB3.x 5Gbps / USB 2.0 / RJ-45 / 오디오잭 / PS/2 / U"
+    },
+    {
+      "category": "motherboard",
+      "name": "ASUS PRIME A520M-K 대원씨티에스",
+      "spec": "AMD(소켓AM4) / AMD A520 / DDR4 / VGA 연결 : PCIe3.0 x16 / M-ATX (22.6x22.1cm) / M.2 : 1개 / USB A타입 : 6개 / 1Gbps / UEFI",
+      "price": null,
+      "link": "https://prod.danawa.com/info/?pcode=12069566&cate=112751",
+      "rawText": "이미지보기 인기 순위 20 ASUS PRIME A520M-K 대원씨티에스 [6월 2주차] 메인보드 중 쇼핑몰 이동이 가장 많았던 상품이에요 AMD(소켓AM4) / AMD A520 / DDR4 / VGA 연결 : PCIe3.0 x16 / M-ATX (22.6x22.1cm) / M.2 : 1개 / USB A타입 : 6개 / 1Gbps / UEFI 더보기 AMD(소켓AM4) / AMD A520 / DDR4 / VGA 연결 : PCIe3.0 x16 / M-ATX (22.6x22.1cm) / 전원부 : 4+2페이즈 / 메모리 4600MHz (PC4-36800) / 2개 / 메모리 용량 : 최대 64GB / 확장슬롯 PCIe버전: PCIe3.0 / PCIex16 : 1개 / PCIex1 : 2개 / 저장장치 SATA3 : 4개 / M.2 : 1개 / M.2 연결 : PCIe , NVMe , SATA / 후면단자 HDMI / D-SUB / USB3.x 5Gbps / USB 2.0 / RJ-45 "
+    },
+    {
+      "category": "memory",
+      "name": "Apacer DDR5-5200 CL40 NOX RGB BLACK 패키지 (32GB(16Gx2))",
+      "spec": "데스크탑용 / DDR5 / 5200MHz (PC5-41600) / 램타이밍 : CL40-40-40-80 / 1.25V / 램개수 : 2개 / LED 라이트 / XMP3.0 / EXPO / 온다이ECC / 히트싱크 : 방열판 / 방열판 색상: 블랙 / LED색상 : RGB / LED 시스템 : AURA SYNC , MYSTIC LIGHT , RGB FUSION , POLYCHROME / 높이: 42.67mm",
+      "price": null,
+      "link": "https://prod.danawa.com/info/?pcode=99749048&cate=112752&adinflow=Y",
+      "rawText": "이미지보기 Apacer DDR5-5200 CL40 NOX RGB BLACK 패키지 (32GB(16Gx2)) 데스크탑용 / DDR5 / 5200MHz (PC5-41600) / 램타이밍 : CL40-40-40-80 / 1.25V / 램개수 : 2개 / LED 라이트 / XMP3.0 / EXPO / 온다이ECC / 히트싱크 : 방열판 / 방열판 색상: 블랙 / LED색상 : RGB / LED 시스템 : AURA SYNC , MYSTIC LIGHT , RGB FUSION , POLYCHROME / 높이: 42.67mm 25.10. 등록 관심 61몰 VS상품비교 607,500 원 가격정보 더보기"
+    },
+    {
+      "category": "memory",
+      "name": "타무즈 DDR5-5600 CL46 (16GB)",
+      "spec": "데스크탑용 / DDR5 / 5600MHz (PC5-44800) / 램타이밍 : CL46-45-45-90 / 1.10V / 램개수 : 1개 / 온다이ECC / 히트싱크 : 미포함 / 높이: 31mm",
+      "price": null,
+      "link": "https://prod.danawa.com/info/?pcode=31998278&cate=112752&adinflow=Y",
+      "rawText": "이미지보기 타무즈 DDR5-5600 CL46 (16GB) 데스크탑용 / DDR5 / 5600MHz (PC5-44800) / 램타이밍 : CL46-45-45-90 / 1.10V / 램개수 : 1개 / 온다이ECC / 히트싱크 : 미포함 / 높이: 31mm 24.01. 등록 관심 119몰 VS상품비교 291,210 원 가격정보 더보기"
+    },
+    {
+      "category": "memory",
+      "name": "ESSENCORE KLEVV DDR5-6000 CL30 CRAS V RGB WHITE 패키지 서린 (32GB(16Gx2))",
+      "spec": "데스크탑용 / DDR5 / 6000MHz (PC5-48000) / 램타이밍 : CL30-36-36-76 / 1.35V / 램개수 : 2개 / LED 라이트 / XMP3.0 / EXPO / 온다이ECC / 히트싱크 : 방열판 / 방열판 색상 : 화이트 / LED색상 : RGB / LED 시스템 : AURA SYNC , MYSTIC LIGHT , RGB FUSION , POLYCHROME / 높이: 44mm / 모듈제조사: SK하이닉스",
+      "price": null,
+      "link": "https://prod.danawa.com/info/?pcode=32076077&cate=112752&adinflow=Y",
+      "rawText": "동영상 재생 이미지보기 ESSENCORE KLEVV DDR5-6000 CL30 CRAS V RGB WHITE 패키지 서린 (32GB(16Gx2)) 데스크탑용 / DDR5 / 6000MHz (PC5-48000) / 램타이밍 : CL30-36-36-76 / 1.35V / 램개수 : 2개 / LED 라이트 / XMP3.0 / EXPO / 온다이ECC / 히트싱크 : 방열판 / 방열판 색상 : 화이트 / LED색상 : RGB / LED 시스템 : AURA SYNC , MYSTIC LIGHT , RGB FUSION , POLYCHROME / 높이: 44mm / 모듈제조사: SK하이닉스 24.01. 등록 관심 108몰 VS상품비교 759,900 원 가격정보 더보기"
+    },
+    {
+      "category": "memory",
+      "name": "GeIL DDR5-5600 CL46 PRISTINE V (16GB)",
+      "spec": "데스크탑용 / DDR5 / 5600MHz (PC5-44800) / 램타이밍 : CL46-46-46-90 / 1.10V / 램개수 : 1개 / XMP3.0 / 온다이ECC / 히트싱크 : 미포함 / 높이: 31.3mm",
+      "price": null,
+      "link": "https://prod.danawa.com/info/?pcode=21695174&cate=112752&adinflow=Y",
+      "rawText": "이미지보기 GeIL DDR5-5600 CL46 PRISTINE V (16GB) 데스크탑용 / DDR5 / 5600MHz (PC5-44800) / 램타이밍 : CL46-46-46-90 / 1.10V / 램개수 : 1개 / XMP3.0 / 온다이ECC / 히트싱크 : 미포함 / 높이: 31.3mm 23.07. 등록 관심 103몰 VS상품비교 312,000 원 가격정보 더보기"
+    },
+    {
+      "category": "memory",
+      "name": "ESSENCORE KLEVV DDR5-5600 CL46 파인인포",
+      "spec": "데스크탑용 / DDR5 / 5600MHz (PC5-44800) / 램타이밍 : CL46-46-46-90 / 1.10V / 램개수 : 1개 / 온다이ECC / 히트싱크 : 미포함 / 높이: 31.25mm / 모듈제조사: SK하이닉스 / A다이 언락",
+      "price": 18796,
+      "link": "https://prod.danawa.com/info/?pcode=18965774&cate=112752",
+      "rawText": "이미지보기 인기 순위 1 ESSENCORE KLEVV DDR5-5600 CL46 파인인포 [6월 2주차] RAM 중 VS검색에 가장 많이 선택된 상품이에요 데스크탑용 / DDR5 / 5600MHz (PC5-44800) / 램타이밍 : CL46-46-46-90 / 1.10V / 램개수 : 1개 / 온다이ECC / 히트싱크 : 미포함 / 높이: 31.25mm / 모듈제조사: SK하이닉스 / A다이 언락 혜택 최저가 302,250원 [SSG.COM] 롯데카드 / 무이자 최대 3개월 23.02. 등록 관심 대량구매 --> New 새로워진 상품비교 기능 을 이용해보세요. 닫기 97몰 VS상품비교 601,480 원 가격정보 더보기 2위 32GB 18,796원/1GB"
+    },
+    {
+      "category": "memory",
+      "name": "TeamGroup DDR5-5600 CL46 Elite 서린",
+      "spec": "데스크탑용 / DDR5 / 5600MHz (PC5-44800) / 램타이밍 : CL46-46-46-90 / 1.10V / 램개수 : 1개 / 온다이ECC / 히트싱크 : 미포함 / 높이: 32mm",
+      "price": 21171,
+      "link": "https://prod.danawa.com/info/?pcode=17535839&cate=112752",
+      "rawText": "이미지보기 인기 순위 2 TeamGroup DDR5-5600 CL46 Elite 서린 데스크탑용 / DDR5 / 5600MHz (PC5-44800) / 램타이밍 : CL46-46-46-90 / 1.10V / 램개수 : 1개 / 온다이ECC / 히트싱크 : 미포함 / 높이: 32mm 혜택 최저가 334,308원 [이마트몰] 롯데카드 / 무이자 최대 3개월 22.07. 등록 관심 대량구매 --> 112몰 VS상품비교 677,470 원 가격정보 더보기 2위 32GB 21,171원/1GB"
+    },
+    {
+      "category": "memory",
+      "name": "ESSENCORE KLEVV DDR5-6000 CL30 CRAS V RGB WHITE 패키지 서린",
+      "spec": "데스크탑용 / DDR5 / 6000MHz (PC5-48000) / 램타이밍 : CL30-36-36-76 / 1.35V / 램개수 : 2개 / LED 라이트 / XMP3.0 / EXPO / 온다이ECC / 히트싱크 : 방열판 / 방열판 색상 : 화이트 / LED색상 : RGB / LED 시스템 : AURA SYNC , MYSTIC LIGHT , RGB FUSION , POLYCHROME / 높이: 44mm / 모듈제조사: SK하이닉스",
+      "price": 24133,
+      "link": "https://prod.danawa.com/info/?pcode=32076077&cate=112752",
+      "rawText": "이미지보기 동영상 재생 인기 순위 3 ESSENCORE KLEVV DDR5-6000 CL30 CRAS V RGB WHITE 패키지 서린 [6월 2주차] RAM 중 VS검색에 두번째로 많이 선택된 상품이에요 데스크탑용 / DDR5 / 6000MHz (PC5-48000) / 램타이밍 : CL30-36-36-76 / 1.35V / 램개수 : 2개 / LED 라이트 / XMP3.0 / EXPO / 온다이ECC / 히트싱크 : 방열판 / 방열판 색상 : 화이트 / LED색상 : RGB / LED 시스템 : AURA SYNC , MYSTIC LIGHT , RGB FUSION , POLYCHROME / 높이: 44mm / 모듈제조사: SK하이닉스 혜택 최저가 701,100원 [하이마트] 삼성카드 / 무이자 최대 6개월 24.01. 등록 관심 대량구매 --> 84몰 VS상품비교 1,544,480 원 가격정보 더보기 2위 64GB(32Gx2) 24,133원/1GB"
+    },
+    {
+      "category": "memory",
+      "name": "삼성전자 DDR5-5600",
+      "spec": "데스크탑용 / DDR5 / 5600MHz (PC5-44800) / 램개수 : 1개 / 히트싱크 : 미포함 / 모듈제조사: 삼성전자 / 병행수입, 벌크, A / S 등 여부 판매처 확인요망",
+      "price": 22437,
+      "link": "https://prod.danawa.com/info/?pcode=18911780&cate=112752",
+      "rawText": "이미지보기 인기 순위 4 삼성전자 DDR5-5600 [6월 2주차] RAM 중 가장 많이 조회된 상품이에요 데스크탑용 / DDR5 / 5600MHz (PC5-44800) / 램개수 : 1개 / 히트싱크 : 미포함 / 모듈제조사: 삼성전자 / 병행수입, 벌크, A / S 등 여부 판매처 확인요망 혜택 최저가 327,407원 [이마트몰] NH농협카드 / 무이자 최대 3개월 23.02. 등록 관심 대량구매 --> 231몰 VS상품비교 717,990 원 가격정보 더보기 2위 32GB 22,437원/1GB"
+    },
+    {
+      "category": "memory",
+      "name": "ESSENCORE KLEVV DDR5-5600 CL46 AMD 파인인포",
+      "spec": "데스크탑용 / DDR5 / 5600MHz (PC5-44800) / 램타이밍 : CL46-46-46-90 / 1.10V / 램개수 : 1개 / 온다이ECC / 히트싱크 : 미포함 / 높이: 31.25mm / 모듈제조사: SK하이닉스 / 코어울트라 미지원",
+      "price": 18111,
+      "link": "https://prod.danawa.com/info/?pcode=94638185&cate=112752",
+      "rawText": "이미지보기 인기 순위 5 ESSENCORE KLEVV DDR5-5600 CL46 AMD 파인인포 데스크탑용 / DDR5 / 5600MHz (PC5-44800) / 램타이밍 : CL46-46-46-90 / 1.10V / 램개수 : 1개 / 온다이ECC / 히트싱크 : 미포함 / 높이: 31.25mm / 모듈제조사: SK하이닉스 / 코어울트라 미지원 혜택 최저가 283,650원 [SSG.COM] 롯데카드 / 무이자 최대 3개월 25.07. 등록 관심 대량구매 --> 91몰 VS상품비교 289,770 원 가격정보 더보기 1위 16GB 18,111원/1GB"
+    },
+    {
+      "category": "memory",
+      "name": "TeamGroup T-CREATE DDR5-5600 CL46 CLASSIC 패키지 서린 (32GB(16Gx2))",
+      "spec": "데스크탑용 / DDR5 / 5600MHz (PC5-44800) / 램타이밍 : CL46-46-46-90 / 1.10V / 램개수 : 2개 / 온다이ECC / 히트싱크 : 방열판 / 방열판 색상: 블랙 / 높이: 32mm",
+      "price": null,
+      "link": "https://prod.danawa.com/info/?pcode=19566122&cate=112752",
+      "rawText": "동영상 재생 이미지보기 TeamGroup T-CREATE DDR5-5600 CL46 CLASSIC 패키지 서린 (32GB(16Gx2)) 데스크탑용 / DDR5 / 5600MHz (PC5-44800) / 램타이밍 : CL46-46-46-90 / 1.10V / 램개수 : 2개 / 온다이ECC / 히트싱크 : 방열판 / 방열판 색상: 블랙 / 높이: 32mm 23.03. 등록 관심 100몰 VS상품비교 745,960 원 가격정보 더보기"
+    },
+    {
+      "category": "memory",
+      "name": "PATRIOT DDR5-6000 CL30 SIGNATURE PREMIUM EVO 블랙",
+      "spec": "데스크탑용 / DDR5 / 6000MHz (PC5-48000) / 램타이밍 : CL30-40-40-76 / 1.35V / 램개수 : 1개 / XMP3.0 / EXPO / 온다이ECC / 히트싱크 : 방열판 / 방열판 색상: 블랙 / 높이: 37mm",
+      "price": 18037,
+      "link": "https://prod.danawa.com/info/?pcode=99946718&cate=112752",
+      "rawText": "이미지보기 인기 순위 6 PATRIOT DDR5-6000 CL30 SIGNATURE PREMIUM EVO 블랙 데스크탑용 / DDR5 / 6000MHz (PC5-48000) / 램타이밍 : CL30-40-40-76 / 1.35V / 램개수 : 1개 / XMP3.0 / EXPO / 온다이ECC / 히트싱크 : 방열판 / 방열판 색상: 블랙 / 높이: 37mm 혜택 최저가 279,890원 [옥션] 삼성카드 / 무이자 최대 24개월 25.11. 등록 관심 대량구매 --> 60몰 VS상품비교 288,590 원 가격정보 더보기 16GB 18,037원/1GB"
+    },
+    {
+      "category": "memory",
+      "name": "ESSENCORE KLEVV DDR5-6000 CL30 FIT V 패키지 서린",
+      "spec": "데스크탑용 / DDR5 / 6000MHz (PC5-48000) / 램타이밍 : CL30-36-36-76 / 1.35V / 램개수 : 2개 / XMP3.0 / EXPO / 온다이ECC / 히트싱크 : 방열판 / 방열판 색상 : 블랙 / 높이: 33.21mm / 모듈제조사: SK하이닉스 / 코어울트라 미지원",
+      "price": 21188,
+      "link": "https://prod.danawa.com/info/?pcode=91188656&cate=112752",
+      "rawText": "이미지보기 동영상 재생 인기 순위 7 ESSENCORE KLEVV DDR5-6000 CL30 FIT V 패키지 서린 데스크탑용 / DDR5 / 6000MHz (PC5-48000) / 램타이밍 : CL30-36-36-76 / 1.35V / 램개수 : 2개 / XMP3.0 / EXPO / 온다이ECC / 히트싱크 : 방열판 / 방열판 색상 : 블랙 / 높이: 33.21mm / 모듈제조사: SK하이닉스 / 코어울트라 미지원 25.05. 등록 관심 대량구매 --> 87몰 VS상품비교 678,000 원 가격정보 더보기 32GB(16Gx2) 21,188원/1GB"
+    },
+    {
+      "category": "memory",
+      "name": "PATRIOT DDR5-6000 CL30 SIGNATURE PREMIUM EVO 화이트",
+      "spec": "데스크탑용 / DDR5 / 6000MHz (PC5-48000) / 램타이밍 : CL30-40-40-76 / 1.35V / 램개수 : 1개 / XMP3.0 / EXPO / 온다이ECC / 히트싱크 : 방열판 / 방열판 색상: 화이트 / 높이: 37mm",
+      "price": 18024,
+      "link": "https://prod.danawa.com/info/?pcode=99946733&cate=112752",
+      "rawText": "이미지보기 인기 순위 8 PATRIOT DDR5-6000 CL30 SIGNATURE PREMIUM EVO 화이트 데스크탑용 / DDR5 / 6000MHz (PC5-48000) / 램타이밍 : CL30-40-40-76 / 1.35V / 램개수 : 1개 / XMP3.0 / EXPO / 온다이ECC / 히트싱크 : 방열판 / 방열판 색상: 화이트 / 높이: 37mm 혜택 최저가 279,890원 [옥션] 삼성카드 / 무이자 최대 24개월 25.11. 등록 관심 대량구매 --> 66몰 VS상품비교 288,390 원 가격정보 더보기 16GB 18,024원/1GB"
+    },
+    {
+      "category": "memory",
+      "name": "마이크론 Crucial DDR5-5600 CL46 대원씨티에스",
+      "spec": "데스크탑용 / DDR5 / 5600MHz (PC5-44800) / 램타이밍 : CL46-45-45 / 1.10V / 램개수 : 1개 / 온다이ECC / 히트싱크 : 미포함 / 모듈제조사: 마이크론 / Single Ranked, x16 based",
+      "price": 21875,
+      "link": "https://prod.danawa.com/info/?pcode=20369126&cate=112752",
+      "rawText": "이미지보기 인기 순위 9 마이크론 Crucial DDR5-5600 CL46 대원씨티에스 데스크탑용 / DDR5 / 5600MHz (PC5-44800) / 램타이밍 : CL46-45-45 / 1.10V / 램개수 : 1개 / 온다이ECC / 히트싱크 : 미포함 / 모듈제조사: 마이크론 / Single Ranked, x16 based 혜택 최저가 318,750원 [SSG.COM] NH농협카드 / 무이자 최대 3개월 22.12. 등록 관심 대량구매 --> 80몰 VS상품비교 1,400,000 원 가격정보 더보기 64GB 21,875원/1GB"
+    },
+    {
+      "category": "memory",
+      "name": "삼성전자 DDR4-3200",
+      "spec": "데스크탑용 / DDR4 / 3200MHz (PC4-25600) / 램개수 : 1개 / 히트싱크 : 미포함 / 단종된 모델이므로 중고상품 주의하시기 바랍니다",
+      "price": 12184,
+      "link": "https://prod.danawa.com/info/?pcode=11541857&cate=112752",
+      "rawText": "이미지보기 인기 순위 10 삼성전자 DDR4-3200 데스크탑용 / DDR4 / 3200MHz (PC4-25600) / 램개수 : 1개 / 히트싱크 : 미포함 / 단종된 모델이므로 중고상품 주의하시기 바랍니다 20.06. 등록 관심 대량구매 --> 119몰 VS상품비교 389,900 원 가격정보 더보기 32GB 12,184원/1GB"
+    },
+    {
+      "category": "memory",
+      "name": "삼성전자 DDR4-2666 중고",
+      "spec": "데스크탑용 / DDR4 / 2666MHz (PC4-21300) / 램개수 : 1개 / 히트싱크 : 미포함",
+      "price": 8078,
+      "link": "https://prod.danawa.com/info/?pcode=8158972&cate=112752",
+      "rawText": "이미지보기 인기 순위 11 삼성전자 DDR4-2666 중고 데스크탑용 / DDR4 / 2666MHz (PC4-21300) / 램개수 : 1개 / 히트싱크 : 미포함 19.06. 등록 관심 대량구매 --> 104몰 VS상품비교 258,480 원 가격정보 더보기 32GB 8,078원/1GB"
+    },
+    {
+      "category": "memory",
+      "name": "삼성전자 DDR4-3200 중고",
+      "spec": "데스크탑용 / DDR4 / 3200MHz (PC4-25600) / 램개수 : 1개 / 히트싱크 : 미포함",
+      "price": 10000,
+      "link": "https://prod.danawa.com/info/?pcode=16126766&cate=112752",
+      "rawText": "이미지보기 인기 순위 12 삼성전자 DDR4-3200 중고 데스크탑용 / DDR4 / 3200MHz (PC4-25600) / 램개수 : 1개 / 히트싱크 : 미포함 20.07. 등록 관심 대량구매 --> 73몰 VS상품비교 319,990 원 가격정보 더보기 32GB 10,000원/1GB"
+    },
+    {
+      "category": "memory",
+      "name": "AGI DDR5-6000 CL30 TURBOJET UD858 RGB 블랙 패키지 서린",
+      "spec": "데스크탑용 / DDR5 / 6000MHz (PC5-48000) / 램타이밍 : CL30 / 1.35V / 램개수 : 2개 / LED 라이트 / XMP3.0 / EXPO / 온다이ECC / 히트싱크 : 방열판 / 방열판 색상: 블랙 / LED색상 : RGB / LED 시스템 : AURA SYNC , MYSTIC LIGHT , RGB FUSION , POLYCHROME / 높이: 37mm",
+      "price": 20116,
+      "link": "https://prod.danawa.com/info/?pcode=101078582&cate=112752",
+      "rawText": "이미지보기 인기 순위 13 AGI DDR5-6000 CL30 TURBOJET UD858 RGB 블랙 패키지 서린 데스크탑용 / DDR5 / 6000MHz (PC5-48000) / 램타이밍 : CL30 / 1.35V / 램개수 : 2개 / LED 라이트 / XMP3.0 / EXPO / 온다이ECC / 히트싱크 : 방열판 / 방열판 색상: 블랙 / LED색상 : RGB / LED 시스템 : AURA SYNC , MYSTIC LIGHT , RGB FUSION , POLYCHROME / 높이: 37mm 25.11. 등록 관심 대량구매 --> 66몰 VS상품비교 643,720 원 가격정보 더보기 1위 32GB(16Gx2) 20,116원/1GB"
+    },
+    {
+      "category": "memory",
+      "name": "컴이지 킹덤 DDR5-5600 CL46",
+      "spec": "데스크탑용 / DDR5 / 5600MHz (PC5-44800) / 램타이밍 : CL46-46-46-90 / 1.10V / 램개수 : 1개 / 온다이ECC / 높이: 31mm",
+      "price": 16499,
+      "link": "https://prod.danawa.com/info/?pcode=104571350&cate=112752",
+      "rawText": "이미지보기 인기 순위 14 컴이지 킹덤 DDR5-5600 CL46 데스크탑용 / DDR5 / 5600MHz (PC5-44800) / 램타이밍 : CL46-46-46-90 / 1.10V / 램개수 : 1개 / 온다이ECC / 높이: 31mm 혜택 최저가 245,520원 [SSG.COM] NH농협카드 / 무이자 최대 3개월 26.01. 등록 관심 대량구매 --> 75몰 VS상품비교 263,980 원 가격정보 더보기 16GB 16,499원/1GB"
+    },
+    {
+      "category": "memory",
+      "name": "삼성전자 노트북 DDR5-5600",
+      "spec": "노트북용 / DDR5 / 5600MHz (PC5-44800) / 램개수 : 1개 / 히트싱크 : 미포함",
+      "price": 17671,
+      "link": "https://prod.danawa.com/info/?pcode=19953029&cate=112752",
+      "rawText": "이미지보기 인기 순위 15 삼성전자 노트북 DDR5-5600 노트북용 / DDR5 / 5600MHz (PC5-44800) / 램개수 : 1개 / 히트싱크 : 미포함 23.04. 등록 관심 대량구매 --> 174몰 VS상품비교 565,470 원 가격정보 더보기 2위 32GB 17,671원/1GB"
+    },
+    {
+      "category": "memory",
+      "name": "GeIL DDR5-6000 CL38 GEMINI RGB White 패키지",
+      "spec": "데스크탑용 / DDR5 / 6000MHz (PC5-48000) / 램타이밍 : CL38-44-44-84 / 1.35V / 램개수 : 2개 / LED 라이트 / XMP3.0 / EXPO / 온다이ECC / 히트싱크 : 방열판 / 방열판 색상: 화이트 / LED색상 : RGB / LED 시스템 : AURA SYNC , MYSTIC LIGHT , RGB FUSION , POLYCHROME / 높이: 45.1mm",
+      "price": 21524,
+      "link": "https://prod.danawa.com/info/?pcode=97124186&cate=112752",
+      "rawText": "이미지보기 인기 순위 16 GeIL DDR5-6000 CL38 GEMINI RGB White 패키지 데스크탑용 / DDR5 / 6000MHz (PC5-48000) / 램타이밍 : CL38-44-44-84 / 1.35V / 램개수 : 2개 / LED 라이트 / XMP3.0 / EXPO / 온다이ECC / 히트싱크 : 방열판 / 방열판 색상: 화이트 / LED색상 : RGB / LED 시스템 : AURA SYNC , MYSTIC LIGHT , RGB FUSION , POLYCHROME / 높이: 45.1mm 혜택 최저가 660,130원 [옥션] 삼성카드 / 무이자 최대 24개월 25.09. 등록 관심 대량구매 --> 72몰 VS상품비교 688,780 원 가격정보 더보기 32GB(16Gx2) 21,524원/1GB"
+    },
+    {
+      "category": "memory",
+      "name": "GeIL DDR5-5600 CL46 PRISTINE V",
+      "spec": "데스크탑용 / DDR5 / 5600MHz (PC5-44800) / 램타이밍 : CL46-46-46-90 / 1.10V / 램개수 : 1개 / XMP3.0 / 온다이ECC / 히트싱크 : 미포함 / 높이: 31.3mm",
+      "price": 19500,
+      "link": "https://prod.danawa.com/info/?pcode=21695174&cate=112752",
+      "rawText": "이미지보기 인기 순위 17 GeIL DDR5-5600 CL46 PRISTINE V 데스크탑용 / DDR5 / 5600MHz (PC5-44800) / 램타이밍 : CL46-46-46-90 / 1.10V / 램개수 : 1개 / XMP3.0 / 온다이ECC / 히트싱크 : 미포함 / 높이: 31.3mm 혜택 최저가 296,987원 [SSG.COM] NH농협카드 / 무이자 최대 3개월 23.07. 등록 관심 대량구매 --> 103몰 VS상품비교 312,000 원 가격정보 더보기 16GB 19,500원/1GB"
+    },
+    {
+      "category": "memory",
+      "name": "SK하이닉스 DDR5-5600",
+      "spec": "데스크탑용 / DDR5 / 5600MHz (PC5-44800) / 1.10V / 램개수 : 1개 / 히트싱크 : 미포함 / 모듈제조사: SK하이닉스",
+      "price": 22759,
+      "link": "https://prod.danawa.com/info/?pcode=18883523&cate=112752",
+      "rawText": "이미지보기 인기 순위 18 SK하이닉스 DDR5-5600 데스크탑용 / DDR5 / 5600MHz (PC5-44800) / 1.10V / 램개수 : 1개 / 히트싱크 : 미포함 / 모듈제조사: SK하이닉스 23.01. 등록 관심 대량구매 --> 128몰 VS상품비교 728,290 원 가격정보 더보기 2위 32GB 22,759원/1GB"
+    },
+    {
+      "category": "memory",
+      "name": "ESSENCORE KLEVV DDR5-6400 CL30 FIT V WHITE 패키지 서린",
+      "spec": "데스크탑용 / DDR5 / 6400MHz (PC5-51200) / 램타이밍 : CL30-38-38-78 / 1.40V / 램개수 : 2개 / XMP3.0 / EXPO / 온다이ECC / 히트싱크 : 방열판 / 방열판 색상: 화이트 / 높이: 33.21mm / 모듈제조사: SK하이닉스 / 코어울트라 미지원 / 25년 8월부로 전압 1.35V→1.4V 변경",
+      "price": 17361,
+      "link": "https://prod.danawa.com/info/?pcode=93805283&cate=112752",
+      "rawText": "이미지보기 인기 순위 19 ESSENCORE KLEVV DDR5-6400 CL30 FIT V WHITE 패키지 서린 데스크탑용 / DDR5 / 6400MHz (PC5-51200) / 램타이밍 : CL30-38-38-78 / 1.40V / 램개수 : 2개 / XMP3.0 / EXPO / 온다이ECC / 히트싱크 : 방열판 / 방열판 색상: 화이트 / 높이: 33.21mm / 모듈제조사: SK하이닉스 / 코어울트라 미지원 / 25년 8월부로 전압 1.35V→1.4V 변경 25.07. 등록 관심 대량구매 --> 1몰 VS상품비교 555,560 원 가격정보 더보기 32GB(16Gx2) 17,361원/1GB"
+    },
+    {
+      "category": "gpu",
+      "name": "PALIT 지포스 RTX 5060 Ti DUAL D7 8GB 이엠텍",
+      "spec": "RTX 5060 Ti / PCIe5.0x16(at x8) / 600W 이상 / 전원 포트 : 8핀 x1 / 가로(길이) : 262.1mm / 베이스클럭 : 2407 / 부스트클럭 : 2572MHz / 스트림 프로세서 : 4608 / 최대 AI TOPS : 759(FP4) / GDDR7 / 출력단자: HDMI2.1 , DP2.1 / 지원정보 : 8K 지원 , HDR 지원 , HDCP 2.3 / 사용전력 : 180W / 2팬 / 두께 : 40.1mm / 제로팬(0-dB기술) / 백플레이트 / DrMOS / LED 라이트 / ThunderMaster / A/S 3년",
+      "price": null,
+      "link": "https://prod.danawa.com/info/?pcode=89732453&cate=112753&adinflow=Y",
+      "rawText": "이미지보기 PALIT 지포스 RTX 5060 Ti DUAL D7 8GB 이엠텍 RTX 5060 Ti / PCIe5.0x16(at x8) / 600W 이상 / 전원 포트 : 8핀 x1 / 가로(길이) : 262.1mm / 베이스클럭 : 2407 / 부스트클럭 : 2572MHz / 스트림 프로세서 : 4608 / 최대 AI TOPS : 759(FP4) / GDDR7 / 출력단자: HDMI2.1 , DP2.1 / 지원정보 : 8K 지원 , HDR 지원 , HDCP 2.3 / 사용전력 : 180W / 2팬 / 두께 : 40.1mm / 제로팬(0-dB기술) / 백플레이트 / DrMOS / LED 라이트 / ThunderMaster / A/S 3년 25.04. 등록 관심 248몰 VS상품비교 592,180 원 가격정보 더보기"
+    },
+    {
+      "category": "gpu",
+      "name": "PALIT 지포스 RTX 5060 DUAL OC D7 8GB 이엠텍",
+      "spec": "RTX 5060 / PCIe5.0x16(at x8) / 550W 이상 / 전원 포트 : 8핀 x1 / 가로(길이) : 262.1mm / 베이스클럭 : 2280 / 부스트클럭 : 2535MHz / 스트림 프로세서 : 3840 / 최대 AI TOPS : 614(FP4) / GDDR7 / 출력단자: HDMI2.1 , DP2.1 / 지원정보 : 8K 지원 , HDR 지원 , HDCP 2.3 / 사용전력 : 145W / 2팬 / 두께 : 40.1mm / 제로팬(0-dB기술) / 백플레이트 / DrMOS / LED 라이트 / A/S 3년",
+      "price": null,
+      "link": "https://prod.danawa.com/info/?pcode=90887879&cate=112753&adinflow=Y",
+      "rawText": "동영상 재생 이미지보기 PALIT 지포스 RTX 5060 DUAL OC D7 8GB 이엠텍 RTX 5060 / PCIe5.0x16(at x8) / 550W 이상 / 전원 포트 : 8핀 x1 / 가로(길이) : 262.1mm / 베이스클럭 : 2280 / 부스트클럭 : 2535MHz / 스트림 프로세서 : 3840 / 최대 AI TOPS : 614(FP4) / GDDR7 / 출력단자: HDMI2.1 , DP2.1 / 지원정보 : 8K 지원 , HDR 지원 , HDCP 2.3 / 사용전력 : 145W / 2팬 / 두께 : 40.1mm / 제로팬(0-dB기술) / 백플레이트 / DrMOS / LED 라이트 / A/S 3년 25.05. 등록 관심 273몰 VS상품비교 506,900 원 가격정보 더보기"
+    },
+    {
+      "category": "gpu",
+      "name": "MSI 지포스 RTX 5070 게이밍 트리오 OC D7 12GB 트라이프로져4",
+      "spec": "RTX 5070 / PCIe5.0x16 / 650W 이상 / 전원 포트 : 16핀(12V2x6) x1 / 가로(길이) : 338mm / 베이스클럭 : 2325 / 부스트클럭 : 2610MHz / OC클럭 : 2625MHz / 스트림 프로세서 : 6144 / 최대 AI TOPS : 988(FP4) / GDDR7 / VRAM 대역폭 : 672 GB/s / 출력단자: HDMI2.1 , DP2.1 / 지원정보 : 8K 지원 , HDR 지원 , HDCP 2.3 / 사용전력 : 250W / 3팬 / 두께 : 50mm / 제로팬(0-dB기술) / 백플레이트 / DrMOS / LED 라이트 / MYSTIC LIGHT / 구성품: VGA지지대, 2x8핀 to 16핀 커넥터 / A/S 3년",
+      "price": null,
+      "link": "https://prod.danawa.com/info/?pcode=77379380&cate=112753&adinflow=Y",
+      "rawText": "동영상 재생 이미지보기 MSI 지포스 RTX 5070 게이밍 트리오 OC D7 12GB 트라이프로져4 RTX 5070 / PCIe5.0x16 / 650W 이상 / 전원 포트 : 16핀(12V2x6) x1 / 가로(길이) : 338mm / 베이스클럭 : 2325 / 부스트클럭 : 2610MHz / OC클럭 : 2625MHz / 스트림 프로세서 : 6144 / 최대 AI TOPS : 988(FP4) / GDDR7 / VRAM 대역폭 : 672 GB/s / 출력단자: HDMI2.1 , DP2.1 / 지원정보 : 8K 지원 , HDR 지원 , HDCP 2.3 / 사용전력 : 250W / 3팬 / 두께 : 50mm / 제로팬(0-dB기술) / 백플레이트 / DrMOS / LED 라이트 / MYSTIC LIGHT / 구성품: VGA지지대, 2x8핀 to 16핀 커넥터 / A/S 3년 25.03. 등록 관심 140몰 VS상품비교 1,084,990 원 가격정보 더보기"
+    },
+    {
+      "category": "gpu",
+      "name": "MSI 지포스 RTX 5060 벤투스 2X OC D7 8GB",
+      "spec": "RTX 5060 / PCIe5.0x16(at x8) / 550W 이상 / 전원 포트 : 8핀 x1 / 가로(길이) : 197mm / 베이스클럭 : 2280 / 부스트클럭 : 2527MHz / OC클럭 : 2535MHz / 스트림 프로세서 : 3840 / 최대 AI TOPS : 614(FP4) / GDDR7 / 출력단자: HDMI2.1 , DP2.1 / 지원정보 : 8K 지원 , HDR 지원 , HDCP 2.3 / 사용전력 : 145W / 2팬 / 두께 : 41mm / 제로팬(0-dB기술) / 백플레이트 / DrMOS",
+      "price": null,
+      "link": "https://prod.danawa.com/info/?pcode=90956033&cate=112753&adinflow=Y",
+      "rawText": "동영상 재생 이미지보기 MSI 지포스 RTX 5060 벤투스 2X OC D7 8GB RTX 5060 / PCIe5.0x16(at x8) / 550W 이상 / 전원 포트 : 8핀 x1 / 가로(길이) : 197mm / 베이스클럭 : 2280 / 부스트클럭 : 2527MHz / OC클럭 : 2535MHz / 스트림 프로세서 : 3840 / 최대 AI TOPS : 614(FP4) / GDDR7 / 출력단자: HDMI2.1 , DP2.1 / 지원정보 : 8K 지원 , HDR 지원 , HDCP 2.3 / 사용전력 : 145W / 2팬 / 두께 : 41mm / 제로팬(0-dB기술) / 백플레이트 / DrMOS 25.05. 등록 관심 248몰 VS상품비교 504,000 원 가격정보 더보기"
+    },
+    {
+      "category": "gpu",
+      "name": "MSI 지포스 RTX 5060 벤투스 2X OC D7 8GB",
+      "spec": "RTX 5060 / PCIe5.0x16(at x8) / 550W 이상 / 전원 포트 : 8핀 x1 / 가로(길이) : 197mm / 베이스클럭 : 2280 / 부스트클럭 : 2527MHz / OC클럭 : 2535MHz / 스트림 프로세서 : 3840 / 최대 AI TOPS : 614(FP4) / GDDR7 / 출력단자: HDMI2.1 , DP2.1 / 지원정보 : 8K 지원 , HDR 지원 , HDCP 2.3 / 사용전력 : 145W / 2팬 / 두께 : 41mm / 제로팬(0-dB기술) / 백플레이트 / DrMOS",
+      "price": null,
+      "link": "https://prod.danawa.com/info/?pcode=90956033&cate=112753",
+      "rawText": "이미지보기 동영상 재생 인기 순위 1 MSI 지포스 RTX 5060 벤투스 2X OC D7 8GB [6월 2주차] 그래픽카드 중 가장 많이 조회된 상품이에요 RTX 5060 / PCIe5.0x16(at x8) / 550W 이상 / 전원 포트 : 8핀 x1 / 가로(길이) : 197mm / 베이스클럭 : 2280 / 부스트클럭 : 2527MHz / OC클럭 : 2535MHz / 스트림 프로세서 : 3840 / 최대 AI TOPS : 614(FP4) / GDDR7 / 출력단자: HDMI2.1 , DP2.1 / 지원정보 : 8K 지원 , HDR 지원 , HDCP 2.3 / 사용전력 : 145W / 2팬 / 두께 : 41mm / 제로팬(0-dB기술) / 백플레이트 / DrMOS 혜택 최저가 482,670원 [이마트몰] NH농협카드 / 무이자 최대 3개월 25.05. 등록 관심 대량구매 --> New 새로워진 상품비교 기능 을 이용해보세요. 닫기 248몰 VS상품비교 504,000 원 가격정"
+    },
+    {
+      "category": "gpu",
+      "name": "PALIT 지포스 RTX 5060 Ti DUAL D7 8GB 이엠텍",
+      "spec": "RTX 5060 Ti / PCIe5.0x16(at x8) / 600W 이상 / 전원 포트 : 8핀 x1 / 가로(길이) : 262.1mm / 베이스클럭 : 2407 / 부스트클럭 : 2572MHz / 스트림 프로세서 : 4608 / 최대 AI TOPS : 759(FP4) / GDDR7 / 출력단자: HDMI2.1 , DP2.1 / 지원정보 : 8K 지원 , HDR 지원 , HDCP 2.3 / 사용전력 : 180W / 2팬 / 두께 : 40.1mm / 제로팬(0-dB기술) / 백플레이트 / DrMOS / LED 라이트 / ThunderMaster / A/S 3년",
+      "price": null,
+      "link": "https://prod.danawa.com/info/?pcode=89732453&cate=112753",
+      "rawText": "이미지보기 인기 순위 2 PALIT 지포스 RTX 5060 Ti DUAL D7 8GB 이엠텍 [6월 2주차] 그래픽카드 중 쇼핑몰 이동이 가장 많았던 상품이에요 RTX 5060 Ti / PCIe5.0x16(at x8) / 600W 이상 / 전원 포트 : 8핀 x1 / 가로(길이) : 262.1mm / 베이스클럭 : 2407 / 부스트클럭 : 2572MHz / 스트림 프로세서 : 4608 / 최대 AI TOPS : 759(FP4) / GDDR7 / 출력단자: HDMI2.1 , DP2.1 / 지원정보 : 8K 지원 , HDR 지원 , HDCP 2.3 / 사용전력 : 180W / 2팬 / 두께 : 40.1mm / 제로팬(0-dB기술) / 백플레이트 / DrMOS / LED 라이트 / ThunderMaster / A/S 3년 혜택 최저가 573,800원 [하이마트] 삼성카드 / 무이자 최대 6개월 25.04. 등록 관심 대량구매 --> 248몰 VS상품비교 592,180 원 가격정보 더보기"
+    },
+    {
+      "category": "gpu",
+      "name": "PALIT 지포스 RTX 5060 DUAL OC D7 8GB 이엠텍",
+      "spec": "RTX 5060 / PCIe5.0x16(at x8) / 550W 이상 / 전원 포트 : 8핀 x1 / 가로(길이) : 262.1mm / 베이스클럭 : 2280 / 부스트클럭 : 2535MHz / 스트림 프로세서 : 3840 / 최대 AI TOPS : 614(FP4) / GDDR7 / 출력단자: HDMI2.1 , DP2.1 / 지원정보 : 8K 지원 , HDR 지원 , HDCP 2.3 / 사용전력 : 145W / 2팬 / 두께 : 40.1mm / 제로팬(0-dB기술) / 백플레이트 / DrMOS / LED 라이트 / A/S 3년",
+      "price": null,
+      "link": "https://prod.danawa.com/info/?pcode=90887879&cate=112753",
+      "rawText": "이미지보기 동영상 재생 인기 순위 3 PALIT 지포스 RTX 5060 DUAL OC D7 8GB 이엠텍 [6월 2주차] 그래픽카드 중 VS검색에 두번째로 많이 선택된 상품이에요 RTX 5060 / PCIe5.0x16(at x8) / 550W 이상 / 전원 포트 : 8핀 x1 / 가로(길이) : 262.1mm / 베이스클럭 : 2280 / 부스트클럭 : 2535MHz / 스트림 프로세서 : 3840 / 최대 AI TOPS : 614(FP4) / GDDR7 / 출력단자: HDMI2.1 , DP2.1 / 지원정보 : 8K 지원 , HDR 지원 , HDCP 2.3 / 사용전력 : 145W / 2팬 / 두께 : 40.1mm / 제로팬(0-dB기술) / 백플레이트 / DrMOS / LED 라이트 / A/S 3년 혜택 최저가 469,800원 [하이마트] 삼성카드 / 무이자 최대 6개월 25.05. 등록 관심 대량구매 --> 273몰 VS상품비교 506,900 원 가격정보 더보기"
+    },
+    {
+      "category": "gpu",
+      "name": "MSI 지포스 RTX 5070 게이밍 트리오 OC D7 12GB 트라이프로져4",
+      "spec": "RTX 5070 / PCIe5.0x16 / 650W 이상 / 전원 포트 : 16핀(12V2x6) x1 / 가로(길이) : 338mm / 베이스클럭 : 2325 / 부스트클럭 : 2610MHz / OC클럭 : 2625MHz / 스트림 프로세서 : 6144 / 최대 AI TOPS : 988(FP4) / GDDR7 / VRAM 대역폭 : 672 GB/s / 출력단자: HDMI2.1 , DP2.1 / 지원정보 : 8K 지원 , HDR 지원 , HDCP 2.3 / 사용전력 : 250W / 3팬 / 두께 : 50mm / 제로팬(0-dB기술) / 백플레이트 / DrMOS / LED 라이트 / MYSTIC LIGHT / 구성품: VGA지지대, 2x8핀 to 16핀 커넥터 / A/S 3년",
+      "price": null,
+      "link": "https://prod.danawa.com/info/?pcode=77379380&cate=112753",
+      "rawText": "이미지보기 동영상 재생 인기 순위 4 MSI 지포스 RTX 5070 게이밍 트리오 OC D7 12GB 트라이프로져4 RTX 5070 / PCIe5.0x16 / 650W 이상 / 전원 포트 : 16핀(12V2x6) x1 / 가로(길이) : 338mm / 베이스클럭 : 2325 / 부스트클럭 : 2610MHz / OC클럭 : 2625MHz / 스트림 프로세서 : 6144 / 최대 AI TOPS : 988(FP4) / GDDR7 / VRAM 대역폭 : 672 GB/s / 출력단자: HDMI2.1 , DP2.1 / 지원정보 : 8K 지원 , HDR 지원 , HDCP 2.3 / 사용전력 : 250W / 3팬 / 두께 : 50mm / 제로팬(0-dB기술) / 백플레이트 / DrMOS / LED 라이트 / MYSTIC LIGHT / 구성품: VGA지지대, 2x8핀 to 16핀 커넥터 / A/S 3년 혜택 최저가 1,033,470원 [옥션] 삼성카드 / 무이자 최대 24개월 25.03. 등록 관심"
+    },
+    {
+      "category": "gpu",
+      "name": "ZOTAC GAMING 지포스 RTX 5060 Ti Twin Edge OC D7 8GB",
+      "spec": "RTX 5060 Ti / PCIe5.0x16(at x8) / 600W 이상 / 전원 포트 : 8핀 x1 / 가로(길이) : 220.5mm / 베이스클럭 : 2407 / 부스트클럭 : 2602MHz / 스트림 프로세서 : 4608 / 최대 AI TOPS : 759(FP4) / GDDR7 / 출력단자: DP2.1 , HDMI2.1 / 지원정보 : HDR 지원 , 8K 지원 , HDCP 2.3 / 사용전력 : 180W / 전원부 : 5+2페이즈 / 2팬 / 두께 : 41mm / 제로팬(0-dB기술) / 백플레이트",
+      "price": null,
+      "link": "https://prod.danawa.com/info/?pcode=85410707&cate=112753",
+      "rawText": "이미지보기 인기 순위 5 ZOTAC GAMING 지포스 RTX 5060 Ti Twin Edge OC D7 8GB RTX 5060 Ti / PCIe5.0x16(at x8) / 600W 이상 / 전원 포트 : 8핀 x1 / 가로(길이) : 220.5mm / 베이스클럭 : 2407 / 부스트클럭 : 2602MHz / 스트림 프로세서 : 4608 / 최대 AI TOPS : 759(FP4) / GDDR7 / 출력단자: DP2.1 , HDMI2.1 / 지원정보 : HDR 지원 , 8K 지원 , HDCP 2.3 / 사용전력 : 180W / 전원부 : 5+2페이즈 / 2팬 / 두께 : 41mm / 제로팬(0-dB기술) / 백플레이트 혜택 최저가 553,927원 [신세계몰] NH농협카드 / 무이자 최대 3개월 25.04. 등록 관심 대량구매 --> 125몰 VS상품비교 573,370 원 가격정보 더보기"
+    },
+    {
+      "category": "gpu",
+      "name": "GIGABYTE 지포스 RTX 5070 Ti GAMING OC D7 16GB 제이씨현",
+      "spec": "RTX 5070 Ti / PCIe5.0x16 / 750W 이상 / 전원 포트 : 16핀(12V2x6) x1 / 가로(길이) : 340mm / 베이스클럭 : 2295 / 부스트클럭 : 2588MHz / 스트림 프로세서 : 8960 / 최대 AI TOPS : 1406(FP4) / GDDR7 / VRAM 대역폭 : 896 GB/s / 출력단자: HDMI2.1 , DP2.1 / 지원정보 : 8K 지원 , HDR 지원 , HDCP 2.3 / 3팬 / 두께 : 70mm / 제로팬(0-dB기술) / 백플레이트 / LED 라이트 / Dual BIOS / 구성품: VGA지지대, 3x8핀 to 16핀 커넥터 / A/S 4년",
+      "price": null,
+      "link": "https://prod.danawa.com/info/?pcode=76551056&cate=112753",
+      "rawText": "이미지보기 인기 순위 6 GIGABYTE 지포스 RTX 5070 Ti GAMING OC D7 16GB 제이씨현 RTX 5070 Ti / PCIe5.0x16 / 750W 이상 / 전원 포트 : 16핀(12V2x6) x1 / 가로(길이) : 340mm / 베이스클럭 : 2295 / 부스트클럭 : 2588MHz / 스트림 프로세서 : 8960 / 최대 AI TOPS : 1406(FP4) / GDDR7 / VRAM 대역폭 : 896 GB/s / 출력단자: HDMI2.1 , DP2.1 / 지원정보 : 8K 지원 , HDR 지원 , HDCP 2.3 / 3팬 / 두께 : 70mm / 제로팬(0-dB기술) / 백플레이트 / LED 라이트 / Dual BIOS / 구성품: VGA지지대, 3x8핀 to 16핀 커넥터 / A/S 4년 혜택 최저가 1,492,200원 [하이마트] 삼성카드 / 무이자 최대 6개월 25.02. 등록 관심 대량구매 --> 162몰 VS상품비교 1,546,210 원 가격정보 더"
+    },
+    {
+      "category": "gpu",
+      "name": "PALIT 지포스 RTX 5080 GAMINGPRO D7 16GB 이엠텍",
+      "spec": "RTX 5080 / PCIe5.0x16 / 850W 이상 / 가로(길이) : 331.9mm / 베이스클럭 : 2295 / 부스트클럭 : 2617MHz / 스트림 프로세서 : 10752 / 최대 AI TOPS : 1801(FP4) / GDDR7 / VRAM 대역폭 : 960 GB/s / 출력단자: HDMI2.1 , DP2.1 / 지원정보 : 8K 지원 , HDR 지원 , HDCP 2.3 / 사용전력 : 360W / 3팬 / 두께 : 60mm / 제로팬(0-dB기술) / 백플레이트 / LED 라이트 / ThunderMaster / 구성품: 3x8핀 to 16핀 커넥터 / A/S 3년",
+      "price": null,
+      "link": "https://prod.danawa.com/info/?pcode=75184250&cate=112753",
+      "rawText": "이미지보기 인기 순위 7 PALIT 지포스 RTX 5080 GAMINGPRO D7 16GB 이엠텍 RTX 5080 / PCIe5.0x16 / 850W 이상 / 가로(길이) : 331.9mm / 베이스클럭 : 2295 / 부스트클럭 : 2617MHz / 스트림 프로세서 : 10752 / 최대 AI TOPS : 1801(FP4) / GDDR7 / VRAM 대역폭 : 960 GB/s / 출력단자: HDMI2.1 , DP2.1 / 지원정보 : 8K 지원 , HDR 지원 , HDCP 2.3 / 사용전력 : 360W / 3팬 / 두께 : 60mm / 제로팬(0-dB기술) / 백플레이트 / LED 라이트 / ThunderMaster / 구성품: 3x8핀 to 16핀 커넥터 / A/S 3년 혜택 최저가 1,898,800원 [하이마트] 삼성카드 / 무이자 최대 6개월 25.01. 등록 관심 대량구매 --> 250몰 VS상품비교 2,052,400 원 가격정보 더보기"
+    },
+    {
+      "category": "gpu",
+      "name": "이엠텍 지포스 RTX 5060 MIRACLE WHITE D7 8GB",
+      "spec": "RTX 5060 / PCIe5.0x16(at x8) / 550W 이상 / 전원 포트 : 8핀 x1 / 가로(길이) : 250mm / 베이스클럭 : 2280 / 부스트클럭 : 2497MHz / 스트림 프로세서 : 3840 / 최대 AI TOPS : 614(FP4) / GDDR7 / 출력단자: HDMI2.1 , DP2.1 / 지원정보 : HDR 지원 , 8K 지원 , HDCP 2.3 / 사용전력 : 145W / 2팬 / 두께 : 45mm / DrMOS / 제로팬(0-dB기술) / 백플레이트 / LED 라이트 / A/S 3년 / 25년 9월부로 측면 고정LED 변경",
+      "price": null,
+      "link": "https://prod.danawa.com/info/?pcode=92044253&cate=112753",
+      "rawText": "이미지보기 동영상 재생 인기 순위 8 이엠텍 지포스 RTX 5060 MIRACLE WHITE D7 8GB RTX 5060 / PCIe5.0x16(at x8) / 550W 이상 / 전원 포트 : 8핀 x1 / 가로(길이) : 250mm / 베이스클럭 : 2280 / 부스트클럭 : 2497MHz / 스트림 프로세서 : 3840 / 최대 AI TOPS : 614(FP4) / GDDR7 / 출력단자: HDMI2.1 , DP2.1 / 지원정보 : HDR 지원 , 8K 지원 , HDCP 2.3 / 사용전력 : 145W / 2팬 / 두께 : 45mm / DrMOS / 제로팬(0-dB기술) / 백플레이트 / LED 라이트 / A/S 3년 / 25년 9월부로 측면 고정LED 변경 혜택 최저가 478,800원 [하이마트] 삼성카드 / 무이자 최대 6개월 25.06. 등록 관심 대량구매 --> 222몰 VS상품비교 509,120 원 가격정보 더보기"
+    },
+    {
+      "category": "gpu",
+      "name": "ASUS PRIME 라데온 RX 9070 XT OC D6 16GB 대원씨티에스",
+      "spec": "RX 9070 XT / PCIe5.0x16 / 750W 이상 / 전원 포트 : 8핀 x3 / 가로(길이) : 312mm / 부스트클럭 : 3010MHz / OC클럭 : 3030MHz / 스트림 프로세서 : 4096 / 최대 AI TOPS : 1557(INT4) / GDDR6 / VRAM 대역폭 : 640 GB/s / 출력단자: HDMI2.1 , DP2.1 / 지원정보 : HDCP 2.3 , 8K 지원 , HDR 지원 / 3팬 / 두께 : 50mm / 백플레이트 / Dual BIOS / 제로팬(0-dB기술) / A/S 3년",
+      "price": null,
+      "link": "https://prod.danawa.com/info/?pcode=77461292&cate=112753",
+      "rawText": "이미지보기 인기 순위 9 ASUS PRIME 라데온 RX 9070 XT OC D6 16GB 대원씨티에스 RX 9070 XT / PCIe5.0x16 / 750W 이상 / 전원 포트 : 8핀 x3 / 가로(길이) : 312mm / 부스트클럭 : 3010MHz / OC클럭 : 3030MHz / 스트림 프로세서 : 4096 / 최대 AI TOPS : 1557(INT4) / GDDR6 / VRAM 대역폭 : 640 GB/s / 출력단자: HDMI2.1 , DP2.1 / 지원정보 : HDCP 2.3 , 8K 지원 , HDR 지원 / 3팬 / 두께 : 50mm / 백플레이트 / Dual BIOS / 제로팬(0-dB기술) / A/S 3년 혜택 최저가 981,100원 [SSG.COM] NH농협카드 / 무이자 최대 3개월 25.03. 등록 관심 대량구매 --> 155몰 VS상품비교 1,016,610 원 가격정보 더보기"
+    },
+    {
+      "category": "gpu",
+      "name": "PALIT 지포스 RTX 5060 Ti INFINITY 3 D7 16GB 이엠텍",
+      "spec": "RTX 5060 Ti / PCIe5.0x16(at x8) / 600W 이상 / 전원 포트 : 8핀 x1 / 가로(길이) : 291.9mm / 베이스클럭 : 2407 / 부스트클럭 : 2572MHz / 스트림 프로세서 : 4608 / 최대 AI TOPS : 759(FP4) / GDDR7 / 출력단자: HDMI2.1 , DP2.1 / 지원정보 : HDR 지원 , HDCP 2.3 , 8K 지원 / 사용전력 : 180W / 3팬 / 두께 : 41.3mm / DrMOS / 제로팬(0-dB기술) / 백플레이트 / ThunderMaster / A/S 3년",
+      "price": null,
+      "link": "https://prod.danawa.com/info/?pcode=81037490&cate=112753",
+      "rawText": "이미지보기 인기 순위 10 PALIT 지포스 RTX 5060 Ti INFINITY 3 D7 16GB 이엠텍 RTX 5060 Ti / PCIe5.0x16(at x8) / 600W 이상 / 전원 포트 : 8핀 x1 / 가로(길이) : 291.9mm / 베이스클럭 : 2407 / 부스트클럭 : 2572MHz / 스트림 프로세서 : 4608 / 최대 AI TOPS : 759(FP4) / GDDR7 / 출력단자: HDMI2.1 , DP2.1 / 지원정보 : HDR 지원 , HDCP 2.3 , 8K 지원 / 사용전력 : 180W / 3팬 / 두께 : 41.3mm / DrMOS / 제로팬(0-dB기술) / 백플레이트 / ThunderMaster / A/S 3년 혜택 최저가 829,000원 [하이마트] 삼성카드 / 무이자 최대 6개월 25.04. 등록 관심 대량구매 --> 227몰 VS상품비교 878,990 원 가격정보 더보기"
+    },
+    {
+      "category": "gpu",
+      "name": "MSI 지포스 RTX 5080 뱅가드 SOC D7 16GB 하이퍼프로져",
+      "spec": "RTX 5080 / PCIe5.0x16 / 850W 이상 / 전원 포트 : 16핀(12V2x6) x1 / 가로(길이) : 357mm / 부스트클럭 : 2730MHz / OC클럭 : 2745MHz / 스트림 프로세서 : 10752 / 최대 AI TOPS : 1801(FP4) / GDDR7 / VRAM 대역폭 : 960 GB/s / 출력단자: HDMI2.1 , DP2.1 / 지원정보 : HDCP 2.3 , 8K 지원 , HDR 지원 / 사용전력 : 360W / 3팬 / 두께 : 66mm / LED 라이트 / 백플레이트 / Dual BIOS / DrMOS / 제로팬(0-dB기술) / MYSTIC LIGHT / 구성품: 3x8핀 to 16핀 커넥터, VGA지지대 / A/S 3년",
+      "price": null,
+      "link": "https://prod.danawa.com/info/?pcode=75541700&cate=112753",
+      "rawText": "이미지보기 동영상 재생 인기 순위 11 MSI 지포스 RTX 5080 뱅가드 SOC D7 16GB 하이퍼프로져 RTX 5080 / PCIe5.0x16 / 850W 이상 / 전원 포트 : 16핀(12V2x6) x1 / 가로(길이) : 357mm / 부스트클럭 : 2730MHz / OC클럭 : 2745MHz / 스트림 프로세서 : 10752 / 최대 AI TOPS : 1801(FP4) / GDDR7 / VRAM 대역폭 : 960 GB/s / 출력단자: HDMI2.1 , DP2.1 / 지원정보 : HDCP 2.3 , 8K 지원 , HDR 지원 / 사용전력 : 360W / 3팬 / 두께 : 66mm / LED 라이트 / 백플레이트 / Dual BIOS / DrMOS / 제로팬(0-dB기술) / MYSTIC LIGHT / 구성품: 3x8핀 to 16핀 커넥터, VGA지지대 / A/S 3년 혜택 최저가 2,134,000원 [하이마트] 삼성카드 / 무이자 최대 6개월 25.02. 등록 관심 대량"
+    },
+    {
+      "category": "gpu",
+      "name": "GIGABYTE 지포스 RTX 5060 Ti WINDFORCE MAX OC D7 8GB 피씨디렉트",
+      "spec": "RTX 5060 Ti / PCIe5.0x16(at x8) / 650W 이상 / 전원 포트 : 8핀 x1 / 가로(길이) : 208mm / 베이스클럭 : 2407 / 부스트클럭 : 2587MHz / 스트림 프로세서 : 4608 / 최대 AI TOPS : 759(FP4) / GDDR7 / 출력단자: HDMI2.1 , DP2.1 / 지원정보 : 8K 지원 , HDCP 2.3 , HDR 지원 / 2팬 / 두께 : 40mm / 백플레이트 / 제로팬(0-dB기술) / Control Center / A/S 3년",
+      "price": null,
+      "link": "https://prod.danawa.com/info/?pcode=93704759&cate=112753",
+      "rawText": "이미지보기 인기 순위 12 GIGABYTE 지포스 RTX 5060 Ti WINDFORCE MAX OC D7 8GB 피씨디렉트 RTX 5060 Ti / PCIe5.0x16(at x8) / 650W 이상 / 전원 포트 : 8핀 x1 / 가로(길이) : 208mm / 베이스클럭 : 2407 / 부스트클럭 : 2587MHz / 스트림 프로세서 : 4608 / 최대 AI TOPS : 759(FP4) / GDDR7 / 출력단자: HDMI2.1 , DP2.1 / 지원정보 : 8K 지원 , HDCP 2.3 , HDR 지원 / 2팬 / 두께 : 40mm / 백플레이트 / 제로팬(0-dB기술) / Control Center / A/S 3년 혜택 최저가 587,170원 [하이마트] 삼성카드 / 무이자 최대 6개월 25.07. 등록 관심 대량구매 --> 201몰 VS상품비교 594,600 원 가격정보 더보기"
+    },
+    {
+      "category": "gpu",
+      "name": "ASRock 라데온 RX 9070 XT CHALLENGER D6 16GB 대원씨티에스",
+      "spec": "RX 9070 XT / PCIe5.0x16 / 800W 이상 / 전원 포트 : 8핀 x2 / 가로(길이) : 290mm / 부스트클럭 : 2970MHz / 스트림 프로세서 : 4096 / 최대 AI TOPS : 1557(INT4) / GDDR6 / VRAM 대역폭 : 640 GB/s / 출력단자: HDMI2.1 , DP2.1 / 지원정보 : HDCP 지원 , 8K 지원 , HDR 지원 / 3팬 / 두께 : 56mm / LED 라이트 / 백플레이트 / DrMOS / LED온오프스위치 / 제로팬(0-dB기술) / POLYCHROME",
+      "price": null,
+      "link": "https://prod.danawa.com/info/?pcode=99711887&cate=112753",
+      "rawText": "이미지보기 인기 순위 13 ASRock 라데온 RX 9070 XT CHALLENGER D6 16GB 대원씨티에스 RX 9070 XT / PCIe5.0x16 / 800W 이상 / 전원 포트 : 8핀 x2 / 가로(길이) : 290mm / 부스트클럭 : 2970MHz / 스트림 프로세서 : 4096 / 최대 AI TOPS : 1557(INT4) / GDDR6 / VRAM 대역폭 : 640 GB/s / 출력단자: HDMI2.1 , DP2.1 / 지원정보 : HDCP 지원 , 8K 지원 , HDR 지원 / 3팬 / 두께 : 56mm / LED 라이트 / 백플레이트 / DrMOS / LED온오프스위치 / 제로팬(0-dB기술) / POLYCHROME 혜택 최저가 952,100원 [이마트몰] NH농협카드 / 무이자 최대 3개월 25.10. 등록 관심 대량구매 --> 145몰 VS상품비교 983,870 원 가격정보 더보기"
+    },
+    {
+      "category": "gpu",
+      "name": "ZOTAC GAMING 지포스 RTX 5070 SOLID OC D7 12GB",
+      "spec": "RTX 5070 / PCIe5.0x16 / 650W 이상 / 전원 포트 : 16핀(12V2x6) x1 / 가로(길이) : 304.4mm / 베이스클럭 : 2325 / 부스트클럭 : 2542MHz / 스트림 프로세서 : 6144 / 최대 AI TOPS : 988(FP4) / GDDR7 / VRAM 대역폭 : 672 GB/s / 출력단자: HDMI2.1 , DP2.1 / 지원정보 : HDCP 2.3 , 8K 지원 , HDR 지원 / 사용전력 : 250W / 전원부 : 9+3페이즈 / 3팬 / 두께 : 41.6mm / LED 라이트 / 백플레이트 / 제로팬(0-dB기술) / 구성품: VGA지지대, 2x8핀 to 16핀 커넥터 / A/S 3년",
+      "price": null,
+      "link": "https://prod.danawa.com/info/?pcode=77319413&cate=112753",
+      "rawText": "이미지보기 동영상 재생 인기 순위 14 ZOTAC GAMING 지포스 RTX 5070 SOLID OC D7 12GB RTX 5070 / PCIe5.0x16 / 650W 이상 / 전원 포트 : 16핀(12V2x6) x1 / 가로(길이) : 304.4mm / 베이스클럭 : 2325 / 부스트클럭 : 2542MHz / 스트림 프로세서 : 6144 / 최대 AI TOPS : 988(FP4) / GDDR7 / VRAM 대역폭 : 672 GB/s / 출력단자: HDMI2.1 , DP2.1 / 지원정보 : HDCP 2.3 , 8K 지원 , HDR 지원 / 사용전력 : 250W / 전원부 : 9+3페이즈 / 3팬 / 두께 : 41.6mm / LED 라이트 / 백플레이트 / 제로팬(0-dB기술) / 구성품: VGA지지대, 2x8핀 to 16핀 커넥터 / A/S 3년 혜택 최저가 930,820원 [옥션] 삼성카드 / 무이자 최대 24개월 25.03. 등록 관심 대량구매 --> 182몰 VS상품비교 9"
+    },
+    {
+      "category": "gpu",
+      "name": "XFX 라데온 RX 9060 XT SWIFT DUAL OC D6 16GB",
+      "spec": "RX 9060 XT / PCIe5.0x16 / 450W 이상 / 전원 포트 : 8핀 x1 / 가로(길이) : 270mm / 베이스클럭 : 1900 / 부스트클럭 : 3320MHz / 스트림 프로세서 : 2048 / 최대 AI TOPS : 821(INT4) / GDDR6 / 출력단자: HDMI2.1 , DP2.1 / 지원정보 : 8K 지원 / 사용전력 : 182W / 2팬 / 두께 : 49mm / 백플레이트 / Dual BIOS / 제로팬(0-dB기술) / A/S 3년",
+      "price": null,
+      "link": "https://prod.danawa.com/info/?pcode=92892695&cate=112753",
+      "rawText": "이미지보기 인기 순위 15 XFX 라데온 RX 9060 XT SWIFT DUAL OC D6 16GB RX 9060 XT / PCIe5.0x16 / 450W 이상 / 전원 포트 : 8핀 x1 / 가로(길이) : 270mm / 베이스클럭 : 1900 / 부스트클럭 : 3320MHz / 스트림 프로세서 : 2048 / 최대 AI TOPS : 821(INT4) / GDDR6 / 출력단자: HDMI2.1 , DP2.1 / 지원정보 : 8K 지원 / 사용전력 : 182W / 2팬 / 두께 : 49mm / 백플레이트 / Dual BIOS / 제로팬(0-dB기술) / A/S 3년 25.06. 등록 관심 대량구매 --> 139몰 VS상품비교 639,950 원 가격정보 더보기"
+    },
+    {
+      "category": "gpu",
+      "name": "MSI 지포스 RTX 5060 Ti 벤투스 2X OC 플러스 D7 16GB",
+      "spec": "RTX 5060 Ti / PCIe5.0x16(at x8) / 600W 이상 / 전원 포트 : 8핀 x1 / 가로(길이) : 227mm / 베이스클럭 : 2407 / 부스트클럭 : 2602MHz / OC클럭 : 2617MHz / 스트림 프로세서 : 4608 / 최대 AI TOPS : 759(FP4) / GDDR7 / 출력단자: HDMI2.1 , DP2.1 / 지원정보 : HDCP 2.3 , HDR 지원 , 8K 지원 / 사용전력 : 180W / 2팬 / 두께 : 41mm / 제로팬(0-dB기술) / 백플레이트 / DrMOS",
+      "price": null,
+      "link": "https://prod.danawa.com/info/?pcode=81990338&cate=112753",
+      "rawText": "이미지보기 인기 순위 16 MSI 지포스 RTX 5060 Ti 벤투스 2X OC 플러스 D7 16GB RTX 5060 Ti / PCIe5.0x16(at x8) / 600W 이상 / 전원 포트 : 8핀 x1 / 가로(길이) : 227mm / 베이스클럭 : 2407 / 부스트클럭 : 2602MHz / OC클럭 : 2617MHz / 스트림 프로세서 : 4608 / 최대 AI TOPS : 759(FP4) / GDDR7 / 출력단자: HDMI2.1 , DP2.1 / 지원정보 : HDCP 2.3 , HDR 지원 , 8K 지원 / 사용전력 : 180W / 2팬 / 두께 : 41mm / 제로팬(0-dB기술) / 백플레이트 / DrMOS 혜택 최저가 828,630원 [하이마트] 삼성카드 / 무이자 최대 6개월 25.04. 등록 관심 대량구매 --> 126몰 VS상품비교 859,900 원 가격정보 더보기"
+    },
+    {
+      "category": "gpu",
+      "name": "ZOTAC GAMING 지포스 RTX 5070 Ti SOLID OC D7 16GB",
+      "spec": "RTX 5070 Ti / PCIe5.0x16 / 750W 이상 / 전원 포트 : 16핀(12V2x6) x1 / 가로(길이) : 329.7mm / 베이스클럭 : 2295 / 부스트클럭 : 2482MHz / 스트림 프로세서 : 8960 / 최대 AI TOPS : 1406(FP4) / GDDR7 / VRAM 대역폭 : 896 GB/s / 출력단자: HDMI2.1 , DP2.1 / 지원정보 : HDCP 2.3 , 8K 지원 , HDR 지원 / 사용전력 : 300W / 전원부 : 10+4+3페이즈 / 3팬 / 두께 : 67.8mm / LED 라이트 / 백플레이트 / Dual BIOS / 제로팬(0-dB기술) / SPECTRA / 구성품: 3x8핀 to 16핀 커넥터, VGA지지대 / A/S 3년",
+      "price": null,
+      "link": "https://prod.danawa.com/info/?pcode=76464143&cate=112753",
+      "rawText": "이미지보기 인기 순위 17 ZOTAC GAMING 지포스 RTX 5070 Ti SOLID OC D7 16GB RTX 5070 Ti / PCIe5.0x16 / 750W 이상 / 전원 포트 : 16핀(12V2x6) x1 / 가로(길이) : 329.7mm / 베이스클럭 : 2295 / 부스트클럭 : 2482MHz / 스트림 프로세서 : 8960 / 최대 AI TOPS : 1406(FP4) / GDDR7 / VRAM 대역폭 : 896 GB/s / 출력단자: HDMI2.1 , DP2.1 / 지원정보 : HDCP 2.3 , 8K 지원 , HDR 지원 / 사용전력 : 300W / 전원부 : 10+4+3페이즈 / 3팬 / 두께 : 67.8mm / LED 라이트 / 백플레이트 / Dual BIOS / 제로팬(0-dB기술) / SPECTRA / 구성품: 3x8핀 to 16핀 커넥터, VGA지지대 / A/S 3년 혜택 최저가 1,605,430원 [하이마트] 삼성카드 / 무이자 최대 6개월 25.02. "
+    },
+    {
+      "category": "gpu",
+      "name": "COLORFUL 지포스 RTX 5060 Ti GAMING DUO D7 8GB 도우정보",
+      "spec": "RTX 5060 Ti / PCIe5.0x16(at x8) / 600W 이상 / 전원 포트 : 8핀 x1 / 가로(길이) : 200mm / 베이스클럭 : 2407 / 부스트클럭 : 2572MHz / 스트림 프로세서 : 4608 / 최대 AI TOPS : 759(FP4) / GDDR7 / 출력단자: DP2.1 , HDMI2.1 / 지원정보 : 8K 지원 , HDR 지원 , HDCP 2.3 / 사용전력 : 180W / 2팬 / 두께 : 40mm / 제로팬(0-dB기술) / 백플레이트 / A/S 3년",
+      "price": null,
+      "link": "https://prod.danawa.com/info/?pcode=106736336&cate=112753",
+      "rawText": "이미지보기 인기 순위 18 COLORFUL 지포스 RTX 5060 Ti GAMING DUO D7 8GB 도우정보 RTX 5060 Ti / PCIe5.0x16(at x8) / 600W 이상 / 전원 포트 : 8핀 x1 / 가로(길이) : 200mm / 베이스클럭 : 2407 / 부스트클럭 : 2572MHz / 스트림 프로세서 : 4608 / 최대 AI TOPS : 759(FP4) / GDDR7 / 출력단자: DP2.1 , HDMI2.1 / 지원정보 : 8K 지원 , HDR 지원 , HDCP 2.3 / 사용전력 : 180W / 2팬 / 두께 : 40mm / 제로팬(0-dB기술) / 백플레이트 / A/S 3년 혜택 최저가 588,060원 [하이마트] 삼성카드 / 무이자 최대 6개월 26.02. 등록 관심 대량구매 --> 23몰 VS상품비교 599,390 원 가격정보 더보기"
+    },
+    {
+      "category": "gpu",
+      "name": "GIGABYTE 지포스 RTX 5080 GAMING OC D7 16GB 제이씨현",
+      "spec": "RTX 5080 / PCIe5.0x16 / 850W 이상 / 가로(길이) : 340mm / 부스트클럭 : 2730MHz / 스트림 프로세서 : 10752 / 최대 AI TOPS : 1801(FP4) / GDDR7 / VRAM 대역폭 : 960 GB/s / 출력단자: HDMI2.1 , DP2.1 / 지원정보 : 8K 지원 / 3팬 / 두께 : 70mm / LED 라이트 / 백플레이트 / Dual BIOS / 제로팬(0-dB기술) / 구성품: 3x8핀 to 16핀 커넥터, VGA지지대 / A/S 4년",
+      "price": null,
+      "link": "https://prod.danawa.com/info/?pcode=75184268&cate=112753",
+      "rawText": "이미지보기 인기 순위 19 GIGABYTE 지포스 RTX 5080 GAMING OC D7 16GB 제이씨현 RTX 5080 / PCIe5.0x16 / 850W 이상 / 가로(길이) : 340mm / 부스트클럭 : 2730MHz / 스트림 프로세서 : 10752 / 최대 AI TOPS : 1801(FP4) / GDDR7 / VRAM 대역폭 : 960 GB/s / 출력단자: HDMI2.1 , DP2.1 / 지원정보 : 8K 지원 / 3팬 / 두께 : 70mm / LED 라이트 / 백플레이트 / Dual BIOS / 제로팬(0-dB기술) / 구성품: 3x8핀 to 16핀 커넥터, VGA지지대 / A/S 4년 혜택 최저가 1,958,200원 [하이마트] 삼성카드 / 무이자 최대 6개월 25.01. 등록 관심 대량구매 --> 201몰 VS상품비교 2,049,980 원 가격정보 더보기"
+    },
+    {
+      "category": "gpu",
+      "name": "PALIT 지포스 RTX 5070 Ti GAMINGPRO-S D7 16GB 이엠텍",
+      "spec": "RTX 5070 Ti / PCIe5.0x16 / 750W 이상 / 전원 포트 : 16핀(12V2x6) x1 / 가로(길이) : 331.9mm / 베이스클럭 : 2295 / 부스트클럭 : 2452MHz / 스트림 프로세서 : 8960 / 최대 AI TOPS : 1406(FP4) / GDDR7 / VRAM 대역폭 : 896 GB/s / 출력단자: HDMI2.1 , DP2.1 / 지원정보 : 8K 지원 , HDR 지원 , HDCP 2.3 / 사용전력 : 300W / 3팬 / 두께 : 49.7mm / 제로팬(0-dB기술) / 백플레이트 / LED 라이트 / Dual BIOS / PWM 커넥터 / ThunderMaster / 구성품: 2x8핀 to 16핀 커넥터 / A/S 3년",
+      "price": null,
+      "link": "https://prod.danawa.com/info/?pcode=91768979&cate=112753",
+      "rawText": "이미지보기 인기 순위 20 PALIT 지포스 RTX 5070 Ti GAMINGPRO-S D7 16GB 이엠텍 RTX 5070 Ti / PCIe5.0x16 / 750W 이상 / 전원 포트 : 16핀(12V2x6) x1 / 가로(길이) : 331.9mm / 베이스클럭 : 2295 / 부스트클럭 : 2452MHz / 스트림 프로세서 : 8960 / 최대 AI TOPS : 1406(FP4) / GDDR7 / VRAM 대역폭 : 896 GB/s / 출력단자: HDMI2.1 , DP2.1 / 지원정보 : 8K 지원 , HDR 지원 , HDCP 2.3 / 사용전력 : 300W / 3팬 / 두께 : 49.7mm / 제로팬(0-dB기술) / 백플레이트 / LED 라이트 / Dual BIOS / PWM 커넥터 / ThunderMaster / 구성품: 2x8핀 to 16핀 커넥터 / A/S 3년 혜택 최저가 1,394,410원 [하이마트] 삼성카드 / 무이자 최대 6개월 25.06. 등록 관심 대량구매"
+    },
+    {
+      "category": "psu",
+      "name": "맥스엘리트 STARS CYGNUS 850W 80PLUS골드 풀모듈러 ATX3.1",
+      "spec": "ATX 파워 / 850W / 80 PLUS 골드 / 케이블연결: 풀모듈러 / +12V 가용률: 99% / PF(역률): 99% / 깊이: 145mm / 무상 10년 / 팬리스모드 / 자동 팬 조절 / 대기전력 1W 미만 / 프리볼트",
+      "price": null,
+      "link": "https://prod.danawa.com/info/?pcode=90500312&cate=112777&adinflow=Y",
+      "rawText": "동영상 재생 이미지보기 맥스엘리트 STARS CYGNUS 850W 80PLUS골드 풀모듈러 ATX3.1 ATX 파워 / 850W / 80 PLUS 골드 / 케이블연결: 풀모듈러 / +12V 가용률: 99% / PF(역률): 99% / 깊이: 145mm / 무상 10년 / 팬리스모드 / 자동 팬 조절 / 대기전력 1W 미만 / 프리볼트 더보기 ATX 파워 / 850W / 80 PLUS 골드 / 케이블연결 : 풀모듈러 / +12V 싱글레일 / +12V 가용률 : 99% / 액티브PFC / PF(역률) : 99% / 140mm 팬 / 깊이 : 145mm / 무상 10년 / [커넥터] 메인전원 : 24핀(20+4) / 보조전원 : (4+4)핀x2 / PCIe 16핀(12+4) : 12V2x6 1개 / PCIe 8핀(6+2) : 3개 / SATA : 7개 / SATA3.3 : 1개 / IDE 4핀 : 4개 / [부가기능] 팬리스모드 / 자동 팬 조절 / 대기전력 1W 미만 / 프리볼트 닫기 "
+    },
+    {
+      "category": "psu",
+      "name": "마이크로닉스 Classic II 풀체인지 700W 80PLUS실버 ATX3.1",
+      "spec": "ATX 파워 / 700W / 80 PLUS 실버 / ETA인증: SILVER / LAMBDA인증: STANDARD++ / 전압변동: ±0.5% / +12V 가용률: 100% / PF(역률): 99% / 깊이: 140mm / 무상 7년 / 대기전력 1W 미만",
+      "price": null,
+      "link": "https://prod.danawa.com/info/?pcode=96986309&cate=112777&adinflow=Y",
+      "rawText": "동영상 재생 이미지보기 마이크로닉스 Classic II 풀체인지 700W 80PLUS실버 ATX3.1 ATX 파워 / 700W / 80 PLUS 실버 / ETA인증: SILVER / LAMBDA인증: STANDARD++ / 전압변동: ±0.5% / +12V 가용률: 100% / PF(역률): 99% / 깊이: 140mm / 무상 7년 / 대기전력 1W 미만 더보기 ATX 파워 / 700W / 80 PLUS 실버 / ETA인증 : SILVER / LAMBDA인증 : STANDARD++ / 전압변동 : ±0.5% / +12V 싱글레일 / +12V 가용률 : 100% / 액티브PFC / PF(역률) : 99% / 120mm 팬 / 깊이 : 140mm / 무상 7년 / [커넥터] 메인전원 : 24핀 / 보조전원 : 8핀x1, (4+4)핀x1 / PCIe 16핀(12+4) : 12V2x6 1개 / PCIe 8핀(6+2) : 2개 / SATA : 6개 / IDE 4핀 : 4개 / [부가기능] "
+    },
+    {
+      "category": "psu",
+      "name": "darkFlash 퍼펙트모스트 850W 80PLUS골드 풀모듈러 ATX3.1 블랙",
+      "spec": "ATX 파워 / 850W / 80 PLUS 골드 / 케이블연결: 풀모듈러 / ETA인증: PLATINUM / LAMBDA인증: A- / +12V 가용률: 100% / PF(역률): 99% / 깊이: 140mm / 무상 10년 / 팬리스모드 / 자동 팬 조절 / 대기전력 1W 미만",
+      "price": null,
+      "link": "https://prod.danawa.com/info/?pcode=75938642&cate=112777&adinflow=Y",
+      "rawText": "이미지보기 darkFlash 퍼펙트모스트 850W 80PLUS골드 풀모듈러 ATX3.1 블랙 ATX 파워 / 850W / 80 PLUS 골드 / 케이블연결: 풀모듈러 / ETA인증: PLATINUM / LAMBDA인증: A- / +12V 가용률: 100% / PF(역률): 99% / 깊이: 140mm / 무상 10년 / 팬리스모드 / 자동 팬 조절 / 대기전력 1W 미만 더보기 ATX 파워 / 850W / 80 PLUS 골드 / 케이블연결 : 풀모듈러 / ETA인증 : PLATINUM / LAMBDA인증 : A- / +12V 싱글레일 / +12V 가용률 : 100% / 액티브PFC / PF(역률) : 99% / 120mm 팬 / 깊이 : 140mm / 무상 10년 / [커넥터] 메인전원 : 24핀(20+4) / 보조전원 : (4+4)핀x2 / PCIe 16핀(12+4) : 12V2x6 1개 / PCIe 8핀(6+2) : 3개 / SATA : 7개 / IDE 4핀 : 5개 / [부가기"
+    },
+    {
+      "category": "psu",
+      "name": "잘만 MegaMax II 700W 80PLUS브론즈 ATX3.1",
+      "spec": "ATX 파워 / 700W / 80 PLUS 브론즈 / ETA인증: SILVER / LAMBDA인증: A- / +12V 가용률: 100% / PF(역률): 99% / 깊이: 140mm / 무상 7년 / 대기전력 1W 미만 / 플랫케이블",
+      "price": null,
+      "link": "https://prod.danawa.com/info/?pcode=74056925&cate=112777&adinflow=Y",
+      "rawText": "이미지보기 잘만 MegaMax II 700W 80PLUS브론즈 ATX3.1 ATX 파워 / 700W / 80 PLUS 브론즈 / ETA인증: SILVER / LAMBDA인증: A- / +12V 가용률: 100% / PF(역률): 99% / 깊이: 140mm / 무상 7년 / 대기전력 1W 미만 / 플랫케이블 더보기 ATX 파워 / 700W / 80 PLUS 브론즈 / ETA인증 : SILVER / LAMBDA인증 : A- / +12V 싱글레일 / +12V 가용률 : 100% / 액티브PFC / PF(역률) : 99% / 120mm 팬 / 깊이 : 140mm / 무상 7년 / [커넥터] 메인전원 : 24핀(20+4) / 보조전원 : 8핀x1, (4+4)핀x1 / PCIe 16핀(12+4) : 12V2x6 1개 / PCIe 8핀(6+2) : 2개 / SATA : 6개 / IDE 4핀 : 4개 / FDD : 1개 / [부가기능] 대기전력 1W 미만 / 플랫케이블 닫기 25.01. 등록 관"
+    },
+    {
+      "category": "psu",
+      "name": "마이크로닉스 Classic II 850W 80PLUS골드 풀모듈러 ATX3.1",
+      "spec": "ATX 파워 / 850W / 80 PLUS 골드 / 케이블연결 : 풀모듈러 / 전압변동 : ±0.5% / PF(역률) : 99% / 깊이 : 140mm / 무상 10년 / 팬리스모드 / 자동 팬 조절 / 대기전력 1W 미만 / 플랫케이블 / [변경사항] 25년 7월 PCIe 8핀(6+2) 2개→3개로 변경",
+      "price": null,
+      "link": "https://prod.danawa.com/info/?pcode=51815078&cate=112777",
+      "rawText": "이미지보기 인기 순위 1 마이크로닉스 Classic II 850W 80PLUS골드 풀모듈러 ATX3.1 [6월 1주차] 파워 중 가장 많이 조회된 상품이에요 ATX 파워 / 850W / 80 PLUS 골드 / 케이블연결 : 풀모듈러 / 전압변동 : ±0.5% / PF(역률) : 99% / 깊이 : 140mm / 무상 10년 / 팬리스모드 / 자동 팬 조절 / 대기전력 1W 미만 / 플랫케이블 / [변경사항] 25년 7월 PCIe 8핀(6+2) 2개→3개로 변경 더보기 ATX 파워 / 850W / 80 PLUS 골드 / 케이블연결 : 풀모듈러 / 전압변동 : ±0.5% / +12V 싱글레일 / 액티브PFC / PF(역률) : 99% / 120mm 팬 / 깊이 : 140mm / 무상 10년 / [커넥터] 메인전원 : 24핀(20+4) / 보조전원 : 8핀x1, (4+4)핀x1 / PCIe 16핀(12+4) : 12V2x6 1개 / PCIe 8핀(6+2) : 3개 / SATA : 8개 /"
+    },
+    {
+      "category": "psu",
+      "name": "마이크로닉스 Classic II 풀체인지 700W 80PLUS실버 ATX3.1",
+      "spec": "ATX 파워 / 700W / 80 PLUS 실버 / ETA인증 : SILVER / LAMBDA인증 : STANDARD++ / 전압변동 : ±0.5% / +12V 가용률 : 100% / PF(역률) : 99% / 깊이 : 140mm / 무상 7년 / 대기전력 1W 미만",
+      "price": null,
+      "link": "https://prod.danawa.com/info/?pcode=96986309&cate=112777",
+      "rawText": "이미지보기 동영상 재생 인기 순위 2 마이크로닉스 Classic II 풀체인지 700W 80PLUS실버 ATX3.1 [6월 1주차] 파워 중 쇼핑몰 이동이 2번째로 가장 많았던 상품이에요 ATX 파워 / 700W / 80 PLUS 실버 / ETA인증 : SILVER / LAMBDA인증 : STANDARD++ / 전압변동 : ±0.5% / +12V 가용률 : 100% / PF(역률) : 99% / 깊이 : 140mm / 무상 7년 / 대기전력 1W 미만 더보기 ATX 파워 / 700W / 80 PLUS 실버 / ETA인증 : SILVER / LAMBDA인증 : STANDARD++ / 전압변동 : ±0.5% / +12V 싱글레일 / +12V 가용률 : 100% / 액티브PFC / PF(역률) : 99% / 120mm 팬 / 깊이 : 140mm / 무상 7년 / [커넥터] 메인전원 : 24핀 / 보조전원 : 8핀x1, (4+4)핀x1 / PCIe 16핀(12+4) : 12V2x6 1개 /"
+    },
+    {
+      "category": "psu",
+      "name": "맥스엘리트 STARS GEMINI 750W 80PLUS브론즈 ATX3.1",
+      "spec": "ATX 파워 / 750W / 80 PLUS 브론즈 / 케이블연결 : 케이블일체형 / +12V 가용률 : 100% / PF(역률) : 99% / 깊이 : 145mm / 무상 7년 / 자동 팬 조절 / 대기전력 1W 미만 / 플랫케이블",
+      "price": null,
+      "link": "https://prod.danawa.com/info/?pcode=97362920&cate=112777",
+      "rawText": "이미지보기 인기 순위 3 맥스엘리트 STARS GEMINI 750W 80PLUS브론즈 ATX3.1 ATX 파워 / 750W / 80 PLUS 브론즈 / 케이블연결 : 케이블일체형 / +12V 가용률 : 100% / PF(역률) : 99% / 깊이 : 145mm / 무상 7년 / 자동 팬 조절 / 대기전력 1W 미만 / 플랫케이블 더보기 ATX 파워 / 750W / 80 PLUS 브론즈 / 케이블연결 : 케이블일체형 / +12V 싱글레일 / +12V 가용률 : 100% / 액티브PFC / PF(역률) : 99% / 140mm 팬 / 깊이 : 145mm / 무상 7년 / [커넥터] 메인전원 : 24핀(20+4) / 보조전원 : (4+4)핀x2 / PCIe 16핀(12+4) : 12V2x6 1개 / PCIe 8핀(6+2) : 2개 / SATA : 4개 / IDE 4핀 : 2개 / [부가기능] 자동 팬 조절 / 대기전력 1W 미만 / 플랫케이블 닫기 혜택 최저가 63,240원 [롯데ON] "
+    },
+    {
+      "category": "psu",
+      "name": "SuperFlower SF-1000F14GE LEADEX III GOLD UP ATX3.1",
+      "spec": "ATX 파워 / 1000W / 80 PLUS 골드 / 케이블연결 : 풀모듈러 / 전압변동 : ±0.5% / +12V 가용률 : 99% / PF(역률) : 99% / 깊이 : 150mm / 무상 10년 / 팬리스모드 / 자동 팬 조절 / 프리볼트 / 플랫케이블",
+      "price": null,
+      "link": "https://prod.danawa.com/info/?pcode=69468725&cate=112777",
+      "rawText": "이미지보기 인기 순위 4 SuperFlower SF-1000F14GE LEADEX III GOLD UP ATX3.1 [6월 1주차] 파워 중 쇼핑몰 이동이 1번째로 가장 많았던 상품이에요 ATX 파워 / 1000W / 80 PLUS 골드 / 케이블연결 : 풀모듈러 / 전압변동 : ±0.5% / +12V 가용률 : 99% / PF(역률) : 99% / 깊이 : 150mm / 무상 10년 / 팬리스모드 / 자동 팬 조절 / 프리볼트 / 플랫케이블 더보기 ATX 파워 / 1000W / 80 PLUS 골드 / 케이블연결 : 풀모듈러 / 전압변동 : ±0.5% / +12V 싱글레일 / +12V 가용률 : 99% / 액티브PFC / PF(역률) : 99% / 140mm 팬 / 깊이 : 150mm / 무상 10년 / [커넥터] 메인전원 : 24핀(20+4) / 보조전원 : (4+4)핀x2 / PCIe 16핀(12+4) : 12V2x6 1개 / PCIe 8핀(6+2) : 4개 / SATA : 8개"
+    },
+    {
+      "category": "psu",
+      "name": "darkFlash 퍼펙트모스트 850W 80PLUS골드 풀모듈러 ATX3.1 블랙",
+      "spec": "ATX 파워 / 850W / 80 PLUS 골드 / 케이블연결 : 풀모듈러 / ETA인증 : PLATINUM / LAMBDA인증 : A- / +12V 가용률 : 100% / PF(역률) : 99% / 깊이 : 140mm / 무상 10년 / 팬리스모드 / 자동 팬 조절 / 대기전력 1W 미만",
+      "price": null,
+      "link": "https://prod.danawa.com/info/?pcode=75938642&cate=112777",
+      "rawText": "이미지보기 인기 순위 5 darkFlash 퍼펙트모스트 850W 80PLUS골드 풀모듈러 ATX3.1 블랙 ATX 파워 / 850W / 80 PLUS 골드 / 케이블연결 : 풀모듈러 / ETA인증 : PLATINUM / LAMBDA인증 : A- / +12V 가용률 : 100% / PF(역률) : 99% / 깊이 : 140mm / 무상 10년 / 팬리스모드 / 자동 팬 조절 / 대기전력 1W 미만 더보기 ATX 파워 / 850W / 80 PLUS 골드 / 케이블연결 : 풀모듈러 / ETA인증 : PLATINUM / LAMBDA인증 : A- / +12V 싱글레일 / +12V 가용률 : 100% / 액티브PFC / PF(역률) : 99% / 120mm 팬 / 깊이 : 140mm / 무상 10년 / [커넥터] 메인전원 : 24핀(20+4) / 보조전원 : (4+4)핀x2 / PCIe 16핀(12+4) : 12V2x6 1개 / PCIe 8핀(6+2) : 3개 / SATA : 7개 / IDE "
+    },
+    {
+      "category": "psu",
+      "name": "맥스엘리트 STARS ARIES 650W 80PLUS스탠다드",
+      "spec": "ATX 파워 / 80 PLUS 스탠다드 / 케이블연결: 케이블일체형 / PF(역률): 99% / 깊이: 145mm / 무상 5년 / 자동 팬 조절 / 대기전력 1W 미만 / 플랫케이블",
+      "price": null,
+      "link": "https://prod.danawa.com/info/?pcode=122667428&cate=112777",
+      "rawText": "이미지보기 맥스엘리트 STARS ARIES 650W 80PLUS스탠다드 ATX 파워 / 80 PLUS 스탠다드 / 케이블연결: 케이블일체형 / PF(역률): 99% / 깊이: 145mm / 무상 5년 / 자동 팬 조절 / 대기전력 1W 미만 / 플랫케이블 더보기 ATX 파워 / 80 PLUS 스탠다드 / 케이블연결 : 케이블일체형 / +12V 싱글레일 / 액티브PFC / PF(역률) : 99% / 140mm / 깊이 : 145mm / 무상 5년 / [커넥터] 메인전원 : 24핀(20+4) / 보조전원 : (4+4)핀x1 / PCIe 8핀(6+2) : 2개 / SATA : 4개 / IDE 4핀 : 2개 / [부가기능] 자동 팬 조절 / 대기전력 1W 미만 / 플랫케이블 닫기 26.05. 등록 관심 25몰 VS상품비교 44,790 원 가격정보 더보기"
+    },
+    {
+      "category": "psu",
+      "name": "SuperFlower SF-1000F14GE LEADEX III GOLD UP ATX3.1",
+      "spec": "ATX 파워 / 1000W / 80 PLUS 골드 / 케이블연결: 풀모듈러 / 전압변동: ±0.5% / +12V 가용률: 99% / PF(역률): 99% / 깊이: 150mm / 무상 10년 / 팬리스모드 / 자동 팬 조절 / 프리볼트 / 플랫케이블",
+      "price": null,
+      "link": "https://prod.danawa.com/info/?pcode=69468725&cate=112777",
+      "rawText": "이미지보기 SuperFlower SF-1000F14GE LEADEX III GOLD UP ATX3.1 ATX 파워 / 1000W / 80 PLUS 골드 / 케이블연결: 풀모듈러 / 전압변동: ±0.5% / +12V 가용률: 99% / PF(역률): 99% / 깊이: 150mm / 무상 10년 / 팬리스모드 / 자동 팬 조절 / 프리볼트 / 플랫케이블 더보기 ATX 파워 / 1000W / 80 PLUS 골드 / 케이블연결 : 풀모듈러 / 전압변동 : ±0.5% / +12V 싱글레일 / +12V 가용률 : 99% / 액티브PFC / PF(역률) : 99% / 140mm 팬 / 깊이 : 150mm / 무상 10년 / [커넥터] 메인전원 : 24핀(20+4) / 보조전원 : (4+4)핀x2 / PCIe 16핀(12+4) : 12V2x6 1개 / PCIe 8핀(6+2) : 4개 / SATA : 8개 / IDE 4핀 : 4개 / [부가기능] 팬리스모드 / 자동 팬 조절 / 프리볼트 / 플랫케이"
+    },
+    {
+      "category": "psu",
+      "name": "마이크로닉스 Classic II 750W 80PLUS골드 풀모듈러 ATX3.1",
+      "spec": "ATX 파워 / 750W / 80 PLUS 골드 / 케이블연결 : 풀모듈러 / 전압변동 : ±0.2% / +12V 가용률 : 100% / PF(역률) : 99% / 깊이 : 140mm / 무상 10년 / 팬리스모드 / 자동 팬 조절 / 대기전력 1W 미만 / 플랫케이블",
+      "price": null,
+      "link": "https://prod.danawa.com/info/?pcode=58913891&cate=112777",
+      "rawText": "이미지보기 인기 순위 6 마이크로닉스 Classic II 750W 80PLUS골드 풀모듈러 ATX3.1 ATX 파워 / 750W / 80 PLUS 골드 / 케이블연결 : 풀모듈러 / 전압변동 : ±0.2% / +12V 가용률 : 100% / PF(역률) : 99% / 깊이 : 140mm / 무상 10년 / 팬리스모드 / 자동 팬 조절 / 대기전력 1W 미만 / 플랫케이블 더보기 ATX 파워 / 750W / 80 PLUS 골드 / 케이블연결 : 풀모듈러 / 전압변동 : ±0.2% / +12V 싱글레일 / +12V 가용률 : 100% / 액티브PFC / PF(역률) : 99% / 120mm 팬 / 깊이 : 140mm / 무상 10년 / [커넥터] 메인전원 : 24핀(20+4) / 보조전원 : 8핀x1, (4+4)핀x1 / PCIe 16핀(12+4) : 12V2x6 1개 / PCIe 8핀(6+2) : 2개 / SATA : 8개 / IDE 4핀 : 4개 / FDD : 1개 / [부가기능] "
+    },
+    {
+      "category": "psu",
+      "name": "SuperFlower SF-850F14XG LEADEX VII GOLD ATX3.1",
+      "spec": "ATX 파워 / 850W / 80 PLUS 골드 / 케이블연결 : 풀모듈러 / ETA인증 : PLATINUM / LAMBDA인증 : A / +12V 가용률 : 99% / PF(역률) : 99% / 깊이 : 150mm / 무상 10년 / 팬리스모드 / 자동 팬 조절 / 프리볼트 / 플랫케이블 / [변경사항] 24년 10월 ATX3.1지원하여 변경",
+      "price": null,
+      "link": "https://prod.danawa.com/info/?pcode=20057990&cate=112777",
+      "rawText": "이미지보기 인기 순위 7 SuperFlower SF-850F14XG LEADEX VII GOLD ATX3.1 [6월 1주차] 파워 중 가장 2번째로 많이 조회된 상품이에요 ATX 파워 / 850W / 80 PLUS 골드 / 케이블연결 : 풀모듈러 / ETA인증 : PLATINUM / LAMBDA인증 : A / +12V 가용률 : 99% / PF(역률) : 99% / 깊이 : 150mm / 무상 10년 / 팬리스모드 / 자동 팬 조절 / 프리볼트 / 플랫케이블 / [변경사항] 24년 10월 ATX3.1지원하여 변경 더보기 ATX 파워 / 850W / 80 PLUS 골드 / 케이블연결 : 풀모듈러 / ETA인증 : PLATINUM / LAMBDA인증 : A / +12V 싱글레일 / +12V 가용률 : 99% / 액티브PFC / PF(역률) : 99% / 140mm / 깊이 : 150mm / 무상 10년 / [커넥터] 메인전원 : 24핀(20+4) / 보조전원 : (4+4)핀x2 / PC"
+    },
+    {
+      "category": "psu",
+      "name": "마이크로닉스 Classic II 풀체인지 600W 80PLUS실버 ATX3.1",
+      "spec": "ATX 파워 / 600W / 80 PLUS 실버 / ETA인증 : SILVER / LAMBDA인증 : STANDARD++ / 전압변동 : ±0.5% / +12V 가용률 : 100% / PF(역률) : 99% / 깊이 : 140mm / 무상 7년 / 대기전력 1W 미만",
+      "price": null,
+      "link": "https://prod.danawa.com/info/?pcode=96986270&cate=112777",
+      "rawText": "이미지보기 인기 순위 8 마이크로닉스 Classic II 풀체인지 600W 80PLUS실버 ATX3.1 ATX 파워 / 600W / 80 PLUS 실버 / ETA인증 : SILVER / LAMBDA인증 : STANDARD++ / 전압변동 : ±0.5% / +12V 가용률 : 100% / PF(역률) : 99% / 깊이 : 140mm / 무상 7년 / 대기전력 1W 미만 더보기 ATX 파워 / 600W / 80 PLUS 실버 / ETA인증 : SILVER / LAMBDA인증 : STANDARD++ / 전압변동 : ±0.5% / +12V 싱글레일 / +12V 가용률 : 100% / 액티브PFC / PF(역률) : 99% / 120mm 팬 / 깊이 : 140mm / 무상 7년 / [커넥터] 메인전원 : 24핀 / 보조전원 : 8핀x1, 4핀x1 / PCIe 8핀(6+2) : 2개 / SATA : 6개 / IDE 4핀 : 4개 / [부가기능] 대기전력 1W 미만 닫기 혜택 최저가 59,76"
+    },
+    {
+      "category": "psu",
+      "name": "잘만 MegaMax II 700W 80PLUS브론즈 ATX3.1",
+      "spec": "ATX 파워 / 700W / 80 PLUS 브론즈 / ETA인증 : SILVER / LAMBDA인증 : A- / +12V 가용률 : 100% / PF(역률) : 99% / 깊이 : 140mm / 무상 7년 / 대기전력 1W 미만 / 플랫케이블",
+      "price": null,
+      "link": "https://prod.danawa.com/info/?pcode=74056925&cate=112777",
+      "rawText": "이미지보기 인기 순위 9 잘만 MegaMax II 700W 80PLUS브론즈 ATX3.1 ATX 파워 / 700W / 80 PLUS 브론즈 / ETA인증 : SILVER / LAMBDA인증 : A- / +12V 가용률 : 100% / PF(역률) : 99% / 깊이 : 140mm / 무상 7년 / 대기전력 1W 미만 / 플랫케이블 더보기 ATX 파워 / 700W / 80 PLUS 브론즈 / ETA인증 : SILVER / LAMBDA인증 : A- / +12V 싱글레일 / +12V 가용률 : 100% / 액티브PFC / PF(역률) : 99% / 120mm 팬 / 깊이 : 140mm / 무상 7년 / [커넥터] 메인전원 : 24핀(20+4) / 보조전원 : 8핀x1, (4+4)핀x1 / PCIe 16핀(12+4) : 12V2x6 1개 / PCIe 8핀(6+2) : 2개 / SATA : 6개 / IDE 4핀 : 4개 / FDD : 1개 / [부가기능] 대기전력 1W 미만 / 플랫케이블 닫"
+    },
+    {
+      "category": "psu",
+      "name": "마이크로닉스 Classic II 풀체인지 500W 80PLUS브론즈 ATX3.1",
+      "spec": "ATX 파워 / 500W / 80 PLUS 브론즈 / ETA인증 : BRONZE / LAMBDA인증 : STANDARD++ / 전압변동 : ±0.3% / +12V 가용률 : 100% / PF(역률) : 99% / 깊이 : 140mm / 무상 7년 / 팬리스모드 / 자동 팬 조절 / 대기전력 1W 미만 / 플랫케이블",
+      "price": null,
+      "link": "https://prod.danawa.com/info/?pcode=49642352&cate=112777",
+      "rawText": "이미지보기 인기 순위 10 마이크로닉스 Classic II 풀체인지 500W 80PLUS브론즈 ATX3.1 ATX 파워 / 500W / 80 PLUS 브론즈 / ETA인증 : BRONZE / LAMBDA인증 : STANDARD++ / 전압변동 : ±0.3% / +12V 가용률 : 100% / PF(역률) : 99% / 깊이 : 140mm / 무상 7년 / 팬리스모드 / 자동 팬 조절 / 대기전력 1W 미만 / 플랫케이블 더보기 ATX 파워 / 500W / 80 PLUS 브론즈 / ETA인증 : BRONZE / LAMBDA인증 : STANDARD++ / 전압변동 : ±0.3% / +12V 싱글레일 / +12V 가용률 : 100% / 액티브PFC / PF(역률) : 99% / 120mm 팬 / 깊이 : 140mm / 무상 7년 / [커넥터] 메인전원 : 24핀(20+4) / 보조전원 : 8핀x1, 4핀x1 / PCIe 8핀(6+2) : 2개 / SATA : 6개 / IDE 4핀 : 3개"
+    },
+    {
+      "category": "psu",
+      "name": "엔티스 EG 1000W 80PLUS골드 풀모듈러 ATX3.1",
+      "spec": "ATX 파워 / 1000W / 80 PLUS 골드 / 케이블연결 : 풀모듈러 / +12V 가용률 : 100% / PF(역률) : 99% / 깊이 : 140mm / 무상 10년 / 팬리스모드 / 대기전력 1W 미만 / [변경사항] 25년 3월 PCIe 8핀(6+2) 케이블 커넥터 2개→3개로 변경",
+      "price": null,
+      "link": "https://prod.danawa.com/info/?pcode=65925125&cate=112777",
+      "rawText": "이미지보기 인기 순위 11 엔티스 EG 1000W 80PLUS골드 풀모듈러 ATX3.1 ATX 파워 / 1000W / 80 PLUS 골드 / 케이블연결 : 풀모듈러 / +12V 가용률 : 100% / PF(역률) : 99% / 깊이 : 140mm / 무상 10년 / 팬리스모드 / 대기전력 1W 미만 / [변경사항] 25년 3월 PCIe 8핀(6+2) 케이블 커넥터 2개→3개로 변경 더보기 ATX 파워 / 1000W / 80 PLUS 골드 / 케이블연결 : 풀모듈러 / +12V 싱글레일 / +12V 가용률 : 100% / 액티브PFC / PF(역률) : 99% / 120mm 팬 / 깊이 : 140mm / 무상 10년 / [커넥터] 메인전원 : 24핀(20+4) / 보조전원 : (4+4)핀x2 / PCIe 16핀(12+4) : 12V2x6 1개 / PCIe 8핀(6+2) : 3개 / SATA : 6개 / IDE 4핀 : 3개 / [부가기능] 팬리스모드 / 대기전력 1W 미만 / [변경사"
+    },
+    {
+      "category": "psu",
+      "name": "잘만 GigaMax III 850W 80PLUS브론즈 모듈러 ATX3.1",
+      "spec": "ATX 파워 / 850W / 80 PLUS 브론즈 / 케이블연결 : 세미모듈러 / ETA인증 : SILVER / LAMBDA인증 : STANDARD++ / +12V 가용률 : 100% / PF(역률) : 99% / 깊이 : 140mm / 무상 7년 / 대기전력 1W 미만 / 플랫케이블 / [변경사항] 24년 4월 ATX 3.0 → ATX 3.1 인증추가로 변경 / PCIe 16핀(12+4) 12VHPWR → 12V2x6로 변경",
+      "price": null,
+      "link": "https://prod.danawa.com/info/?pcode=29615807&cate=112777",
+      "rawText": "이미지보기 인기 순위 12 잘만 GigaMax III 850W 80PLUS브론즈 모듈러 ATX3.1 ATX 파워 / 850W / 80 PLUS 브론즈 / 케이블연결 : 세미모듈러 / ETA인증 : SILVER / LAMBDA인증 : STANDARD++ / +12V 가용률 : 100% / PF(역률) : 99% / 깊이 : 140mm / 무상 7년 / 대기전력 1W 미만 / 플랫케이블 / [변경사항] 24년 4월 ATX 3.0 → ATX 3.1 인증추가로 변경 / PCIe 16핀(12+4) 12VHPWR → 12V2x6로 변경 더보기 ATX 파워 / 850W / 80 PLUS 브론즈 / 케이블연결 : 세미모듈러 / ETA인증 : SILVER / LAMBDA인증 : STANDARD++ / +12V 싱글레일 / +12V 가용률 : 100% / 액티브PFC / PF(역률) : 99% / 120mm 팬 / 깊이 : 140mm / 무상 7년 / [커넥터] 메인전원 : 24핀 / 보조전원 : 8"
+    },
+    {
+      "category": "psu",
+      "name": "시소닉 NEW FOCUS V4 GX-850 GOLD 풀모듈러 ATX3.1",
+      "spec": "ATX 파워 / 850W / 80 PLUS 골드 / 케이블연결 : 풀모듈러 / ETA인증 : PLATINUM / LAMBDA인증 : A- / +12V 가용률 : 98% / PF(역률) : 99% / 깊이 : 140mm / 무상 10년 / 팬리스모드 / 자동 팬 조절 / 대기전력 1W 미만",
+      "price": null,
+      "link": "https://prod.danawa.com/info/?pcode=67577021&cate=112777",
+      "rawText": "이미지보기 인기 순위 13 시소닉 NEW FOCUS V4 GX-850 GOLD 풀모듈러 ATX3.1 ATX 파워 / 850W / 80 PLUS 골드 / 케이블연결 : 풀모듈러 / ETA인증 : PLATINUM / LAMBDA인증 : A- / +12V 가용률 : 98% / PF(역률) : 99% / 깊이 : 140mm / 무상 10년 / 팬리스모드 / 자동 팬 조절 / 대기전력 1W 미만 더보기 ATX 파워 / 850W / 80 PLUS 골드 / 케이블연결 : 풀모듈러 / ETA인증 : PLATINUM / LAMBDA인증 : A- / +12V 싱글레일 / +12V 가용률 : 98% / 액티브PFC / PF(역률) : 99% / 135mm 팬 / 깊이 : 140mm / 무상 10년 / [커넥터] 메인전원 : 24핀(20+4) / 보조전원 : (4+4)핀x2 / PCIe 16핀(12+4) : 12V2x6 1개 / PCIe 8핀(6+2) : 3개 / SATA : 8개 / IDE 4핀 : 3"
+    },
+    {
+      "category": "psu",
+      "name": "마이크로닉스 Classic II 풀체인지 600W 80PLUS브론즈 ATX3.1",
+      "spec": "ATX 파워 / 600W / 80 PLUS 브론즈 / ETA인증 : BRONZE / LAMBDA인증 : STANDARD+ / 전압변동 : ±0.3% / +12V 가용률 : 100% / PF(역률) : 99% / 깊이 : 140mm / 무상 7년 / 팬리스모드 / 자동 팬 조절 / 대기전력 1W 미만 / 플랫케이블",
+      "price": null,
+      "link": "https://prod.danawa.com/info/?pcode=49642652&cate=112777",
+      "rawText": "이미지보기 인기 순위 14 마이크로닉스 Classic II 풀체인지 600W 80PLUS브론즈 ATX3.1 ATX 파워 / 600W / 80 PLUS 브론즈 / ETA인증 : BRONZE / LAMBDA인증 : STANDARD+ / 전압변동 : ±0.3% / +12V 가용률 : 100% / PF(역률) : 99% / 깊이 : 140mm / 무상 7년 / 팬리스모드 / 자동 팬 조절 / 대기전력 1W 미만 / 플랫케이블 더보기 ATX 파워 / 600W / 80 PLUS 브론즈 / ETA인증 : BRONZE / LAMBDA인증 : STANDARD+ / 전압변동 : ±0.3% / +12V 싱글레일 / +12V 가용률 : 100% / 액티브PFC / PF(역률) : 99% / 120mm 팬 / 깊이 : 140mm / 무상 7년 / [커넥터] 메인전원 : 24핀(20+4) / 보조전원 : 8핀x1, 4핀x1 / PCIe 8핀(6+2) : 2개 / SATA : 6개 / IDE 4핀 : 4개 /"
+    },
+    {
+      "category": "psu",
+      "name": "마이크로닉스 Classic II 850W 80PLUS골드 풀모듈러 ATX3.1 화이트",
+      "spec": "ATX 파워 / 850W / 80 PLUS 골드 / 케이블연결 : 풀모듈러 / 전압변동 : ±0.5% / PF(역률) : 99% / 깊이 : 140mm / 무상 10년 / 팬리스모드 / 자동 팬 조절 / 대기전력 1W 미만 / 플랫케이블 / [변경사항] 25년 10월 PCIe 8핀(6+2) 2개→3개로 변경",
+      "price": null,
+      "link": "https://prod.danawa.com/info/?pcode=47487848&cate=112777",
+      "rawText": "이미지보기 인기 순위 15 마이크로닉스 Classic II 850W 80PLUS골드 풀모듈러 ATX3.1 화이트 ATX 파워 / 850W / 80 PLUS 골드 / 케이블연결 : 풀모듈러 / 전압변동 : ±0.5% / PF(역률) : 99% / 깊이 : 140mm / 무상 10년 / 팬리스모드 / 자동 팬 조절 / 대기전력 1W 미만 / 플랫케이블 / [변경사항] 25년 10월 PCIe 8핀(6+2) 2개→3개로 변경 더보기 ATX 파워 / 850W / 80 PLUS 골드 / 케이블연결 : 풀모듈러 / 전압변동 : ±0.5% / +12V 싱글레일 / 액티브PFC / PF(역률) : 99% / 120mm 팬 / 깊이 : 140mm / 무상 10년 / [커넥터] 메인전원 : 24핀(20+4) / 보조전원 : 8핀x1, (4+4)핀x1 / PCIe 16핀(12+4) : 12V2x6 1개 / PCIe 8핀(6+2) : 3개 / SATA : 8개 / IDE 4핀 : 4개 / FDD : 1개 "
+    },
+    {
+      "category": "psu",
+      "name": "SuperFlower SF-1200F14XP LEADEX VII PRO PLATINUM 블랙 ATX3.1",
+      "spec": "ATX 파워 / 1200W / 80 PLUS 플래티넘 / 케이블연결 : 풀모듈러 / ETA인증 : PLATINUM / LAMBDA인증 : STANDARD+ / 깊이 : 150mm / 무상 12년 / 팬리스모드 / 프리볼트 / [변경사항] 24년 3월 ATX 3.0 → ATX 3.1 인증추가로 변경 / 24년 6월 A / S 보증기간 10년 → 12년으로 변경 / 25년 1월 PCIe 16핀(12+4) 12V2x6 1개→12V2x6 2개로 변경",
+      "price": null,
+      "link": "https://prod.danawa.com/info/?pcode=32038043&cate=112777",
+      "rawText": "이미지보기 동영상 재생 인기 순위 16 SuperFlower SF-1200F14XP LEADEX VII PRO PLATINUM 블랙 ATX3.1 ATX 파워 / 1200W / 80 PLUS 플래티넘 / 케이블연결 : 풀모듈러 / ETA인증 : PLATINUM / LAMBDA인증 : STANDARD+ / 깊이 : 150mm / 무상 12년 / 팬리스모드 / 프리볼트 / [변경사항] 24년 3월 ATX 3.0 → ATX 3.1 인증추가로 변경 / 24년 6월 A / S 보증기간 10년 → 12년으로 변경 / 25년 1월 PCIe 16핀(12+4) 12V2x6 1개→12V2x6 2개로 변경 더보기 ATX 파워 / 1200W / 80 PLUS 플래티넘 / 케이블연결 : 풀모듈러 / ETA인증 : PLATINUM / LAMBDA인증 : STANDARD+ / 140mm / 깊이 : 150mm / 무상 12년 / [커넥터] 메인전원 : 24핀(20+4) / 보조전원 : (4+4)핀x2 / PCI"
+    },
+    {
+      "category": "psu",
+      "name": "잘만 EcoMax 500W",
+      "spec": "ATX 파워 / 500W / 케이블연결 : 케이블일체형 / +12V 가용률 : 91% / 깊이 : 140mm / 무상 3년 / 대기전력 1W 미만",
+      "price": null,
+      "link": "https://prod.danawa.com/info/?pcode=6216861&cate=112777",
+      "rawText": "이미지보기 인기 순위 17 잘만 EcoMax 500W ATX 파워 / 500W / 케이블연결 : 케이블일체형 / +12V 가용률 : 91% / 깊이 : 140mm / 무상 3년 / 대기전력 1W 미만 더보기 ATX 파워 / 500W / 케이블연결 : 케이블일체형 / +12V 다중레일 / +12V 가용률 : 91% / 120mm 팬 / 깊이 : 140mm / 무상 3년 / [커넥터] 메인전원 : 24핀(20+4) / 보조전원 : (4+4)핀x1 / PCIe 8핀(6+2) : 2개 / SATA : 4개 / IDE 4핀 : 3개 / [부가기능] 대기전력 1W 미만 닫기 혜택 최저가 35,550원 [하이마트] 삼성카드 18.06. 등록 관심 대량구매 --> 208몰 VS상품비교 37,990 원 가격정보 더보기"
+    },
+    {
+      "category": "psu",
+      "name": "MONTECH CENTURY II 850 80PLUS골드 풀모듈러 ATX3.1",
+      "spec": "ATX 파워 / 850W / 80 PLUS 골드 / 케이블연결 : 풀모듈러 / ETA인증 : PLATINUM / LAMBDA인증 : A- / +12V 가용률 : 99% / PF(역률) : 99% / 깊이 : 140mm / 무상 10년 / 팬리스모드 / 프리볼트",
+      "price": null,
+      "link": "https://prod.danawa.com/info/?pcode=98760509&cate=112777",
+      "rawText": "이미지보기 인기 순위 18 MONTECH CENTURY II 850 80PLUS골드 풀모듈러 ATX3.1 ATX 파워 / 850W / 80 PLUS 골드 / 케이블연결 : 풀모듈러 / ETA인증 : PLATINUM / LAMBDA인증 : A- / +12V 가용률 : 99% / PF(역률) : 99% / 깊이 : 140mm / 무상 10년 / 팬리스모드 / 프리볼트 더보기 ATX 파워 / 850W / 80 PLUS 골드 / 케이블연결 : 풀모듈러 / ETA인증 : PLATINUM / LAMBDA인증 : A- / +12V 싱글레일 / +12V 가용률 : 99% / 액티브PFC / PF(역률) : 99% / 135mm 팬 / 깊이 : 140mm / 무상 10년 / [커넥터] 메인전원 : 24핀(20+4) / 보조전원 : (4+4)핀x2 / PCIe 16핀(12+4) : 12V2x6 1개 / PCIe 8핀(6+2) : 4개 / SATA : 8개 / IDE 4핀 : 4개 / [부가기능] 팬리"
+    },
+    {
+      "category": "case",
+      "name": "darkFlash DPF70 ARGB (화이트)",
+      "spec": "ATX 케이스 / 지원보드규격: ATX, M-ATX, ITX / VGA 길이: 410mm / CPU쿨러 높이: 160mm / 미들타워 / 최대 3개 / 전면 패널 타입: 강화유리 / 측면 패널 타입: 강화유리 / 쿨링팬: 총4개 / 지원파워규격: 표준-ATX / 파워 장착 길이: 230mm / 파워 위치: 하단후면",
+      "price": null,
+      "link": "https://prod.danawa.com/info/?pcode=100271096&cate=112775&adinflow=Y",
+      "rawText": "이미지보기 darkFlash DPF70 ARGB (화이트) ATX 케이스 / 지원보드규격: ATX, M-ATX, ITX / VGA 길이: 410mm / CPU쿨러 높이: 160mm / 미들타워 / 최대 3개 / 전면 패널 타입: 강화유리 / 측면 패널 타입: 강화유리 / 쿨링팬: 총4개 / 지원파워규격: 표준-ATX / 파워 장착 길이: 230mm / 파워 위치: 하단후면 더보기 ATX 케이스 / 지원보드규격 : ATX , M-ATX , ITX / VGA 길이 : 410mm / CPU쿨러 높이 : 160mm / 미들타워 / [패널] 전면 패널 타입 : 강화유리 / 측면 패널 타입 : 강화유리 / [쿨러/튜닝] 쿨링팬 : 총4개 / LED팬: 4개 / 후면 : 120mm LED x1 / 내부 측면: 120mm LED x3 / [크기] 너비(W) : 275mm / 높이(H) : 398mm / 깊이(D) : 425mm / [호환성] 지원파워규격 : 표준-ATX / 파워 장착 길이 : 23"
+    },
+    {
+      "category": "case",
+      "name": "앱코 G31 오메가포스 세븐팬 (블랙)",
+      "spec": "ATX 케이스 / 지원보드규격: ATX, M-ATX, M-ITX / VGA 길이: 400mm / CPU쿨러 높이: 165mm / 미들타워 / 최대 4개 이상 / 전면 패널 타입: 메쉬 / 측면 패널 타입: 강화유리 / 쿨링팬: 총7개 / 지원파워규격: 표준-ATX / 파워 장착 길이: 200mm / 파워 위치: 하단후면",
+      "price": null,
+      "link": "https://prod.danawa.com/info/?pcode=105967793&cate=112775&adinflow=Y",
+      "rawText": "이미지보기 앱코 G31 오메가포스 세븐팬 (블랙) ATX 케이스 / 지원보드규격: ATX, M-ATX, M-ITX / VGA 길이: 400mm / CPU쿨러 높이: 165mm / 미들타워 / 최대 4개 이상 / 전면 패널 타입: 메쉬 / 측면 패널 타입: 강화유리 / 쿨링팬: 총7개 / 지원파워규격: 표준-ATX / 파워 장착 길이: 200mm / 파워 위치: 하단후면 더보기 ATX 케이스 / 지원보드규격 : ATX , M-ATX , M-ITX / VGA 길이 : 400mm / CPU쿨러 높이 : 165mm / 미들타워 / [패널] 전면 패널 타입 : 메쉬 / 측면 패널 타입 : 강화유리 / [쿨러/튜닝] 쿨링팬 : 총7개 / LED팬: 7개 / 후면 : 120mm LED x1 / 전면 : 140mm LED x3 / 상단 : 120mm LED x3 / [크기] 너비(W) : 212mm / 높이(H) : 490mm / 깊이(D) : 460mm / [호환성] 지원파워규격 : 표준-ATX"
+    },
+    {
+      "category": "case",
+      "name": "잘만 D50 (블랙)",
+      "spec": "ATX 케이스 / 지원보드규격: ATX, ATX (후면커넥터), M-ATX, M-ATX (후면커넥터), M-ITX / VGA 길이: 415mm / CPU쿨러 높이: 165mm / 미들타워 / 최대 3개 / 전면 패널 타입: 강화유리 / 측면 패널 타입: 강화유리 / 쿨링팬: 총5개 / 지원파워규격: 표준-ATX / 파워 장착 길이: 180mm / 파워 위치: 하단후면",
+      "price": null,
+      "link": "https://prod.danawa.com/info/?pcode=122650745&cate=112775&adinflow=Y",
+      "rawText": "이미지보기 잘만 D50 (블랙) ATX 케이스 / 지원보드규격: ATX, ATX (후면커넥터), M-ATX, M-ATX (후면커넥터), M-ITX / VGA 길이: 415mm / CPU쿨러 높이: 165mm / 미들타워 / 최대 3개 / 전면 패널 타입: 강화유리 / 측면 패널 타입: 강화유리 / 쿨링팬: 총5개 / 지원파워규격: 표준-ATX / 파워 장착 길이: 180mm / 파워 위치: 하단후면 더보기 ATX 케이스 / 지원보드규격 : ATX , ATX (후면커넥터) , M-ATX , M-ATX (후면커넥터) , M-ITX / VGA 길이 : 415mm / CPU쿨러 높이 : 165mm / 미들타워 / [패널] 전면 패널 타입 : 강화유리 / 측면 패널 타입 : 강화유리 / [쿨러/튜닝] 쿨링팬 : 총5개 / LED팬: 5개 / 후면 : 120mm LED x2 / 내부 측면: 120mm LED x3 / [크기] 너비(W) : 290mm / 높이(H) : 464mm / 깊이(D) "
+    },
+    {
+      "category": "case",
+      "name": "앱코 U30 마린 (화이트)",
+      "spec": "ATX 케이스 / 지원보드규격: ATX, M-ATX, M-ITX / VGA 길이: 400mm / CPU쿨러 높이: 165mm / 미들타워 / 전면 패널 타입: 강화유리 / 측면 패널 타입: 강화유리 / 측면 개폐 방식: 버튼 / 쿨링팬: 총3개 / 지원파워규격: 표준-ATX / 파워 장착 길이: 240mm / 파워 위치: 하단후면",
+      "price": null,
+      "link": "https://prod.danawa.com/info/?pcode=53783246&cate=112775&adinflow=Y",
+      "rawText": "이미지보기 앱코 U30 마린 (화이트) ATX 케이스 / 지원보드규격: ATX, M-ATX, M-ITX / VGA 길이: 400mm / CPU쿨러 높이: 165mm / 미들타워 / 전면 패널 타입: 강화유리 / 측면 패널 타입: 강화유리 / 측면 개폐 방식: 버튼 / 쿨링팬: 총3개 / 지원파워규격: 표준-ATX / 파워 장착 길이: 240mm / 파워 위치: 하단후면 더보기 ATX 케이스 / 지원보드규격 : ATX , M-ATX , M-ITX / VGA 길이 : 400mm / CPU쿨러 높이 : 165mm / 미들타워 / [패널] 전면 패널 타입 : 강화유리 / 측면 패널 타입 : 강화유리 / 측면 개폐 방식 : 버튼 / [쿨러/튜닝] 쿨링팬 : 총3개 / LED팬: 3개 / 후면 : 120mm LED x1 / 내부 측면: 120mm LED x2 / [크기] 너비(W) : 212mm / 깊이(D) : 420mm / 높이(H) : 485mm / [호환성] 지원파워규격 : 표준-ATX"
+    },
+    {
+      "category": "case",
+      "name": "DAVEN D7 Mesh 세븐팬",
+      "spec": "ATX 케이스 / 지원보드규격 : ATX , M-ATX , M-ITX / VGA 길이 : 400mm / CPU쿨러 높이 : 170mm / 미들타워 / 최대 3개 / 전면 패널 타입 : 메쉬 / 측면 패널 타입 : 강화유리 / 측면 개폐 방식 : 버튼 / 쿨링팬 : 총7개 / 지원파워규격 : 표준-ATX / 파워 장착 길이 : 200mm / 파워 위치 : 하단후면",
+      "price": null,
+      "link": "https://prod.danawa.com/info/?pcode=102621416&cate=112775",
+      "rawText": "이미지보기 인기 순위 1 DAVEN D7 Mesh 세븐팬 [6월 1주차] 케이스 중 가장 많이 조회된 상품이에요 ATX 케이스 / 지원보드규격 : ATX , M-ATX , M-ITX / VGA 길이 : 400mm / CPU쿨러 높이 : 170mm / 미들타워 / 최대 3개 / 전면 패널 타입 : 메쉬 / 측면 패널 타입 : 강화유리 / 측면 개폐 방식 : 버튼 / 쿨링팬 : 총7개 / 지원파워규격 : 표준-ATX / 파워 장착 길이 : 200mm / 파워 위치 : 하단후면 더보기 ATX 케이스 / 지원보드규격 : ATX , M-ATX , M-ITX / VGA 길이 : 400mm / CPU쿨러 높이 : 170mm / 미들타워 / [패널] 전면 패널 타입 : 메쉬 / 측면 패널 타입 : 강화유리 / 측면 개폐 방식 : 버튼 / [쿨러/튜닝] 쿨링팬 : 총7개 / LED팬: 7개 / 후면 : 120mm LED x1 / 전면 : 120mm LED x3 / 상단 : 120mm LED x3 /"
+    },
+    {
+      "category": "case",
+      "name": "darkFlash DPF70 ARGB",
+      "spec": "ATX 케이스 / 지원보드규격 : ATX , M-ATX , ITX / VGA 길이 : 410mm / CPU쿨러 높이 : 160mm / 미들타워 / 최대 3개 / 전면 패널 타입 : 강화유리 / 측면 패널 타입 : 강화유리 / 쿨링팬 : 총4개 / 지원파워규격 : 표준-ATX / 파워 장착 길이 : 230mm / 파워 위치 : 하단후면",
+      "price": null,
+      "link": "https://prod.danawa.com/info/?pcode=100271096&cate=112775",
+      "rawText": "이미지보기 인기 순위 2 darkFlash DPF70 ARGB ATX 케이스 / 지원보드규격 : ATX , M-ATX , ITX / VGA 길이 : 410mm / CPU쿨러 높이 : 160mm / 미들타워 / 최대 3개 / 전면 패널 타입 : 강화유리 / 측면 패널 타입 : 강화유리 / 쿨링팬 : 총4개 / 지원파워규격 : 표준-ATX / 파워 장착 길이 : 230mm / 파워 위치 : 하단후면 더보기 ATX 케이스 / 지원보드규격 : ATX , M-ATX , ITX / VGA 길이 : 410mm / CPU쿨러 높이 : 160mm / 미들타워 / [패널] 전면 패널 타입 : 강화유리 / 측면 패널 타입 : 강화유리 / [쿨러/튜닝] 쿨링팬 : 총4개 / LED팬: 4개 / 후면 : 120mm LED x1 / 내부 측면: 120mm LED x3 / [크기] 너비(W) : 275mm / 높이(H) : 398mm / 깊이(D) : 425mm / [호환성] 지원파워규격 : 표준-ATX / "
+    },
+    {
+      "category": "case",
+      "name": "darkFlash DS500 RGB",
+      "spec": "ATX 케이스 / 지원보드규격 : ATX , M-ATX , M-ITX / VGA 길이 : 405mm / CPU쿨러 높이 : 165mm / 미들타워 / 최대 2개 / 전면 패널 타입 : 강화유리 / 측면 패널 타입 : 강화유리 / 쿨링팬 : 총3개 / 지원파워규격 : 표준-ATX / 파워 장착 길이 : 170mm / 파워 위치 : 하단후면",
+      "price": null,
+      "link": "https://prod.danawa.com/info/?pcode=78530048&cate=112775",
+      "rawText": "이미지보기 인기 순위 3 darkFlash DS500 RGB [6월 1주차] 케이스 중 가장 2번째로 많이 조회된 상품이에요 ATX 케이스 / 지원보드규격 : ATX , M-ATX , M-ITX / VGA 길이 : 405mm / CPU쿨러 높이 : 165mm / 미들타워 / 최대 2개 / 전면 패널 타입 : 강화유리 / 측면 패널 타입 : 강화유리 / 쿨링팬 : 총3개 / 지원파워규격 : 표준-ATX / 파워 장착 길이 : 170mm / 파워 위치 : 하단후면 더보기 ATX 케이스 / 지원보드규격 : ATX , M-ATX , M-ITX / VGA 길이 : 405mm / CPU쿨러 높이 : 165mm / 미들타워 / [패널] 전면 패널 타입 : 강화유리 / 측면 패널 타입 : 강화유리 / [쿨러/튜닝] 쿨링팬 : 총3개 / LED팬: 3개 / 후면 : 120mm LED x1 / 내부 측면: 120mm LED x2 / [크기] 너비(W) : 210mm / 높이(H) : 485mm / 깊"
+    },
+    {
+      "category": "case",
+      "name": "DAVEN AQUA 다이버",
+      "spec": "ATX 케이스 / 지원보드규격 : E-ATX , ATX , M-ATX , M-ITX / VGA 길이 : 400mm / CPU쿨러 높이 : 165mm / 미들타워 / 최대 4개 / 전면 패널 타입 : 강화유리 / 측면 패널 타입 : 강화유리 / 측면 개폐 방식 : 버튼 / 쿨링팬 : 총3개 / 지원파워규격 : 표준-ATX / 파워 장착 길이 : 220mm / 파워 위치 : 하단후면",
+      "price": null,
+      "link": "https://prod.danawa.com/info/?pcode=65426303&cate=112775",
+      "rawText": "이미지보기 인기 순위 4 DAVEN AQUA 다이버 ATX 케이스 / 지원보드규격 : E-ATX , ATX , M-ATX , M-ITX / VGA 길이 : 400mm / CPU쿨러 높이 : 165mm / 미들타워 / 최대 4개 / 전면 패널 타입 : 강화유리 / 측면 패널 타입 : 강화유리 / 측면 개폐 방식 : 버튼 / 쿨링팬 : 총3개 / 지원파워규격 : 표준-ATX / 파워 장착 길이 : 220mm / 파워 위치 : 하단후면 더보기 ATX 케이스 / 지원보드규격 : E-ATX , ATX , M-ATX , M-ITX / VGA 길이 : 400mm / CPU쿨러 높이 : 165mm / 미들타워 / [패널] 전면 패널 타입 : 강화유리 / 측면 패널 타입 : 강화유리 / 측면 개폐 방식 : 버튼 / [쿨러/튜닝] 쿨링팬 : 총3개 / LED팬: 3개 / 후면 : 120mm LED x1 / 내부 측면: 120mm LED x2 / [크기] 너비(W) : 215mm / 높이(H) : 49"
+    },
+    {
+      "category": "case",
+      "name": "앱코 G31 오메가포스 세븐팬",
+      "spec": "ATX 케이스 / 지원보드규격 : ATX , M-ATX , M-ITX / VGA 길이 : 400mm / CPU쿨러 높이 : 165mm / 미들타워 / 최대 4개 이상 / 전면 패널 타입 : 메쉬 / 측면 패널 타입 : 강화유리 / 쿨링팬 : 총7개 / 지원파워규격 : 표준-ATX / 파워 장착 길이 : 200mm / 파워 위치 : 하단후면 / G31 오메가포스 → G31 오메가포스 세븐팬 으로 상품명 변경",
+      "price": null,
+      "link": "https://prod.danawa.com/info/?pcode=105967793&cate=112775",
+      "rawText": "이미지보기 인기 순위 5 앱코 G31 오메가포스 세븐팬 ATX 케이스 / 지원보드규격 : ATX , M-ATX , M-ITX / VGA 길이 : 400mm / CPU쿨러 높이 : 165mm / 미들타워 / 최대 4개 이상 / 전면 패널 타입 : 메쉬 / 측면 패널 타입 : 강화유리 / 쿨링팬 : 총7개 / 지원파워규격 : 표준-ATX / 파워 장착 길이 : 200mm / 파워 위치 : 하단후면 / G31 오메가포스 → G31 오메가포스 세븐팬 으로 상품명 변경 더보기 ATX 케이스 / 지원보드규격 : ATX , M-ATX , M-ITX / VGA 길이 : 400mm / CPU쿨러 높이 : 165mm / 미들타워 / [패널] 전면 패널 타입 : 메쉬 / 측면 패널 타입 : 강화유리 / [쿨러/튜닝] 쿨링팬 : 총7개 / LED팬: 7개 / 후면 : 120mm LED x1 / 전면 : 140mm LED x3 / 상단 : 120mm LED x3 / [크기] 너비(W) : 212mm / 높"
+    },
+    {
+      "category": "case",
+      "name": "3RSYS S480 WOOD BTF (블랙)",
+      "spec": "ATX 케이스 / 지원보드규격: ATX, ATX (후면커넥터), M-ATX, M-ATX (후면커넥터), ITX / VGA 길이: 400mm / CPU쿨러 높이: 162mm / 미들타워 / 전면 패널 타입: 강화유리 / 측면 패널 타입: 강화유리 / 쿨링팬: 총4개 / 파워 장착 길이: 200mm",
+      "price": null,
+      "link": "https://prod.danawa.com/info/?pcode=99479786&cate=112775",
+      "rawText": "이미지보기 3RSYS S480 WOOD BTF (블랙) ATX 케이스 / 지원보드규격: ATX, ATX (후면커넥터), M-ATX, M-ATX (후면커넥터), ITX / VGA 길이: 400mm / CPU쿨러 높이: 162mm / 미들타워 / 전면 패널 타입: 강화유리 / 측면 패널 타입: 강화유리 / 쿨링팬: 총4개 / 파워 장착 길이: 200mm 더보기 ATX 케이스 / 지원보드규격 : ATX , ATX (후면커넥터) , M-ATX , M-ATX (후면커넥터) , ITX / VGA 길이 : 400mm / CPU쿨러 높이 : 162mm / 미들타워 / [패널] 전면 패널 타입 : 강화유리 / 측면 패널 타입 : 강화유리 / [쿨러/튜닝] 쿨링팬 : 총4개 / LED팬: 4개 / 후면 : 120mm LED x1 / 전면 : 120mm LED x3 / [크기] 너비(W) : 285mm / 깊이(D) : 440mm / 높이(H) : 410mm / [호환성] 파워 장착 길이 : 200mm"
+    },
+    {
+      "category": "case",
+      "name": "앱코 G50 빅플로우 MESH ARGB BTF (블랙)",
+      "spec": "ATX 케이스 / 지원보드규격: E-ATX, ATX, ATX (후면커넥터), M-ATX, M-ATX (후면커넥터), M-ITX / VGA 길이: 408mm / CPU쿨러 높이: 180mm / 미들타워 / 전면 패널 타입: 메쉬 / 측면 패널 타입: 강화유리 / 쿨링팬: 총4개 / 지원파워규격: 표준-ATX / 파워 장착 길이: 240mm / 파워 위치: 하단후면",
+      "price": null,
+      "link": "https://prod.danawa.com/info/?pcode=99640949&cate=112775",
+      "rawText": "이미지보기 앱코 G50 빅플로우 MESH ARGB BTF (블랙) ATX 케이스 / 지원보드규격: E-ATX, ATX, ATX (후면커넥터), M-ATX, M-ATX (후면커넥터), M-ITX / VGA 길이: 408mm / CPU쿨러 높이: 180mm / 미들타워 / 전면 패널 타입: 메쉬 / 측면 패널 타입: 강화유리 / 쿨링팬: 총4개 / 지원파워규격: 표준-ATX / 파워 장착 길이: 240mm / 파워 위치: 하단후면 더보기 ATX 케이스 / 지원보드규격 : E-ATX , ATX , ATX (후면커넥터) , M-ATX , M-ATX (후면커넥터) , M-ITX / VGA 길이 : 408mm / CPU쿨러 높이 : 180mm / 미들타워 / [패널] 전면 패널 타입 : 메쉬 / 측면 패널 타입 : 강화유리 / [쿨러/튜닝] 쿨링팬 : 총4개 / LED팬: 4개 / 후면 : 140mm LED x1 / 전면 : 140mm LED x3 / [크기] 너비(W) : 238mm / 깊이"
+    },
+    {
+      "category": "case",
+      "name": "앱코 G50 빅플로우 MESH ARGB BTF",
+      "spec": "ATX 케이스 / 지원보드규격 : E-ATX , ATX , ATX (후면커넥터) , M-ATX , M-ATX (후면커넥터) , M-ITX / VGA 길이 : 408mm / CPU쿨러 높이 : 180mm / 미들타워 / 전면 패널 타입 : 메쉬 / 측면 패널 타입 : 강화유리 / 쿨링팬 : 총4개 / 지원파워규격 : 표준-ATX / 파워 장착 길이 : 240mm / 파워 위치 : 하단후면",
+      "price": null,
+      "link": "https://prod.danawa.com/info/?pcode=99640949&cate=112775",
+      "rawText": "이미지보기 인기 순위 6 앱코 G50 빅플로우 MESH ARGB BTF ATX 케이스 / 지원보드규격 : E-ATX , ATX , ATX (후면커넥터) , M-ATX , M-ATX (후면커넥터) , M-ITX / VGA 길이 : 408mm / CPU쿨러 높이 : 180mm / 미들타워 / 전면 패널 타입 : 메쉬 / 측면 패널 타입 : 강화유리 / 쿨링팬 : 총4개 / 지원파워규격 : 표준-ATX / 파워 장착 길이 : 240mm / 파워 위치 : 하단후면 더보기 ATX 케이스 / 지원보드규격 : E-ATX , ATX , ATX (후면커넥터) , M-ATX , M-ATX (후면커넥터) , M-ITX / VGA 길이 : 408mm / CPU쿨러 높이 : 180mm / 미들타워 / [패널] 전면 패널 타입 : 메쉬 / 측면 패널 타입 : 강화유리 / [쿨러/튜닝] 쿨링팬 : 총4개 / LED팬: 4개 / 후면 : 140mm LED x1 / 전면 : 140mm LED x3 / [크기] 너"
+    },
+    {
+      "category": "case",
+      "name": "잘만 N30 백사십",
+      "spec": "ATX 케이스 / 지원보드규격 : ATX , M-ATX , M-ITX / VGA 길이 : 430mm / CPU쿨러 높이 : 180mm / 미들타워 / 최대 4개 / 전면 패널 타입 : 강화유리 / 측면 패널 타입 : 강화유리 / 쿨링팬 : 총3개 / 파워 장착 길이 : 200mm / 파워 위치 : 하단후면",
+      "price": null,
+      "link": "https://prod.danawa.com/info/?pcode=96580280&cate=112775",
+      "rawText": "이미지보기 인기 순위 7 잘만 N30 백사십 ATX 케이스 / 지원보드규격 : ATX , M-ATX , M-ITX / VGA 길이 : 430mm / CPU쿨러 높이 : 180mm / 미들타워 / 최대 4개 / 전면 패널 타입 : 강화유리 / 측면 패널 타입 : 강화유리 / 쿨링팬 : 총3개 / 파워 장착 길이 : 200mm / 파워 위치 : 하단후면 더보기 ATX 케이스 / 지원보드규격 : ATX , M-ATX , M-ITX / VGA 길이 : 430mm / CPU쿨러 높이 : 180mm / 미들타워 / [패널] 전면 패널 타입 : 강화유리 / 측면 패널 타입 : 강화유리 / [쿨러/튜닝] 쿨링팬 : 총3개 / LED팬: 3개 / 후면 : 140mm LED x1 / 내부 측면: 120mm LED x2 / [크기] 너비(W) : 220mm / 높이(H) : 459mm / 깊이(D) : 474mm / [호환성] 파워 장착 길이 : 200mm / 파워 위치 : 하단후면 / [부가기능] L"
+    },
+    {
+      "category": "case",
+      "name": "DAVEN 벤투스 420 MESH ARGB",
+      "spec": "ATX 케이스 / 지원보드규격 : ATX , ATX (후면커넥터) , M-ATX , M-ATX (후면커넥터) , M-ITX / VGA 길이 : 395mm / CPU쿨러 높이 : 175mm / 미들타워 / 전면 패널 타입 : 메쉬 / 측면 패널 타입 : 강화유리 / 쿨링팬 : 총7개 / 지원파워규격 : 표준-ATX / 파워 장착 길이 : 220mm / 파워 위치 : 하단후면",
+      "price": null,
+      "link": "https://prod.danawa.com/info/?pcode=99837545&cate=112775",
+      "rawText": "이미지보기 인기 순위 8 DAVEN 벤투스 420 MESH ARGB ATX 케이스 / 지원보드규격 : ATX , ATX (후면커넥터) , M-ATX , M-ATX (후면커넥터) , M-ITX / VGA 길이 : 395mm / CPU쿨러 높이 : 175mm / 미들타워 / 전면 패널 타입 : 메쉬 / 측면 패널 타입 : 강화유리 / 쿨링팬 : 총7개 / 지원파워규격 : 표준-ATX / 파워 장착 길이 : 220mm / 파워 위치 : 하단후면 더보기 ATX 케이스 / 지원보드규격 : ATX , ATX (후면커넥터) , M-ATX , M-ATX (후면커넥터) , M-ITX / VGA 길이 : 395mm / CPU쿨러 높이 : 175mm / 미들타워 / [패널] 전면 패널 타입 : 메쉬 / 측면 패널 타입 : 강화유리 / [쿨러/튜닝] 쿨링팬 : 총7개 / LED팬: 4개 / 후면 : 140mm LED x1 / 전면 : 140mm LED x3 / 하단: 120mm x3 / [크기] 너비(W"
+    },
+    {
+      "category": "case",
+      "name": "마이크로닉스 WIZMAX 우드리안 MAX",
+      "spec": "ATX 케이스 / 지원보드규격 : ATX , ATX (후면커넥터) , M-ATX , M-ATX (후면커넥터) , ITX / VGA 길이 : 410mm / CPU쿨러 높이 : 160mm / 빅타워 / 최대 5개 / 전면 패널 타입 : 강화유리 / 측면 패널 타입 : 강화유리 / 쿨링팬 : 총4개 / 지원파워규격 : 표준-ATX / 파워 위치 : 상단",
+      "price": null,
+      "link": "https://prod.danawa.com/info/?pcode=79559156&cate=112775",
+      "rawText": "이미지보기 동영상 재생 인기 순위 9 마이크로닉스 WIZMAX 우드리안 MAX [6월 1주차] 케이스 중 쇼핑몰 이동이 1번째로 가장 많았던 상품이에요 ATX 케이스 / 지원보드규격 : ATX , ATX (후면커넥터) , M-ATX , M-ATX (후면커넥터) , ITX / VGA 길이 : 410mm / CPU쿨러 높이 : 160mm / 빅타워 / 최대 5개 / 전면 패널 타입 : 강화유리 / 측면 패널 타입 : 강화유리 / 쿨링팬 : 총4개 / 지원파워규격 : 표준-ATX / 파워 위치 : 상단 더보기 ATX 케이스 / 지원보드규격 : ATX , ATX (후면커넥터) , M-ATX , M-ATX (후면커넥터) , ITX / VGA 길이 : 410mm / CPU쿨러 높이 : 160mm / 빅타워 / [패널] 전면 패널 타입 : 강화유리 / 측면 패널 타입 : 강화유리 / [쿨러/튜닝] 쿨링팬 : 총4개 / LED팬: 4개 / 후면 : 120mm LED x1 / 내부 측면: 120mm"
+    },
+    {
+      "category": "case",
+      "name": "darkFlash DLX21 RGB MESH 강화유리",
+      "spec": "ATX 케이스 / 지원보드규격 : E-ATX , ATX , M-ATX , M-ITX / VGA 길이 : 400mm / CPU쿨러 높이 : 180mm / 미들타워 / 최대 4개 / 측면 패널 타입 : 강화유리 / 측면 개폐 방식 : 스윙도어 / 쿨링팬 : 총4개 / 지원파워규격 : 표준-ATX / 파워 장착 길이 : 235mm / 파워 위치 : 하단후면",
+      "price": null,
+      "link": "https://prod.danawa.com/info/?pcode=11884168&cate=112775",
+      "rawText": "이미지보기 인기 순위 10 darkFlash DLX21 RGB MESH 강화유리 ATX 케이스 / 지원보드규격 : E-ATX , ATX , M-ATX , M-ITX / VGA 길이 : 400mm / CPU쿨러 높이 : 180mm / 미들타워 / 최대 4개 / 측면 패널 타입 : 강화유리 / 측면 개폐 방식 : 스윙도어 / 쿨링팬 : 총4개 / 지원파워규격 : 표준-ATX / 파워 장착 길이 : 235mm / 파워 위치 : 하단후면 더보기 ATX 케이스 / 지원보드규격 : E-ATX , ATX , M-ATX , M-ITX / VGA 길이 : 400mm / CPU쿨러 높이 : 180mm / 미들타워 / [패널] 측면 패널 타입 : 강화유리 / 측면 개폐 방식 : 스윙도어 / [쿨러/튜닝] 쿨링팬 : 총4개 / LED팬: 4개 / 후면 : 140mm LED x1 / 전면 : 140mm LED x3 / [크기] 너비(W) : 233mm / 높이(H) : 493mm / 깊이(D) : 448m"
+    },
+    {
+      "category": "case",
+      "name": "3RSYS S480 WOOD BTF (블랙)",
+      "spec": "ATX 케이스 / 지원보드규격 : ATX , ATX (후면커넥터) , M-ATX , M-ATX (후면커넥터) , ITX / VGA 길이 : 400mm / CPU쿨러 높이 : 162mm / 미들타워 / [패널] 전면 패널 타입 : 강화유리 / 측면 패널 타입 : 강화유리 / [쿨러/튜닝] 쿨링팬 : 총4개 / LED팬: 4개 / 후면 : 120mm LED x1 / 전면 : 120mm LED x3 / [크기] 너비(W) : 285mm / 깊이(D) : 440mm / 높이(H) : 410mm / [호환성] 파워 장착 길이 : 200mm / [부가기능] LED 색상: RGB",
+      "price": null,
+      "link": "https://prod.danawa.com/info/?pcode=99479786&cate=112775",
+      "rawText": "이미지보기 3RSYS S480 WOOD BTF (블랙) ATX 케이스 / 지원보드규격 : ATX , ATX (후면커넥터) , M-ATX , M-ATX (후면커넥터) , ITX / VGA 길이 : 400mm / CPU쿨러 높이 : 162mm / 미들타워 / [패널] 전면 패널 타입 : 강화유리 / 측면 패널 타입 : 강화유리 / [쿨러/튜닝] 쿨링팬 : 총4개 / LED팬: 4개 / 후면 : 120mm LED x1 / 전면 : 120mm LED x3 / [크기] 너비(W) : 285mm / 깊이(D) : 440mm / 높이(H) : 410mm / [호환성] 파워 장착 길이 : 200mm / [부가기능] LED 색상: RGB 25.10. 등록 관심 108몰 VS상품비교 59,990 원 가격정보 더보기"
+    },
+    {
+      "category": "case",
+      "name": "3RSYS L600 Quiet",
+      "spec": "ATX 케이스 / 지원보드규격 : E-ATX , ATX , M-ATX , ITX / VGA 길이 : 400mm / CPU쿨러 높이 : 180mm / 미들타워 / 전면 패널 타입 : 메쉬 / 측면 패널 타입 : 강화유리 / 측면 개폐 방식 : 스윙도어 / 쿨링팬 : 총4개 / 지원파워규격 : 표준-ATX / 파워 장착 길이 : 200mm / 파워 위치 : 하단후면 / E-ATX 최대 길이 277mm / 우측 패널 타공 / 팬허브 기본 제공",
+      "price": null,
+      "link": "https://prod.danawa.com/info/?pcode=17409059&cate=112775",
+      "rawText": "이미지보기 동영상 재생 인기 순위 11 3RSYS L600 Quiet ATX 케이스 / 지원보드규격 : E-ATX , ATX , M-ATX , ITX / VGA 길이 : 400mm / CPU쿨러 높이 : 180mm / 미들타워 / 전면 패널 타입 : 메쉬 / 측면 패널 타입 : 강화유리 / 측면 개폐 방식 : 스윙도어 / 쿨링팬 : 총4개 / 지원파워규격 : 표준-ATX / 파워 장착 길이 : 200mm / 파워 위치 : 하단후면 / E-ATX 최대 길이 277mm / 우측 패널 타공 / 팬허브 기본 제공 더보기 ATX 케이스 / 지원보드규격 : E-ATX , ATX , M-ATX , ITX / VGA 길이 : 400mm / CPU쿨러 높이 : 180mm / 미들타워 / 수직 PCI형태 : 기본형 / [패널] 전면 패널 타입 : 메쉬 / 측면 패널 타입 : 강화유리 / 측면 개폐 방식 : 스윙도어 / [쿨러/튜닝] 쿨링팬 : 총4개 / 후면 : 140mm x1 / 전면 : 140mm"
+    },
+    {
+      "category": "case",
+      "name": "darkFlash DS900 ARGB 강화유리",
+      "spec": "ATX 케이스 / 지원보드규격 : ATX , M-ATX , M-ITX / VGA 길이 : 425mm / CPU쿨러 높이 : 170mm / 미들타워 / 최대 3개 / 전면 패널 타입 : 강화유리 / 측면 패널 타입 : 강화유리 / 쿨링팬 : 총4개 / 지원파워규격 : 표준-ATX / 파워 장착 길이 : 260mm / 파워 위치 : 하단후면 / 24년 4월 장착쿨링팬 C6 ARGB → C7 ARGB으로 변경 / 24년 8월 상단 라디에이터 120, 140, 240, 280, 360 →120, 240, 360으로 변경",
+      "price": null,
+      "link": "https://prod.danawa.com/info/?pcode=32861129&cate=112775",
+      "rawText": "이미지보기 동영상 재생 인기 순위 12 darkFlash DS900 ARGB 강화유리 ATX 케이스 / 지원보드규격 : ATX , M-ATX , M-ITX / VGA 길이 : 425mm / CPU쿨러 높이 : 170mm / 미들타워 / 최대 3개 / 전면 패널 타입 : 강화유리 / 측면 패널 타입 : 강화유리 / 쿨링팬 : 총4개 / 지원파워규격 : 표준-ATX / 파워 장착 길이 : 260mm / 파워 위치 : 하단후면 / 24년 4월 장착쿨링팬 C6 ARGB → C7 ARGB으로 변경 / 24년 8월 상단 라디에이터 120, 140, 240, 280, 360 →120, 240, 360으로 변경 더보기 ATX 케이스 / 지원보드규격 : ATX , M-ATX , M-ITX / VGA 길이 : 425mm / CPU쿨러 높이 : 170mm / 미들타워 / [패널] 전면 패널 타입 : 강화유리 / 측면 패널 타입 : 강화유리 / [쿨러/튜닝] 쿨링팬 : 총4개 / LED팬: 4개 / 후면"
+    },
+    {
+      "category": "case",
+      "name": "앱코 UD51 엑시드 ARGB BTF",
+      "spec": "ATX 케이스 / 지원보드규격 : E-ATX , ATX , ATX (후면커넥터) , M-ATX , M-ATX (후면커넥터) , M-ITX / VGA 길이 : 400mm / CPU쿨러 높이 : 160mm / 미들타워 / 최대 5개 / 전면 패널 타입 : 강화유리 / 측면 패널 타입 : 강화유리 / 쿨링팬 : 총4개 / 지원파워규격 : 표준-ATX / 파워 장착 길이 : 240mm / 파워 위치 : 상단",
+      "price": null,
+      "link": "https://prod.danawa.com/info/?pcode=105968012&cate=112775",
+      "rawText": "이미지보기 인기 순위 13 앱코 UD51 엑시드 ARGB BTF ATX 케이스 / 지원보드규격 : E-ATX , ATX , ATX (후면커넥터) , M-ATX , M-ATX (후면커넥터) , M-ITX / VGA 길이 : 400mm / CPU쿨러 높이 : 160mm / 미들타워 / 최대 5개 / 전면 패널 타입 : 강화유리 / 측면 패널 타입 : 강화유리 / 쿨링팬 : 총4개 / 지원파워규격 : 표준-ATX / 파워 장착 길이 : 240mm / 파워 위치 : 상단 더보기 ATX 케이스 / 지원보드규격 : E-ATX , ATX , ATX (후면커넥터) , M-ATX , M-ATX (후면커넥터) , M-ITX / VGA 길이 : 400mm / CPU쿨러 높이 : 160mm / 미들타워 / 수직 PCI형태 : 슬롯변경형 / [패널] 전면 패널 타입 : 강화유리 / 측면 패널 타입 : 강화유리 / [쿨러/튜닝] 쿨링팬 : 총4개 / LED팬: 4개 / 후면 : 120mm LED x1 / 내"
+    },
+    {
+      "category": "case",
+      "name": "마이크로닉스 WIZMAX 스텔라",
+      "spec": "ATX 케이스 / 지원보드규격 : ATX , ATX (후면커넥터) , M-ATX , M-ATX (후면커넥터) , ITX / VGA 길이 : 425mm / CPU쿨러 높이 : 175mm / 미들타워 / 전면 패널 타입 : 강화유리 / 측면 패널 타입 : 강화유리 / 측면 개폐 방식 : 버튼 / 쿨링팬 : 총4개 / 지원파워규격 : 표준-ATX / 파워 장착 길이 : 160mm / 파워 위치 : 상단",
+      "price": null,
+      "link": "https://prod.danawa.com/info/?pcode=103480457&cate=112775",
+      "rawText": "이미지보기 동영상 재생 인기 순위 14 마이크로닉스 WIZMAX 스텔라 ATX 케이스 / 지원보드규격 : ATX , ATX (후면커넥터) , M-ATX , M-ATX (후면커넥터) , ITX / VGA 길이 : 425mm / CPU쿨러 높이 : 175mm / 미들타워 / 전면 패널 타입 : 강화유리 / 측면 패널 타입 : 강화유리 / 측면 개폐 방식 : 버튼 / 쿨링팬 : 총4개 / 지원파워규격 : 표준-ATX / 파워 장착 길이 : 160mm / 파워 위치 : 상단 더보기 ATX 케이스 / 지원보드규격 : ATX , ATX (후면커넥터) , M-ATX , M-ATX (후면커넥터) , ITX / VGA 길이 : 425mm / CPU쿨러 높이 : 175mm / 미들타워 / [패널] 전면 패널 타입 : 강화유리 / 측면 패널 타입 : 강화유리 / 측면 개폐 방식 : 버튼 / [쿨러/튜닝] 쿨링팬 : 총4개 / LED팬: 4개 / 후면 : 120mm LED x1 / 하단: 120mm LE"
+    },
+    {
+      "category": "case",
+      "name": "darkFlash DLX ULTRA MESH ARGB",
+      "spec": "ATX 케이스 / 지원보드규격 : E-ATX , ATX , ATX (후면커넥터) , M-ATX , M-ATX (후면커넥터) , ITX / VGA 길이 : 480mm / CPU쿨러 높이 : 190mm / 빅타워 / 최대 5개 / 전면 패널 타입 : 메쉬 / 측면 패널 타입 : 통풍구 / 쿨링팬 : 총4개 / 지원파워규격 : 표준-ATX / 파워 장착 길이 : 260mm / 파워 위치 : 하단후면",
+      "price": null,
+      "link": "https://prod.danawa.com/info/?pcode=122617886&cate=112775",
+      "rawText": "이미지보기 동영상 재생 인기 순위 15 darkFlash DLX ULTRA MESH ARGB ATX 케이스 / 지원보드규격 : E-ATX , ATX , ATX (후면커넥터) , M-ATX , M-ATX (후면커넥터) , ITX / VGA 길이 : 480mm / CPU쿨러 높이 : 190mm / 빅타워 / 최대 5개 / 전면 패널 타입 : 메쉬 / 측면 패널 타입 : 통풍구 / 쿨링팬 : 총4개 / 지원파워규격 : 표준-ATX / 파워 장착 길이 : 260mm / 파워 위치 : 하단후면 더보기 ATX 케이스 / 지원보드규격 : E-ATX , ATX , ATX (후면커넥터) , M-ATX , M-ATX (후면커넥터) , ITX / VGA 길이 : 480mm / CPU쿨러 높이 : 190mm / 빅타워 / 수직 PCI형태 : 슬롯변경형 / [패널] 전면 패널 타입 : 메쉬 / 측면 패널 타입 : 통풍구 / [쿨러/튜닝] 쿨링팬 : 총4개 / LED팬: 4개 / 후면 : 140mm LED "
+    },
+    {
+      "category": "case",
+      "name": "Antec FLUX PRO MESH",
+      "spec": "ATX 케이스 / 지원보드규격 : E-ATX , ATX , M-ATX , ITX / VGA 길이 : 455mm / CPU쿨러 높이 : 190mm / 빅타워 / 최대 6개 / 전면 패널 타입 : 메쉬 / 측면 패널 타입 : 강화유리 / 쿨링팬 : 총6개 / 파워 장착 길이 : 180~300mm / 파워 위치 : 하단후면",
+      "price": null,
+      "link": "https://prod.danawa.com/info/?pcode=72470105&cate=112775",
+      "rawText": "이미지보기 동영상 재생 인기 순위 16 Antec FLUX PRO MESH ATX 케이스 / 지원보드규격 : E-ATX , ATX , M-ATX , ITX / VGA 길이 : 455mm / CPU쿨러 높이 : 190mm / 빅타워 / 최대 6개 / 전면 패널 타입 : 메쉬 / 측면 패널 타입 : 강화유리 / 쿨링팬 : 총6개 / 파워 장착 길이 : 180~300mm / 파워 위치 : 하단후면 더보기 ATX 케이스 / 지원보드규격 : E-ATX , ATX , M-ATX , ITX / VGA 길이 : 455mm / CPU쿨러 높이 : 190mm / 빅타워 / [패널] 전면 패널 타입 : 메쉬 / 측면 패널 타입 : 강화유리 / [쿨러/튜닝] 쿨링팬 : 총6개 / 후면 : 140mm x1 / 전면 : 140mm x3 / 하단: 120mm x2 / [크기] 너비(W) : 245mm / 높이(H) : 545mm / 깊이(D) : 530mm / [호환성] 파워 장착 길이 : 180~300mm "
+    },
+    {
+      "category": "case",
+      "name": "DAVEN AQUA Lite",
+      "spec": "M-ATX 케이스 / 지원보드규격 : M-ATX , M-ITX / VGA 길이 : 280mm / CPU쿨러 높이 : 165mm / 미니타워 / 최대 2개 / 전면 패널 타입 : 강화유리 / 측면 패널 타입 : 강화유리 / 쿨링팬 : 총1개 / 지원파워규격 : 표준-ATX / 파워 장착 길이 : 140mm / 파워 위치 : 하단후면",
+      "price": null,
+      "link": "https://prod.danawa.com/info/?pcode=94814495&cate=112775",
+      "rawText": "이미지보기 인기 순위 17 DAVEN AQUA Lite M-ATX 케이스 / 지원보드규격 : M-ATX , M-ITX / VGA 길이 : 280mm / CPU쿨러 높이 : 165mm / 미니타워 / 최대 2개 / 전면 패널 타입 : 강화유리 / 측면 패널 타입 : 강화유리 / 쿨링팬 : 총1개 / 지원파워규격 : 표준-ATX / 파워 장착 길이 : 140mm / 파워 위치 : 하단후면 더보기 M-ATX 케이스 / 지원보드규격 : M-ATX , M-ITX / VGA 길이 : 280mm / CPU쿨러 높이 : 165mm / 미니타워 / [패널] 전면 패널 타입 : 강화유리 / 측면 패널 타입 : 강화유리 / [쿨러/튜닝] 쿨링팬 : 총1개 / LED팬: 1개 / 후면 : 120mm LED x1 / [크기] 너비(W) : 195mm / 높이(H) : 395mm / 깊이(D) : 290mm / [호환성] 지원파워규격 : 표준-ATX / 파워 장착 길이 : 140mm / 파워 위치 : 하단후"
+    }
+  ]
+}
