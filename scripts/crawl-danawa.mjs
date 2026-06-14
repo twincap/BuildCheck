@@ -9,6 +9,15 @@ const categories = {
   case: "https://prod.danawa.com/list/?cate=112775"
 };
 
+const searchSeeds = {
+  cpu: ["9800X3D", "7800X3D", "7500F", "14400F"],
+  motherboard: ["B650M", "B760M", "X870", "Z890"],
+  memory: ["DDR5 6000 32GB", "DDR4 3200 16GB"],
+  gpu: ["RTX 5090", "RTX5090", "RTX 5080", "RTX 5070", "RX 9070 XT"],
+  psu: ["ATX 3.1 850W", "1000W Gold", "12V-2x6 파워"],
+  case: ["VGA 400mm 케이스", "ATX 메쉬 케이스", "M-ATX 케이스"]
+};
+
 const entities = {
   "&amp;": "&",
   "&lt;": "<",
@@ -40,9 +49,12 @@ function parseProducts(html, category) {
   const blocks = html.match(/<li[^>]+class="[^"]*prod_item[^"]*"[\s\S]*?<\/li>/gi) ?? [];
   return blocks
     .map((block) => {
+      const plain = stripTags(block);
       const name = pick(block, /class="[^"]*prod_name[^"]*"[\s\S]*?<a[^>]*>([\s\S]*?)<\/a>/i);
       const spec = pick(block, /class="[^"]*spec_list[^"]*"[^>]*>([\s\S]*?)<\/div>/i);
-      const priceText = pick(block, /class="[^"]*price_sect[^"]*"[\s\S]*?(\d[\d,]*)\s*원/i);
+      const priceText =
+        pick(block, /class="[^"]*price_sect[^"]*"[\s\S]*?(\d[\d,]*)\s*원/i) ||
+        (plain.match(/(\d{1,3}(?:,\d{3})+)\s*원/)?.[1] ?? "");
       const link = block.match(/class="[^"]*prod_name[^"]*"[\s\S]*?<a[^>]+href="([^"]+)"/i)?.[1] ?? "";
 
       if (!name || name.includes("상품비교")) return null;
@@ -53,14 +65,14 @@ function parseProducts(html, category) {
         spec,
         price: Number(priceText.replace(/,/g, "")) || null,
         link: decodeHtml(link),
-        rawText: stripTags(block).slice(0, 500)
+        rawText: plain.slice(0, 800)
       };
     })
     .filter(Boolean)
     .slice(0, 24);
 }
 
-async function fetchCategory(category, url) {
+async function fetchHtml(url) {
   const response = await fetch(url, {
     headers: {
       "accept-language": "ko-KR,ko;q=0.9,en;q=0.6",
@@ -70,33 +82,70 @@ async function fetchCategory(category, url) {
   });
 
   if (!response.ok) {
-    throw new Error(`${category} fetch failed: ${response.status}`);
+    throw new Error(`${url} fetch failed: ${response.status}`);
   }
 
   const buffer = await response.arrayBuffer();
   const charset = response.headers.get("content-type")?.match(/charset=([^;]+)/i)?.[1]?.toLowerCase() ?? "";
   const encoding = charset.includes("utf") ? "utf-8" : "euc-kr";
-  const html = new TextDecoder(encoding).decode(buffer);
-  return parseProducts(html, category);
+  return new TextDecoder(encoding).decode(buffer);
 }
 
-const entries = await Promise.all(Object.entries(categories).map(([category, url]) => fetchCategory(category, url)));
-const items = entries.flat();
+function uniqueItems(items) {
+  const seen = new Set();
+  return items.filter((item) => {
+    const key = `${item.category}:${item.link || item.name}`;
+    if (seen.has(key)) return false;
+    seen.add(key);
+    return true;
+  });
+}
+
+async function fetchCategory(category, url) {
+  const html = await fetchHtml(url);
+  return parseProducts(html, category).map((item) => ({ ...item, source: "category", sourceQuery: null }));
+}
+
+async function fetchSearch(category, query) {
+  const url = `https://search.danawa.com/dsearch.php?module=goods&act=dispMain&k1=${encodeURIComponent(query)}`;
+  const html = await fetchHtml(url);
+  return parseProducts(html, category).map((item) => ({ ...item, source: "search", sourceQuery: query }));
+}
+
+const categoryEntries = await Promise.all(Object.entries(categories).map(([category, url]) => fetchCategory(category, url)));
+const searchEntries = await Promise.all(
+  Object.entries(searchSeeds).flatMap(([category, queries]) => queries.map((query) => fetchSearch(category, query)))
+);
+const items = uniqueItems([...categoryEntries.flat(), ...searchEntries.flat()]);
 
 await mkdir("data", { recursive: true });
-await writeFile(
-  "data/danawa-raw.generated.json",
-  `${JSON.stringify(
-    {
-      fetchedAt: new Date().toISOString(),
-      note: "Danawa category list snapshot. Use as raw candidate source, then normalize into src/constants/data.ts before production use.",
-      categories,
-      items
-    },
-    null,
-    2
-  )}\n`,
-  "utf8"
-);
+await mkdir("src/constants", { recursive: true });
 
-console.log(`Saved ${items.length} products to data/danawa-raw.generated.json`);
+const fetchedAt = new Date().toISOString();
+const fullPayload = `${JSON.stringify(
+  {
+    fetchedAt,
+    note: "Danawa category/search snapshot. Full raw candidate source for inspection.",
+    categories,
+    searchSeeds,
+    items
+  },
+  null,
+  2
+)}\n`;
+const compactPayload = `${JSON.stringify(
+  {
+    fetchedAt,
+    note: "Compact Danawa snapshot. UI imports this and normalizes it at build time.",
+    categories,
+    searchSeeds,
+    items: items.map((item) => ({ ...item, rawText: item.rawText.slice(0, 220) }))
+  },
+  null,
+  2
+)}\n`;
+
+await writeFile("data/danawa-raw.generated.json", fullPayload, "utf8");
+await writeFile("src/constants/danawa-raw.generated.json", compactPayload, "utf8");
+
+console.log(`Saved ${items.length} products to data/danawa-raw.generated.json and src/constants/danawa-raw.generated.json`);

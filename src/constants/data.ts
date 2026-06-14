@@ -1,3 +1,5 @@
+import { danawaParts } from "./danawaCatalog";
+
 export type Category = "cpu" | "motherboard" | "memory" | "gpu" | "psu" | "case";
 
 type Status = "good" | "warn" | "info";
@@ -19,6 +21,8 @@ type BasePart = {
   specs: string[];
   keywords: string[];
   danawaCategoryUrl: string;
+  source?: "curated" | "danawa";
+  sourceUrl?: string;
 };
 
 export type CpuPart = BasePart & {
@@ -98,7 +102,7 @@ export const categories: { id: Category; label: string; helper: string }[] = [
   { id: "case", label: "케이스", helper: "그래픽카드/파워 장착 공간 확인" }
 ];
 
-export const parts: Part[] = [
+const curatedParts: Part[] = [
   {
     id: "cpu-7500f",
     category: "cpu",
@@ -709,6 +713,8 @@ export const parts: Part[] = [
   }
 ];
 
+export const parts: Part[] = [...curatedParts, ...danawaParts];
+
 export const initialSelection: Selection = {
   cpu: "cpu-7500f",
   motherboard: "mb-b650m-mortar",
@@ -733,10 +739,23 @@ export function getSelectedParts(selection: Selection) {
 }
 
 export function getSearchText(part: Part) {
-  return [part.maker, part.name, part.category, ...part.specs, ...part.keywords].join(" ").toLowerCase();
+  const rawText = [part.maker, part.name, part.category, ...part.specs, ...part.keywords].join(" ").toLowerCase();
+  return `${rawText} ${compactSearch(rawText)}`;
+}
+
+export function compactSearch(value: string) {
+  return value.toLowerCase().replace(/[\s._\-·/]+/g, "");
+}
+
+export function matchesPartSearch(part: Part, query: string) {
+  const search = query.trim().toLowerCase();
+  if (!search) return true;
+  const text = getSearchText(part);
+  return text.includes(search) || text.includes(compactSearch(search));
 }
 
 export function formatWon(value: number) {
+  if (value <= 0) return "가격 확인";
   return `${Math.round(value / 10000).toLocaleString("ko-KR")}만원`;
 }
 

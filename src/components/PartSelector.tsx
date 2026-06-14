@@ -3,7 +3,7 @@ import {
   categories,
   formatWon,
   getPartsByCategory,
-  getSearchText,
+  matchesPartSearch,
   type Category,
   type Selection
 } from "../constants/data";
@@ -29,8 +29,7 @@ export function PartSelector({ activeCategory, selection, onSelect }: Props) {
       categories.map((category) => {
         const query = queries[category.id].trim().toLowerCase();
         const filtered = getPartsByCategory(category.id).filter((part) => {
-          if (!query) return true;
-          return getSearchText(part).includes(query);
+          return matchesPartSearch(part, query);
         });
         return [category.id, filtered];
       })
@@ -68,7 +67,10 @@ export function PartSelector({ activeCategory, selection, onSelect }: Props) {
                   <span className="part-maker">{part.maker}</span>
                   <strong>{part.name}</strong>
                   <small>{part.specs.join(" · ")}</small>
-                  <em>{formatWon(part.price)}</em>
+                  <span className="part-card-foot">
+                    <em>{formatWon(part.price)}</em>
+                    {part.source === "danawa" && <b>Danawa</b>}
+                  </span>
                 </button>
               );
             })}

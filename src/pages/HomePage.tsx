@@ -1,5 +1,5 @@
 import { useState } from "react";
-import visual from "../assets/compat-board.svg";
+import { BuildPreview } from "../components/BuildPreview";
 import { BuildSummary } from "../components/BuildSummary";
 import { CompatibilityReport } from "../components/CompatibilityReport";
 import { PartSelector } from "../components/PartSelector";
@@ -24,7 +24,7 @@ export function HomePage() {
             장착 공간을 즉시 비교하는 React 견적 화면입니다.
           </p>
         </div>
-        <img src={visual} alt="PC 부품 호환성 보드 일러스트" />
+        <BuildPreview selection={selection} />
       </section>
 
       <div className="category-tabs" aria-label="부품 카테고리 선택">
