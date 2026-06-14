@@ -11,13 +11,13 @@ export function CompatibilityReport({ selection }: Props) {
   return (
     <section className="report-panel" aria-label="호환성 리포트">
       <div className="report-heading">
-        <p className="eyebrow">Compatibility</p>
+        <p className="eyebrow">호환성</p>
         <h2>{warningCount === 0 ? "조립 가능" : `${warningCount}개 확인 필요`}</h2>
       </div>
       <div className="report-list">
         {report.map((item) => (
           <article className={`report-card ${item.status}`} key={item.title}>
-            <span>{item.status === "good" ? "OK" : item.status === "warn" ? "!" : "i"}</span>
+            <span>{item.status === "good" ? "정상" : item.status === "warn" ? "확인" : "정보"}</span>
             <div>
               <strong>{item.title}</strong>
               <p>{item.detail}</p>

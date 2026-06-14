@@ -11,7 +11,7 @@ export function BuildSummary({ selection }: Props) {
 
   return (
     <aside className="summary-panel" aria-label="견적 요약">
-      <p className="eyebrow">Live quote</p>
+      <p className="eyebrow">견적 요약</p>
       <h2>{formatWon(total)}</h2>
       <div className="summary-stat">
         <span>예상 소비전력</span>

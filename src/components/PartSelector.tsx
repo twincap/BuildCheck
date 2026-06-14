@@ -1,14 +1,5 @@
 import { useEffect, useMemo, useState } from "react";
-import {
-  categories,
-  formatWon,
-  getPartsByCategory,
-  matchesPartSearch,
-  registerLiveParts,
-  type Category,
-  type Part,
-  type Selection
-} from "../constants/data";
+import { categories, formatWon, registerLiveParts, type Category, type Part, type Selection } from "../constants/data";
 
 type Props = {
   activeCategory: Category;
@@ -45,15 +36,17 @@ export function PartSelector({ activeCategory, selection, onSelect }: Props) {
 
   useEffect(() => {
     const query = activeQuery;
+
     if (query.length === 0) {
       setError("");
       setLoadingCategory(null);
+      setLiveResults((current) => ({ ...current, [activeCategory]: [] }));
       return;
     }
 
     if (query.length < 2) {
       setLiveResults((current) => ({ ...current, [activeCategory]: [] }));
-      setError("검색어 2글자 이상 입력");
+      setError("검색어를 두 글자 이상 입력하세요.");
       setLoadingCategory(null);
       return;
     }
@@ -68,7 +61,7 @@ export function PartSelector({ activeCategory, selection, onSelect }: Props) {
           `/api/danawa-search?category=${activeCategory}&q=${encodeURIComponent(query)}&pages=4&limit=160`,
           { signal: controller.signal }
         );
-        if (!response.ok) throw new Error("Danawa search failed");
+        if (!response.ok) throw new Error("다나와 검색 요청 실패");
         const data = (await response.json()) as { items?: Part[]; error?: string };
         if (data.error) throw new Error(data.error);
         const items = data.items ?? [];
@@ -90,8 +83,8 @@ export function PartSelector({ activeCategory, selection, onSelect }: Props) {
   }, [activeCategory, activeQuery]);
 
   const visibleParts = useMemo(() => {
-    if (activeQuery.length > 0) return liveResults[activeCategory];
-    return getPartsByCategory(activeCategory).filter((part) => matchesPartSearch(part, activeQuery));
+    if (activeQuery.length === 0) return [];
+    return liveResults[activeCategory];
   }, [activeCategory, activeQuery, liveResults]);
 
   function handleSelect(part: Part) {
@@ -109,12 +102,16 @@ export function PartSelector({ activeCategory, selection, onSelect }: Props) {
             aria-label={`${activeMeta.label} 검색`}
             className="part-search"
             onChange={(event) => setQueries((current) => ({ ...current, [activeCategory]: event.target.value }))}
-            placeholder="다나와 실시간 검색"
+            placeholder="다나와에서 검색"
             type="search"
             value={queries[activeCategory]}
           />
           <p className="search-state">
-            {activeQuery ? (loadingCategory === activeCategory ? "다나와 검색 중" : `${visibleParts.length}개 결과`) : "추천 부품"}
+            {activeQuery
+              ? loadingCategory === activeCategory
+                ? "다나와 검색 중"
+                : `${visibleParts.length}개 결과`
+              : "검색어를 입력하세요."}
           </p>
         </div>
         <div className="option-grid">
@@ -133,14 +130,15 @@ export function PartSelector({ activeCategory, selection, onSelect }: Props) {
                 <small>{part.specs.join(" · ")}</small>
                 <span className="part-card-foot">
                   <em>{formatWon(part.price)}</em>
-                  {part.source === "danawa" && <b>Live</b>}
+                  {part.source === "danawa" && <b>실시간</b>}
                 </span>
               </button>
             );
           })}
           {error && <div className="empty-result">{error}</div>}
+          {!error && activeQuery.length === 0 && <div className="empty-result">부품명을 검색하면 다나와 결과가 표시됩니다.</div>}
           {!error && activeQuery && !loadingCategory && visibleParts.length === 0 && (
-            <div className="empty-result">다나와 결과 없음. 검색어를 바꿔보세요.</div>
+            <div className="empty-result">다나와 결과가 없습니다. 검색어를 바꿔보세요.</div>
           )}
         </div>
       </div>

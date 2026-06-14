@@ -84,7 +84,7 @@ async function fetchHtml(url) {
   });
 
   if (!response.ok) {
-    throw new Error(`Danawa fetch failed: ${response.status}`);
+    throw new Error(`다나와 요청 실패: ${response.status}`);
   }
 
   const buffer = await response.arrayBuffer();

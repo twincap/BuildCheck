@@ -14,16 +14,16 @@ npm run build
 
 ## 핵심 기능
 
-- CPU, MainBoard, RAM, GPU, Power, Case 선택
-- 검색어 입력 시 Danawa 검색 페이지를 서버에서 실시간 크롤링
+- CPU, 메인보드, RAM, GPU, 파워, 케이스 선택
+- 검색어 입력 시 다나와 검색 페이지를 서버에서 실시간 크롤링
 - 검색 결과 클릭 시 견적/호환성/프리뷰 즉시 반영
-- 케이스 장착 공간과 GPU/Power 크기 비율 프리뷰
+- 케이스 장착 공간과 GPU/파워 크기 비율 프리뷰
 - 프리뷰 부품 클릭 시 해당 부품 탭으로 이동
 - 2D/3D 프리뷰 모드 전환
 
-## Danawa Live Search
+## 다나와 실시간 검색
 
-브라우저에서 Danawa를 직접 fetch하면 CORS 문제가 생깁니다. 그래서 검색은 `/api/danawa-search` 서버 라우트가 처리합니다.
+브라우저에서 다나와를 직접 fetch하면 CORS 문제가 생깁니다. 그래서 검색은 `/api/danawa-search` 서버 라우트가 처리합니다.
 
 ```text
 /api/danawa-search?category=gpu&q=RTX5090&pages=4&limit=160
@@ -35,7 +35,7 @@ npm run build
 
 ```text
 api/                  # Vercel API
-server/               # Danawa 검색/파싱 공용 로직
+server/               # 다나와 검색/파싱 공용 로직
 src/
   components/         # UI 컴포넌트
   constants/          # 기본 부품 데이터, 호환성 계산
