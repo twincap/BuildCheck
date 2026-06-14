@@ -119,7 +119,6 @@ const searchEntries = await Promise.all(
 const items = uniqueItems([...categoryEntries.flat(), ...searchEntries.flat()]);
 
 await mkdir("data", { recursive: true });
-await mkdir("src/constants", { recursive: true });
 
 const fetchedAt = new Date().toISOString();
 const fullPayload = `${JSON.stringify(
@@ -133,19 +132,7 @@ const fullPayload = `${JSON.stringify(
   null,
   2
 )}\n`;
-const compactPayload = `${JSON.stringify(
-  {
-    fetchedAt,
-    note: "Compact Danawa snapshot. UI imports this and normalizes it at build time.",
-    categories,
-    searchSeeds,
-    items: items.map((item) => ({ ...item, rawText: item.rawText.slice(0, 220) }))
-  },
-  null,
-  2
-)}\n`;
 
 await writeFile("data/danawa-raw.generated.json", fullPayload, "utf8");
-await writeFile("src/constants/danawa-raw.generated.json", compactPayload, "utf8");
 
-console.log(`Saved ${items.length} products to data/danawa-raw.generated.json and src/constants/danawa-raw.generated.json`);
+console.log(`Saved ${items.length} products to data/danawa-raw.generated.json`);

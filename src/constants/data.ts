@@ -1,5 +1,3 @@
-import { danawaParts } from "./danawaCatalog";
-
 export type Category = "cpu" | "motherboard" | "memory" | "gpu" | "psu" | "case";
 
 type Status = "good" | "warn" | "info";
@@ -713,7 +711,9 @@ const curatedParts: Part[] = [
   }
 ];
 
-export const parts: Part[] = [...curatedParts, ...danawaParts];
+const livePartRegistry = new Map<string, Part>();
+
+export const parts: Part[] = curatedParts;
 
 export const initialSelection: Selection = {
   cpu: "cpu-7500f",
@@ -725,13 +725,17 @@ export const initialSelection: Selection = {
 };
 
 export function getPart(id: string) {
-  const found = parts.find((part) => part.id === id);
+  const found = parts.find((part) => part.id === id) ?? livePartRegistry.get(id);
   if (!found) throw new Error(`Unknown part: ${id}`);
   return found;
 }
 
 export function getPartsByCategory(category: Category) {
   return parts.filter((part) => part.category === category);
+}
+
+export function registerLiveParts(newParts: Part[]) {
+  newParts.forEach((part) => livePartRegistry.set(part.id, part));
 }
 
 export function getSelectedParts(selection: Selection) {
