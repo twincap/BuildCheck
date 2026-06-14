@@ -75,14 +75,131 @@ function parseProducts(html, category) {
     .filter(Boolean);
 }
 
-async function fetchHtml(url) {
-  const response = await fetch(url, {
-    headers: {
-      "accept-language": "ko-KR,ko;q=0.9,en;q=0.6",
-      "user-agent":
-        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125 Safari/537.36"
-    }
+function absoluteDanawaUrl(link) {
+  if (!link) return "";
+  if (link.startsWith("//")) return `https:${link}`;
+  if (link.startsWith("/")) return `https://prod.danawa.com${link}`;
+  return decodeHtml(link);
+}
+
+function pushDetail(specs, label, value) {
+  const item = {
+    label: stripTags(label).replace(/\s+/g, " ").trim(),
+    value: stripTags(value).replace(/\s+/g, " ").trim()
+  };
+  const noise = /주의사항|구매 주의|배송|최저가|판매점|다나와|법적|설치비|쇼핑몰|카드혜택|의견|뉴스|블로그|광고|현금최저가|자세히보기/i;
+  if (!item.label || !item.value || item.label.length < 2 || item.value.length > 180) return;
+  if (noise.test(`${item.label} ${item.value}`)) return;
+  specs.push(item);
+}
+
+function parseSpecPieces(text, specs) {
+  const normalized = stripTags(text).replace(/^.*?요약정보\s*[:：]\s*/, "").replace(/^상세\s*스펙\s*/i, "");
+  normalized
+    .split(/\s*\/\s*/)
+    .map((piece) => piece.trim())
+    .filter(Boolean)
+    .forEach((piece) => {
+      const colonIndex = piece.search(/[:：]/);
+      if (colonIndex > 0) {
+        pushDetail(specs, piece.slice(0, colonIndex), piece.slice(colonIndex + 1));
+        return;
+      }
+      pushDetail(specs, "스펙", piece);
+    });
+}
+
+function parseDetailSpecs(html) {
+  const specs = [];
+  const description = html.match(/<meta[^>]+name=["']Description["'][^>]+content=["']([^"']+)["']/i)?.[1] ?? "";
+  if (description) parseSpecPieces(decodeHtml(description), specs);
+
+  const specSetIndex = html.indexOf("spec_set_wrap");
+  if (specSetIndex >= 0) {
+    const specSetEnd = html.indexOf("</dl>", specSetIndex);
+    parseSpecPieces(html.slice(specSetIndex, specSetEnd > specSetIndex ? specSetEnd : specSetIndex + 9000), specs);
+  }
+
+  const rows = html.match(/<tr[\s\S]*?<\/tr>/gi) ?? [];
+
+  rows.forEach((row) => {
+    const label = pick(row, /<th[^>]*>([\s\S]*?)<\/th>/i) || pick(row, /class="[^"]*(?:tit|subject|name)[^"]*"[^>]*>([\s\S]*?)<\/[^>]+>/i);
+    const value = pick(row, /<td[^>]*>([\s\S]*?)<\/td>/i) || pick(row, /class="[^"]*(?:txt|value|desc)[^"]*"[^>]*>([\s\S]*?)<\/[^>]+>/i);
+    if (label && value) pushDetail(specs, label, value);
   });
+
+  const dls = html.match(/<dl[\s\S]*?<\/dl>/gi) ?? [];
+  dls.forEach((dl) => {
+    const label = pick(dl, /<dt[^>]*>([\s\S]*?)<\/dt>/i);
+    const value = pick(dl, /<dd[^>]*>([\s\S]*?)<\/dd>/i);
+    if (label && value) pushDetail(specs, label, value);
+  });
+
+  const clean = [];
+  const seen = new Set();
+  specs.forEach(({ label, value }) => {
+    const key = `${label}:${value}`;
+    if (seen.has(key)) return;
+    seen.add(key);
+    clean.push({ label, value });
+  });
+
+  return clean.slice(0, 80);
+}
+
+function detailTextOf(details) {
+  return details.map((detail) => `${detail.label} ${detail.value}`).join(" / ");
+}
+
+async function enrichProductDetails(items, detailLimit) {
+  const max = Math.max(0, Math.min(Number(detailLimit) || 0, items.length));
+  const targets = items.slice(0, max);
+  const rest = items.slice(max);
+  const enriched = [];
+
+  for (let index = 0; index < targets.length; index += 16) {
+    const batch = targets.slice(index, index + 16);
+    const resolved = await Promise.all(
+      batch.map(async (item) => {
+        const link = absoluteDanawaUrl(item.link);
+        if (!link || !/danawa\.com/i.test(link)) return item;
+
+        try {
+          const detailHtml = await fetchHtml(link, { timeoutMs: 3500 });
+          const details = parseDetailSpecs(detailHtml);
+          return {
+            ...item,
+            detailText: detailTextOf(details),
+            details
+          };
+        } catch {
+          return item;
+        }
+      })
+    );
+    enriched.push(...resolved);
+  }
+
+  return [...enriched, ...rest];
+}
+
+async function fetchHtml(url, { timeoutMs = 8000 } = {}) {
+  const controller = new AbortController();
+  const timer = setTimeout(() => controller.abort(), timeoutMs);
+  let response;
+
+  try {
+    response = await fetch(url, {
+      headers: {
+        "accept-language": "ko-KR,ko;q=0.9,en;q=0.6",
+        "user-agent":
+          "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125 Safari/537.36"
+      },
+      signal: controller.signal
+    });
+  } finally {
+    clearTimeout(timer);
+  }
 
   if (!response.ok) {
     throw new Error(`다나와 요청 실패: ${response.status}`);
@@ -266,7 +383,8 @@ function base(item, index, specs) {
     watts: 0,
     tone: tones[item.category],
     specs,
-    keywords: [item.name, item.spec, item.rawText, "다나와"],
+    details: item.details ?? [],
+    keywords: [item.name, item.spec, item.detailText ?? "", item.rawText, "다나와"],
     danawaCategoryUrl: categoryUrls[item.category],
     source: "danawa",
     sourceUrl: item.link
@@ -280,7 +398,7 @@ function hashCode(value) {
 }
 
 function normalize(item, index) {
-  const text = `${item.name} ${item.spec} ${item.rawText}`;
+  const text = `${item.name} ${item.spec} ${item.detailText ?? ""} ${item.rawText}`;
 
   if (item.category === "cpu") {
     const cores = numberOf(text, [/(\d+)\s*코어/i], 6);
@@ -417,14 +535,14 @@ function isLikelyCategory(category, item) {
 function uniqueItems(items) {
   const seen = new Set();
   return items.filter((item) => {
-    const key = item.sourceUrl || item.name;
+    const key = item.sourceUrl || item.link || item.name;
     if (seen.has(key)) return false;
     seen.add(key);
     return true;
   });
 }
 
-export async function searchDanawa({ category, query, pages = 3, limit = 120 }) {
+export async function searchDanawa({ category, query, pages = 3, limit = 120, detailLimit = 48 }) {
   if (!categoryUrls[category]) throw new Error("Unknown category");
   const cleanQuery = String(query ?? "").trim();
   if (cleanQuery.length < 2) return [];
@@ -436,8 +554,12 @@ export async function searchDanawa({ category, query, pages = 3, limit = 120 }) 
   );
 
   const htmls = await Promise.all(urls.map((url) => fetchHtml(url)));
-  const rawItems = htmls.flatMap((html) => parseProducts(html, category)).filter((item) => isLikelyCategory(category, item));
-  return uniqueItems(rawItems.map((item, index) => normalize(item, index))).slice(0, Math.max(1, Math.min(limit, 200)));
+  const rawItems = uniqueItems(htmls.flatMap((html) => parseProducts(html, category)).filter((item) => isLikelyCategory(category, item))).slice(
+    0,
+    Math.max(1, Math.min(limit, 200))
+  );
+  const enrichedItems = await enrichProductDetails(rawItems, detailLimit);
+  return enrichedItems.map((item, index) => normalize(item, index));
 }
 
 export async function handleDanawaSearchRequest(url) {
@@ -446,6 +568,7 @@ export async function handleDanawaSearchRequest(url) {
     category: requestUrl.searchParams.get("category"),
     query: requestUrl.searchParams.get("q"),
     pages: Number(requestUrl.searchParams.get("pages") ?? 3),
-    limit: Number(requestUrl.searchParams.get("limit") ?? 120)
+    limit: Number(requestUrl.searchParams.get("limit") ?? 120),
+    detailLimit: Number(requestUrl.searchParams.get("detailLimit") ?? 48)
   });
 }

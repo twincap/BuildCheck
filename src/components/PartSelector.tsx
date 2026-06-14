@@ -59,7 +59,7 @@ export function PartSelector({ activeCategory, selection, onSelect }: Props) {
 
       try {
         const response = await fetch(
-          `/api/danawa-search?category=${activeCategory}&q=${encodeURIComponent(query)}&pages=4&limit=160`,
+          `/api/danawa-search?category=${activeCategory}&q=${encodeURIComponent(query)}&pages=4&limit=160&detailLimit=160`,
           { signal: controller.signal }
         );
         if (!response.ok) throw new Error("다나와 검색 요청 실패");
@@ -129,6 +129,14 @@ export function PartSelector({ activeCategory, selection, onSelect }: Props) {
                 <span className="part-maker">{part.maker}</span>
                 <strong>{part.name}</strong>
                 <small>{part.specs.join(" · ")}</small>
+                {part.details && part.details.length > 0 && (
+                  <small className="part-detail-list">
+                    {part.details
+                      .slice(0, 4)
+                      .map((detail) => `${detail.label}: ${detail.value}`)
+                      .join(" · ")}
+                  </small>
+                )}
                 <span className="part-card-foot">
                   <em>{formatWon(part.price)}</em>
                   <b>{part.source === "danawa" ? "실시간" : "현재 선택"}</b>

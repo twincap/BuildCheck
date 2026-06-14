@@ -22,6 +22,7 @@ type BasePart = {
   };
   tone: "mint" | "rose" | "sky" | "amber" | "violet" | "slate";
   specs: string[];
+  details?: { label: string; value: string }[];
   keywords: string[];
   danawaCategoryUrl: string;
   source?: "curated" | "danawa";

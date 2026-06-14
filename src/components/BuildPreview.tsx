@@ -31,6 +31,7 @@ type DragState =
       type: "part";
       key: PreviewKey;
       origin: Position;
+      originAll: Record<PreviewKey, Position>;
       pointer: { x: number; y: number };
       moved: boolean;
     }
@@ -48,11 +49,11 @@ type Props = {
 };
 
 const defaultPositions: Record<PreviewKey, Position> = {
-  motherboard: { x: 4, y: 34, z: 4 },
-  cpu: { x: 35, y: 45, z: 18 },
-  memory: { x: 48, y: 34, z: 25 },
-  gpu: { x: 9, y: 72, z: 32 },
-  psu: { x: 64, y: 58, z: 10 }
+  motherboard: { x: 8, y: 34, z: 8 },
+  cpu: { x: 34, y: 46, z: 28 },
+  memory: { x: 47, y: 28, z: 36 },
+  gpu: { x: 8, y: 72, z: 42 },
+  psu: { x: 66, y: 58, z: 18 }
 };
 
 const keyToCategory: Record<PreviewKey, Category> = {
@@ -63,7 +64,7 @@ const keyToCategory: Record<PreviewKey, Category> = {
   psu: "psu"
 };
 
-const defaultRotation: Rotation = { x: 56, y: 0, z: -24 };
+const defaultRotation: Rotation = { x: 58, y: -18, z: -24 };
 
 function clamp(value: number, min: number, max: number) {
   return Math.min(max, Math.max(min, value));
@@ -102,10 +103,7 @@ function previewBox(key: PreviewKey, parts: {
   gpu: GpuPart;
   psu: PsuPart;
 }) {
-  if (key === "motherboard") {
-    const box = dimensions(parts.motherboard);
-    return { width: box.width, height: box.height, depth: box.depth };
-  }
+  if (key === "motherboard") return dimensions(parts.motherboard);
   if (key === "cpu") {
     const box = dimensions(parts.cpu);
     return { width: box.width, height: box.height, depth: Math.max(box.depth, Math.round(parts.cpu.tdpWatts / 4)) };
@@ -123,12 +121,13 @@ function previewBox(key: PreviewKey, parts: {
 function displayBox(key: PreviewKey, physical: PreviewBox, space: PreviewBox): DisplayBox {
   const minWidth = key === "cpu" ? 8 : key === "memory" ? 12 : 10;
   const minHeight = key === "cpu" ? 10 : key === "memory" ? 10 : 9;
+
   return {
     width: clamp((physical.width / space.width) * 100, minWidth, 96),
     height: clamp((physical.height / space.height) * 100, minHeight, 96),
     depth: physical.depth,
     zSize: clamp((physical.depth / space.depth) * 100, 4, 48),
-    depthPx: clamp((physical.depth / space.depth) * 96, 10, 66)
+    depthPx: clamp((physical.depth / space.depth) * 130, 14, 96)
   };
 }
 
@@ -140,41 +139,31 @@ function clampPosition(position: Position, size: DisplayBox) {
   };
 }
 
-function overlaps2d(a: Position, aSize: DisplayBox, b: Position, bSize: DisplayBox) {
-  return a.x < b.x + bSize.width && a.x + aSize.width > b.x && a.y < b.y + bSize.height && a.y + aSize.height > b.y;
+function clampPartPosition(
+  key: PreviewKey,
+  position: Position,
+  positions: Record<PreviewKey, Position>,
+  sizes: Record<PreviewKey, DisplayBox>
+) {
+  const clamped = clampPosition(position, sizes[key]);
+  if (key !== "cpu") return clamped;
+
+  const board = positions.motherboard;
+  const boardSize = sizes.motherboard;
+  return {
+    x: clamp(clamped.x, board.x, board.x + boardSize.width - sizes.cpu.width),
+    y: clamp(clamped.y, board.y, board.y + boardSize.height - sizes.cpu.height),
+    z: clamp(board.z + Math.max(8, sizes.motherboard.zSize), 0, 100 - sizes.cpu.zSize)
+  };
 }
 
-function resolveCollisions(key: PreviewKey, positions: Record<PreviewKey, Position>, sizes: Record<PreviewKey, DisplayBox>) {
-  let next = clampPosition(positions[key], sizes[key]);
-  const others = (Object.keys(positions) as PreviewKey[]).filter((item) => item !== key);
-
-  for (let pass = 0; pass < 10; pass += 1) {
-    let changed = false;
-
-    for (const other of others) {
-      const otherPosition = positions[other];
-      const otherSize = sizes[other];
-      if (!overlaps2d(next, sizes[key], otherPosition, otherSize)) continue;
-
-      const candidates = [
-        { ...next, x: otherPosition.x + otherSize.width + 1 },
-        { ...next, x: otherPosition.x - sizes[key].width - 1 },
-        { ...next, y: otherPosition.y + otherSize.height + 1 },
-        { ...next, y: otherPosition.y - sizes[key].height - 1 },
-        { ...next, z: otherPosition.z + otherSize.zSize + 1 },
-        { ...next, z: otherPosition.z - sizes[key].zSize - 1 }
-      ].map((candidate) => clampPosition(candidate, sizes[key]));
-
-      next =
-        candidates.find((candidate) => !others.some((item) => overlaps2d(candidate, sizes[key], positions[item], sizes[item]))) ??
-        candidates[0];
-      changed = true;
-    }
-
-    if (!changed) break;
-  }
-
-  return { ...positions, [key]: next };
+function constrainPositions(positions: Record<PreviewKey, Position>, sizes: Record<PreviewKey, DisplayBox>) {
+  const next = (Object.keys(positions) as PreviewKey[]).reduce(
+    (result, key) => ({ ...result, [key]: clampPosition(positions[key], sizes[key]) }),
+    {} as Record<PreviewKey, Position>
+  );
+  next.cpu = clampPartPosition("cpu", next.cpu, next, sizes);
+  return next;
 }
 
 export function BuildPreview({ mode, selection, onModeChange, onNavigate }: Props) {
@@ -192,30 +181,29 @@ export function BuildPreview({ mode, selection, onModeChange, onNavigate }: Prop
   const ramLabel = memory.moduleType === "노트북용" ? "노트북 RAM" : "PC RAM";
 
   const space = useMemo(() => caseSpace(pcCase), [pcCase]);
-  const sizes = useMemo<Record<PreviewKey, DisplayBox>>(() => {
+  const physicalBoxes = useMemo<Record<PreviewKey, PreviewBox>>(() => {
     const parts = { cpu, motherboard, memory, gpu, psu };
     return {
-      motherboard: displayBox("motherboard", previewBox("motherboard", parts), space),
-      cpu: displayBox("cpu", previewBox("cpu", parts), space),
-      memory: displayBox("memory", previewBox("memory", parts), space),
-      gpu: displayBox("gpu", previewBox("gpu", parts), space),
-      psu: displayBox("psu", previewBox("psu", parts), space)
+      motherboard: previewBox("motherboard", parts),
+      cpu: previewBox("cpu", parts),
+      memory: previewBox("memory", parts),
+      gpu: previewBox("gpu", parts),
+      psu: previewBox("psu", parts)
     };
-  }, [cpu, gpu, memory, motherboard, psu, space]);
-
-  const ramCount = clamp(memory.modules, 1, 4);
+  }, [cpu, gpu, memory, motherboard, psu]);
+  const sizes = useMemo<Record<PreviewKey, DisplayBox>>(
+    () => ({
+      motherboard: displayBox("motherboard", physicalBoxes.motherboard, space),
+      cpu: displayBox("cpu", physicalBoxes.cpu, space),
+      memory: displayBox("memory", physicalBoxes.memory, space),
+      gpu: displayBox("gpu", physicalBoxes.gpu, space),
+      psu: displayBox("psu", physicalBoxes.psu, space)
+    }),
+    [physicalBoxes, space]
+  );
 
   useEffect(() => {
-    setPositions((current) => {
-      let next = (Object.keys(current) as PreviewKey[]).reduce(
-        (next, key) => ({ ...next, [key]: clampPosition(current[key], sizes[key]) }),
-        {} as Record<PreviewKey, Position>
-      );
-      (Object.keys(next) as PreviewKey[]).forEach((key) => {
-        next = resolveCollisions(key, next, sizes);
-      });
-      return next;
-    });
+    setPositions((current) => constrainPositions(current, sizes));
   }, [sizes]);
 
   useEffect(() => {
@@ -230,8 +218,8 @@ export function BuildPreview({ mode, selection, onModeChange, onNavigate }: Prop
 
       if (drag.type === "rotate") {
         setRotation({
-          x: clamp(drag.origin.x + dy * 0.35, 18, 76),
-          y: clamp(drag.origin.y + dx * 0.45, -55, 55),
+          x: clamp(drag.origin.x + dy * 0.35, 16, 78),
+          y: clamp(drag.origin.y + dx * 0.45, -70, 70),
           z: drag.origin.z + dx * 0.05
         });
         return;
@@ -241,24 +229,43 @@ export function BuildPreview({ mode, selection, onModeChange, onNavigate }: Prop
       const py = (dy / rect.height) * 100;
       if (Math.abs(px) > 0.4 || Math.abs(py) > 0.4) drag.moved = true;
 
-      setPositions((current) => ({
-        ...current,
-        [drag.key]: clampPosition(
-          {
-            ...drag.origin,
-            x: drag.origin.x + px,
-            y: drag.origin.y + py
-          },
-          sizes[drag.key]
-        )
-      }));
+      setPositions((current) => {
+        const candidate = {
+          ...drag.origin,
+          x: drag.origin.x + px,
+          y: drag.origin.y + py
+        };
+
+        if (drag.key === "motherboard") {
+          const board = clampPartPosition("motherboard", candidate, current, sizes);
+          const boardDx = board.x - drag.origin.x;
+          const boardDy = board.y - drag.origin.y;
+          return constrainPositions(
+            {
+              ...current,
+              motherboard: board,
+              cpu: {
+                ...drag.originAll.cpu,
+                x: drag.originAll.cpu.x + boardDx,
+                y: drag.originAll.cpu.y + boardDy
+              }
+            },
+            sizes
+          );
+        }
+
+        return {
+          ...current,
+          [drag.key]: clampPartPosition(drag.key, candidate, current, sizes)
+        };
+      });
     }
 
     function handlePointerUp() {
       const drag = dragRef.current;
       if (drag?.type === "part") {
         if (!drag.moved) onNavigate(keyToCategory[drag.key]);
-        setPositions((current) => resolveCollisions(drag.key, current, sizes));
+        setPositions((current) => constrainPositions(current, sizes));
       }
       dragRef.current = null;
     }
@@ -289,29 +296,37 @@ export function BuildPreview({ mode, selection, onModeChange, onNavigate }: Prop
       type: "part",
       key,
       origin: positions[key],
+      originAll: positions,
       pointer: { x: event.clientX, y: event.clientY },
       moved: false
     };
   }
 
   function moveZ(key: PreviewKey, event: WheelEvent<HTMLButtonElement>) {
-    if (mode !== "3d") return;
+    if (mode !== "3d" || key === "cpu") return;
     event.preventDefault();
     event.stopPropagation();
 
-    setPositions((current) => {
-      const next = {
-        ...current,
-        [key]: clampPosition(
-          {
-            ...current[key],
-            z: current[key].z + (event.deltaY > 0 ? -6 : 6)
-          },
-          sizes[key]
-        )
-      };
-      return resolveCollisions(key, next, sizes);
-    });
+    setPositions((current) =>
+      constrainPositions(
+        {
+          ...current,
+          [key]: clampPosition(
+            {
+              ...current[key],
+              z: current[key].z + (event.deltaY > 0 ? -7 : 7)
+            },
+            sizes[key]
+          )
+        },
+        sizes
+      )
+    );
+  }
+
+  function dimensionLabel(key: PreviewKey) {
+    const box = physicalBoxes[key];
+    return `${box.width}x${box.height}x${box.depth}mm`;
   }
 
   function styleFor(key: PreviewKey) {
@@ -320,9 +335,8 @@ export function BuildPreview({ mode, selection, onModeChange, onNavigate }: Prop
     return {
       "--depth": `${size.depthPx}px`,
       "--depth-neg": `${-size.depthPx}px`,
-      "--depth-half-neg": `${-size.depthPx / 2}px`,
-      "--shadow-x": `${size.depthPx * 0.55}px`,
-      "--shadow-y": `${size.depthPx * 0.65}px`,
+      "--shadow-x": `${size.depthPx * 0.75}px`,
+      "--shadow-y": `${size.depthPx * 0.85}px`,
       "--z": `${position.z}px`,
       height: `${size.height}%`,
       left: `${position.x}%`,
@@ -339,7 +353,7 @@ export function BuildPreview({ mode, selection, onModeChange, onNavigate }: Prop
   } as CSSProperties;
 
   return (
-    <section className={`build-preview is-${mode}`} aria-label="선택 부품 장착 프리뷰">
+    <section className={`build-preview is-${mode}`} aria-label="선택 부품 장착 미리보기">
       <div className="preview-meta">
         <div>
           <p className="eyebrow">장착 프리뷰</p>
@@ -357,18 +371,14 @@ export function BuildPreview({ mode, selection, onModeChange, onNavigate }: Prop
         </button>
       </div>
 
-      <div
-        className="preview-case"
-        onPointerDown={startRotate}
-        style={sceneStyle}
-        title="3D: 빈 공간 드래그로 회전, 부품 드래그로 X/Y 이동, 부품 위 휠로 Z 이동"
-      >
+      <div className="preview-case" onPointerDown={startRotate} style={sceneStyle}>
         <div className="case-cuboid" aria-hidden="true">
-          <i className="case-floor" />
-          <i className="case-wall case-wall-top" />
-          <i className="case-wall case-wall-right" />
-          <i className="case-wall case-wall-bottom" />
-          <i className="case-wall case-wall-left" />
+          <i className="case-face case-front" />
+          <i className="case-face case-back" />
+          <i className="case-face case-top" />
+          <i className="case-face case-right" />
+          <i className="case-face case-bottom" />
+          <i className="case-face case-left" />
         </div>
         <button className="preview-case-label" onClick={() => onNavigate("case")} type="button">
           케이스 GPU 공간 {pcCase.gpuClearanceMm}mm
@@ -384,6 +394,7 @@ export function BuildPreview({ mode, selection, onModeChange, onNavigate }: Prop
           >
             <span>메인보드</span>
             <small>{motherboard.formFactor}</small>
+            <small>{dimensionLabel("motherboard")}</small>
           </button>
           <button
             className="preview-part preview-cpu"
@@ -395,6 +406,7 @@ export function BuildPreview({ mode, selection, onModeChange, onNavigate }: Prop
           >
             <span>CPU</span>
             <small>{cpu.socket}</small>
+            <small>{dimensionLabel("cpu")}</small>
           </button>
           <button
             className="preview-part preview-ram"
@@ -404,12 +416,9 @@ export function BuildPreview({ mode, selection, onModeChange, onNavigate }: Prop
             style={styleFor("memory")}
             type="button"
           >
-            <span className="ram-sticks">
-              {Array.from({ length: ramCount }).map((_, index) => (
-                <i key={index} />
-              ))}
-            </span>
+            <span>RAM</span>
             <small>{memory.capacityGb}GB {ramLabel}</small>
+            <small>{dimensionLabel("memory")}</small>
           </button>
           <button
             className="preview-part preview-gpu"
@@ -420,8 +429,8 @@ export function BuildPreview({ mode, selection, onModeChange, onNavigate }: Prop
             type="button"
           >
             <span>GPU</span>
-            <strong>{gpu.lengthMm}mm</strong>
-            <small>{gpu.vramGb}GB</small>
+            <strong>{dimensionLabel("gpu")}</strong>
+            <small>{gpu.vramGb}GB VRAM</small>
           </button>
           <button
             className="preview-part preview-psu"
@@ -433,6 +442,7 @@ export function BuildPreview({ mode, selection, onModeChange, onNavigate }: Prop
           >
             <span>파워</span>
             <strong>{psu.capacityWatts}W</strong>
+            <small>{dimensionLabel("psu")}</small>
           </button>
         </div>
       </div>
