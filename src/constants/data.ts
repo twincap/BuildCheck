@@ -47,6 +47,7 @@ export type MotherboardPart = BasePart & {
 export type MemoryPart = BasePart & {
   category: "memory";
   memoryType: "DDR4" | "DDR5";
+  moduleType?: "데스크탑용" | "노트북용" | "PC용";
   capacityGb: number;
   modules: number;
   speedMhz: number;
@@ -331,10 +332,11 @@ const curatedParts: Part[] = [
     price: 118000,
     watts: 9,
     tone: "mint",
-    specs: ["DDR5", "32GB", "5600MHz", "1개"],
+    specs: ["데스크탑용", "DDR5", "32GB", "5600MHz"],
     keywords: ["삼성", "DDR5", "32GB", "5600"],
     danawaCategoryUrl: danawaCategoryUrls.memory,
     memoryType: "DDR5",
+    moduleType: "데스크탑용",
     capacityGb: 32,
     modules: 1,
     speedMhz: 5600
@@ -347,10 +349,11 @@ const curatedParts: Part[] = [
     price: 159000,
     watts: 12,
     tone: "amber",
-    specs: ["DDR5", "32GB", "6000MHz", "2개 킷"],
+    specs: ["데스크탑용", "DDR5", "32GB", "6000MHz"],
     keywords: ["팀그룹", "DDR5", "6000", "튜닝램"],
     danawaCategoryUrl: danawaCategoryUrls.memory,
     memoryType: "DDR5",
+    moduleType: "데스크탑용",
     capacityGb: 32,
     modules: 2,
     speedMhz: 6000
@@ -363,10 +366,11 @@ const curatedParts: Part[] = [
     price: 42000,
     watts: 6,
     tone: "sky",
-    specs: ["DDR4", "16GB", "3200MHz", "1개"],
+    specs: ["데스크탑용", "DDR4", "16GB", "3200MHz"],
     keywords: ["삼성", "DDR4", "16GB", "3200"],
     danawaCategoryUrl: danawaCategoryUrls.memory,
     memoryType: "DDR4",
+    moduleType: "데스크탑용",
     capacityGb: 16,
     modules: 1,
     speedMhz: 3200
@@ -379,10 +383,11 @@ const curatedParts: Part[] = [
     price: 96000,
     watts: 10,
     tone: "rose",
-    specs: ["DDR4", "32GB", "3600MHz", "2개 킷"],
+    specs: ["데스크탑용", "DDR4", "32GB", "3600MHz"],
     keywords: ["커세어", "DDR4", "32GB", "3600"],
     danawaCategoryUrl: danawaCategoryUrls.memory,
     memoryType: "DDR4",
+    moduleType: "데스크탑용",
     capacityGb: 32,
     modules: 2,
     speedMhz: 3600
@@ -395,10 +400,11 @@ const curatedParts: Part[] = [
     price: 182000,
     watts: 12,
     tone: "violet",
-    specs: ["DDR5", "32GB", "6400MHz", "2개 킷"],
+    specs: ["데스크탑용", "DDR5", "32GB", "6400MHz"],
     keywords: ["지스킬", "DDR5", "6400", "고클럭"],
     danawaCategoryUrl: danawaCategoryUrls.memory,
     memoryType: "DDR5",
+    moduleType: "데스크탑용",
     capacityGb: 32,
     modules: 2,
     speedMhz: 6400
@@ -759,8 +765,11 @@ export function matchesPartSearch(part: Part, query: string) {
 }
 
 export function formatWon(value: number) {
-  if (value <= 0) return "가격 확인";
-  return `${Math.round(value / 10000).toLocaleString("ko-KR")}만원`;
+  if (!Number.isFinite(value) || value <= 0) return "가격 확인";
+  if (value < 10000) return `${value.toLocaleString("ko-KR")}원`;
+  const manWon = value / 10000;
+  const display = manWon >= 10 ? Math.round(manWon) : Number(manWon.toFixed(1));
+  return `${display.toLocaleString("ko-KR")}만원`;
 }
 
 export function getCategoryLabel(category: Category) {

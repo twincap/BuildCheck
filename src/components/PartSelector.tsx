@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useState } from "react";
-import { categories, formatWon, registerLiveParts, type Category, type Part, type Selection } from "../constants/data";
+import { categories, formatWon, getPart, registerLiveParts, type Category, type Part, type Selection } from "../constants/data";
 
 type Props = {
   activeCategory: Category;
@@ -33,6 +33,7 @@ export function PartSelector({ activeCategory, selection, onSelect }: Props) {
 
   const activeMeta = categories.find((category) => category.id === activeCategory) ?? categories[0];
   const activeQuery = queries[activeCategory].trim();
+  const selectedPart = getPart(selection[activeCategory]);
 
   useEffect(() => {
     const query = activeQuery;
@@ -83,9 +84,9 @@ export function PartSelector({ activeCategory, selection, onSelect }: Props) {
   }, [activeCategory, activeQuery]);
 
   const visibleParts = useMemo(() => {
-    if (activeQuery.length === 0) return [];
+    if (activeQuery.length === 0) return [selectedPart];
     return liveResults[activeCategory];
-  }, [activeCategory, activeQuery, liveResults]);
+  }, [activeCategory, activeQuery, liveResults, selectedPart]);
 
   function handleSelect(part: Part) {
     if (part.source === "danawa") registerLiveParts([part]);
@@ -111,7 +112,7 @@ export function PartSelector({ activeCategory, selection, onSelect }: Props) {
               ? loadingCategory === activeCategory
                 ? "다나와 검색 중"
                 : `${visibleParts.length}개 결과`
-              : "검색어를 입력하세요."}
+              : "현재 선택 부품"}
           </p>
         </div>
         <div className="option-grid">
@@ -130,13 +131,12 @@ export function PartSelector({ activeCategory, selection, onSelect }: Props) {
                 <small>{part.specs.join(" · ")}</small>
                 <span className="part-card-foot">
                   <em>{formatWon(part.price)}</em>
-                  {part.source === "danawa" && <b>실시간</b>}
+                  <b>{part.source === "danawa" ? "실시간" : "현재 선택"}</b>
                 </span>
               </button>
             );
           })}
           {error && <div className="empty-result">{error}</div>}
-          {!error && activeQuery.length === 0 && <div className="empty-result">부품명을 검색하면 다나와 결과가 표시됩니다.</div>}
           {!error && activeQuery && !loadingCategory && visibleParts.length === 0 && (
             <div className="empty-result">다나와 결과가 없습니다. 검색어를 바꿔보세요.</div>
           )}

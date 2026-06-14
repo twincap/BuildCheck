@@ -30,7 +30,7 @@ button {
 
 .hero h1 {
   margin: 8px 0 10px;
-  font-size: clamp(34px, 5vw, 56px);
+  font-size: clamp(28px, 3.6vw, 42px);
   line-height: 1;
   letter-spacing: 0;
 }
@@ -47,7 +47,7 @@ button {
   min-height: 280px;
   border-radius: var(--radius-card);
   border: 1px solid var(--color-line);
-  background: linear-gradient(180deg, #ffffff 0%, #eef5f1 100%);
+  background: linear-gradient(180deg, #ffffff 0%, #f3f7f4 100%);
   padding: var(--space-2);
   perspective: 900px;
 }
@@ -108,14 +108,14 @@ button {
 
 .preview-case {
   position: relative;
-  height: 210px;
+  height: clamp(210px, 28vw, 260px);
   border: 2px solid var(--color-ink);
   border-radius: var(--radius-control);
   background:
-    linear-gradient(90deg, rgb(16 35 29 / 8%) 1px, transparent 1px),
-    linear-gradient(0deg, rgb(16 35 29 / 8%) 1px, transparent 1px),
-    #f8fbf8;
-  background-size: 24px 24px;
+    linear-gradient(90deg, rgb(16 35 29 / 12%) 1px, transparent 1px),
+    linear-gradient(0deg, rgb(16 35 29 / 12%) 1px, transparent 1px),
+    #fbfdfb;
+  background-size: 22px 22px;
   overflow: hidden;
   transition: transform 180ms ease, box-shadow 180ms ease;
   transform-style: preserve-3d;
@@ -144,7 +144,7 @@ button {
 }
 
 .build-preview.is-3d .preview-stage {
-  transform: rotateX(57deg) rotateZ(-25deg) translateY(8px);
+  transform: rotateX(58deg) rotateZ(-26deg) translate(20px, 16px) scale(0.94);
 }
 
 .preview-part {
@@ -163,6 +163,7 @@ button {
   touch-action: none;
   transform-style: preserve-3d;
   user-select: none;
+  overflow: hidden;
 }
 
 .preview-part:active {
@@ -226,8 +227,9 @@ button {
 }
 
 .build-preview.is-3d .preview-part {
-  box-shadow: 12px 16px 0 rgb(16 35 29 / 14%);
-  transform: translateZ(14px);
+  box-shadow: var(--shadow-x) var(--shadow-y) 0 rgb(16 35 29 / 14%);
+  transform: translateZ(var(--z));
+  overflow: visible;
 }
 
 .build-preview.is-3d .preview-part::before,
@@ -239,18 +241,18 @@ button {
 
 .build-preview.is-3d .preview-part::before {
   top: 5px;
-  right: -10px;
-  width: 10px;
+  right: var(--depth-neg);
+  width: var(--depth);
   height: 100%;
   transform: skewY(45deg);
   transform-origin: left top;
 }
 
 .build-preview.is-3d .preview-part::after {
-  right: -5px;
-  bottom: -10px;
+  right: var(--depth-half-neg);
+  bottom: var(--depth-neg);
   width: 100%;
-  height: 10px;
+  height: var(--depth);
   transform: skewX(45deg);
   transform-origin: left top;
 }
@@ -258,14 +260,17 @@ button {
 .category-tabs {
   display: flex;
   flex-wrap: wrap;
-  gap: var(--space-1);
-  margin: 0 0 var(--space-1);
+  gap: 4px;
+  margin: 0 0 -1px;
+  padding-left: 10px;
+  position: relative;
+  z-index: 2;
 }
 
 .category-tabs button {
-  padding: 6px 9px;
+  padding: 7px 11px;
   border: 1px solid var(--color-line);
-  border-radius: var(--radius-control);
+  border-radius: var(--radius-control) var(--radius-control) 0 0;
   background: var(--color-surface);
   color: var(--color-ink);
   cursor: pointer;
@@ -276,8 +281,10 @@ button {
 
 .category-tabs button.is-active {
   border-color: var(--color-ink);
-  background: var(--color-good);
-  box-shadow: inset 0 0 0 1px var(--color-ink);
+  border-bottom-color: var(--color-surface);
+  background: var(--color-surface);
+  box-shadow: inset 0 3px 0 var(--color-good), 0 -1px 0 var(--color-ink);
+  transform: translateY(1px);
 }
 
 .eyebrow {
@@ -307,6 +314,7 @@ button {
 .part-selector {
   display: grid;
   gap: var(--space-2);
+  border-top-left-radius: 0;
   padding: var(--space-3);
 }
 
@@ -366,7 +374,7 @@ button {
   padding: 12px;
   border: 1px solid var(--color-line);
   border-radius: var(--radius-control);
-  background: var(--color-field);
+  background: #ffffff;
   color: var(--color-ink);
   text-align: left;
   cursor: pointer;
@@ -505,7 +513,7 @@ button {
 
 .report-card {
   display: grid;
-  grid-template-columns: 36px minmax(0, 1fr);
+  grid-template-columns: 50px minmax(0, 1fr);
   gap: var(--space-2);
   padding: 12px;
   border-radius: var(--radius-control);
@@ -525,13 +533,15 @@ button {
 
 .report-card > span {
   display: grid;
-  width: 30px;
-  height: 30px;
+  width: 44px;
+  height: 28px;
   place-items: center;
-  border-radius: 50%;
+  border-radius: 999px;
   background: var(--color-ink);
   color: #fff;
+  font-size: 11px;
   font-weight: 900;
+  white-space: nowrap;
 }
 
 .report-card strong {

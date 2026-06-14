@@ -44,8 +44,9 @@ function pick(block, pattern) {
 }
 
 function priceFrom(text) {
-  const found = text.match(/(\d{1,3}(?:,\d{3})+)\s*원/);
-  return found ? Number(found[1].replace(/,/g, "")) : 0;
+  const values = [...text.matchAll(/(\d{1,3}(?:,\d{3})+)\s*원/g)].map((match) => Number(match[1].replace(/,/g, "")));
+  const plausible = values.find((value) => value >= 5000);
+  return plausible ?? values[0] ?? 0;
 }
 
 function parseProducts(html, category) {
@@ -114,6 +115,12 @@ function socketOf(text) {
 
 function memoryTypeOf(text) {
   return /DDR4/i.test(text) && !/DDR5/i.test(text) ? "DDR4" : "DDR5";
+}
+
+function memoryModuleTypeOf(text) {
+  if (/노트북|SO-?DIMM|SODIMM/i.test(text)) return "노트북용";
+  if (/데스크탑|데스크톱|데스크탑용|데스크톱용|UDIMM|DIMM/i.test(text)) return "데스크탑용";
+  return "PC용";
 }
 
 function formFactorOf(text) {
@@ -207,11 +214,15 @@ function normalize(item, index) {
   if (item.category === "memory") {
     const capacity = numberOf(text, [/(\d+)\s*GB/i], 16);
     const speed = numberOf(text, [/DDR[45]-?(\d{4})/i, /(\d{4})\s*MHz/i], memoryTypeOf(text) === "DDR5" ? 5600 : 3200);
+    const moduleType = memoryModuleTypeOf(text);
+    const specs = rawSpecs(item, [moduleType, memoryTypeOf(text), `${capacity}GB`, `${speed}MHz`]);
+    const normalizedSpecs = [moduleType, ...specs.filter((spec) => !/노트북|데스크탑|데스크톱|PC용|SO-?DIMM|SODIMM/i.test(spec))].slice(0, 4);
     return {
-      ...base(item, index, rawSpecs(item, [memoryTypeOf(text), `${capacity}GB`, `${speed}MHz`])),
+      ...base(item, index, normalizedSpecs),
       category: "memory",
       watts: Math.max(6, Math.round(capacity / 4)),
       memoryType: memoryTypeOf(text),
+      moduleType,
       capacityGb: capacity,
       modules: numberOf(text, [/(\d+)\s*개/i, /x\s*(\d+)/i], 1),
       speedMhz: speed

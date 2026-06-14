@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useMemo, useRef, useState, type CSSProperties, type PointerEvent as ReactPointerEvent } from "react";
 import {
   getPart,
   type CasePart,
@@ -14,6 +14,7 @@ import {
 type PreviewMode = "2d" | "3d";
 type PreviewKey = "motherboard" | "cpu" | "memory" | "gpu" | "psu";
 type Position = { x: number; y: number };
+type PreviewBox = { width: number; height: number; depth: number };
 type DragState = {
   key: PreviewKey;
   origin: Position;
@@ -28,18 +29,18 @@ type Props = {
   onNavigate: (category: Category) => void;
 };
 
-const boardSizes: Record<MotherboardPart["formFactor"], { width: number; height: number }> = {
-  ATX: { width: 48, height: 58 },
-  "M-ATX": { width: 43, height: 48 },
-  "M-ITX": { width: 30, height: 32 }
+const boardBoxes: Record<MotherboardPart["formFactor"], PreviewBox> = {
+  ATX: { width: 50, height: 40, depth: 7 },
+  "M-ATX": { width: 40, height: 40, depth: 7 },
+  "M-ITX": { width: 29, height: 29, depth: 7 }
 };
 
 const defaultPositions: Record<PreviewKey, Position> = {
-  motherboard: { x: 8, y: 20 },
-  cpu: { x: 24, y: 39 },
-  memory: { x: 45, y: 32 },
-  gpu: { x: 16, y: 66 },
-  psu: { x: 68, y: 78 }
+  motherboard: { x: 35, y: 14 },
+  cpu: { x: 36, y: 34 },
+  memory: { x: 19, y: 23 },
+  gpu: { x: 18, y: 64 },
+  psu: { x: 70, y: 35 }
 };
 
 const keyToCategory: Record<PreviewKey, Category> = {
@@ -65,16 +66,45 @@ export function BuildPreview({ mode, selection, onModeChange, onNavigate }: Prop
   const gpu = getPart(selection.gpu) as GpuPart;
   const psu = getPart(selection.psu) as PsuPart;
   const pcCase = getPart(selection.case) as CasePart;
+  const ramLabel = memory.moduleType === "노트북용" ? "노트북 RAM" : "PC RAM";
 
-  const board = boardSizes[motherboard.formFactor];
-  const dimensions: Record<PreviewKey, { width: number; height: number }> = {
-    motherboard: board,
-    cpu: { width: 13, height: clamp((cpu.tdpWatts / pcCase.cpuCoolerClearanceMm) * 38, 14, 28) },
-    memory: { width: clamp(memory.modules * 5 + 10, 15, 28), height: 32 },
-    gpu: { width: clamp((gpu.lengthMm / pcCase.gpuClearanceMm) * 72, 28, 78), height: 15 },
-    psu: { width: clamp((psu.depthMm / pcCase.psuClearanceMm) * 36, 18, 38), height: 14 }
-  };
+  const dimensions = useMemo<Record<PreviewKey, PreviewBox>>(() => {
+    const board = boardBoxes[motherboard.formFactor];
+    const laptopRam = memory.moduleType === "노트북용";
+
+    return {
+      motherboard: board,
+      cpu: { width: 13, height: 17, depth: clamp(cpu.tdpWatts / 8, 8, 24) },
+      memory: {
+        width: laptopRam ? 27 : clamp(memory.modules * 5 + 10, 15, 29),
+        height: laptopRam ? 12 : 31,
+        depth: laptopRam ? 6 : 18
+      },
+      gpu: {
+        width: clamp((gpu.lengthMm / pcCase.gpuClearanceMm) * 72, 30, 82),
+        height: clamp(10 + gpu.vramGb * 0.35, 12, 22),
+        depth: clamp(9 + gpu.vramGb * 0.65, 10, 30)
+      },
+      psu: {
+        width: clamp((psu.depthMm / pcCase.psuClearanceMm) * 34, 20, 38),
+        height: 15,
+        depth: psu.formFactor === "SFX" ? 12 : 20
+      }
+    };
+  }, [cpu.tdpWatts, gpu.lengthMm, gpu.vramGb, memory.moduleType, memory.modules, motherboard.formFactor, pcCase.gpuClearanceMm, pcCase.psuClearanceMm, psu.depthMm, psu.formFactor]);
+
   const ramCount = clamp(memory.modules, 1, 4);
+
+  useEffect(() => {
+    setPositions((current) =>
+      Object.fromEntries(
+        Object.entries(current).map(([key, position]) => {
+          const size = dimensions[key as PreviewKey];
+          return [key, { x: clamp(position.x, 1, 99 - size.width), y: clamp(position.y, 8, 98 - size.height) }];
+        })
+      ) as Record<PreviewKey, Position>
+    );
+  }, [dimensions]);
 
   useEffect(() => {
     function handlePointerMove(event: PointerEvent) {
@@ -112,7 +142,7 @@ export function BuildPreview({ mode, selection, onModeChange, onNavigate }: Prop
     };
   }, [dimensions, onNavigate]);
 
-  function startDrag(key: PreviewKey, event: React.PointerEvent<HTMLButtonElement>) {
+  function startDrag(key: PreviewKey, event: ReactPointerEvent<HTMLButtonElement>) {
     event.preventDefault();
     dragRef.current = {
       key,
@@ -126,15 +156,21 @@ export function BuildPreview({ mode, selection, onModeChange, onNavigate }: Prop
     const position = positions[key];
     const size = dimensions[key];
     return {
+      "--depth": `${size.depth}px`,
+      "--depth-neg": `${-size.depth}px`,
+      "--depth-half-neg": `${-size.depth / 2}px`,
+      "--shadow-x": `${size.depth * 0.8}px`,
+      "--shadow-y": `${size.depth * 0.9}px`,
+      "--z": `${Math.max(4, size.depth - 2)}px`,
       height: `${size.height}%`,
       left: `${position.x}%`,
       top: `${position.y}%`,
       width: `${size.width}%`
-    };
+    } as CSSProperties;
   }
 
   return (
-    <section className={`build-preview is-${mode}`} aria-label="선택 부품 비율 프리뷰">
+    <section className={`build-preview is-${mode}`} aria-label="선택 부품 장착 프리뷰">
       <div className="preview-meta">
         <div>
           <p className="eyebrow">장착 프리뷰</p>
@@ -189,7 +225,7 @@ export function BuildPreview({ mode, selection, onModeChange, onNavigate }: Prop
                 <i key={index} />
               ))}
             </span>
-            <small>{memory.capacityGb}GB RAM</small>
+            <small>{memory.capacityGb}GB {ramLabel}</small>
           </button>
           <button
             className="preview-part preview-gpu"
