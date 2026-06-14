@@ -1,10 +1,17 @@
+import { useState } from "react";
 import visual from "../assets/compat-board.svg";
 import { BuildSummary } from "../components/BuildSummary";
 import { CompatibilityReport } from "../components/CompatibilityReport";
 import { PartSelector } from "../components/PartSelector";
-import { initialSelection } from "../constants/data";
+import { initialSelection, type Category, type Selection } from "../constants/data";
 
 export function HomePage() {
+  const [selection, setSelection] = useState<Selection>(initialSelection);
+
+  function handleSelect(category: Category, id: string) {
+    setSelection((current) => ({ ...current, [category]: id }));
+  }
+
   return (
     <main className="app-shell">
       <section className="hero">
@@ -19,10 +26,10 @@ export function HomePage() {
       </section>
 
       <div className="workspace">
-        <PartSelector selection={initialSelection} />
+        <PartSelector selection={selection} onSelect={handleSelect} />
         <div className="side-stack">
-          <BuildSummary selection={initialSelection} />
-          <CompatibilityReport />
+          <BuildSummary selection={selection} />
+          <CompatibilityReport selection={selection} />
         </div>
       </div>
     </main>

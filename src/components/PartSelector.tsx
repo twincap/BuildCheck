@@ -1,10 +1,11 @@
-import { categories, parts, type Selection } from "../constants/data";
+import { categories, parts, type Category, type Selection } from "../constants/data";
 
 type Props = {
   selection: Selection;
+  onSelect: (category: Category, id: string) => void;
 };
 
-export function PartSelector({ selection }: Props) {
+export function PartSelector({ selection, onSelect }: Props) {
   return (
     <section className="part-selector" aria-label="부품 선택">
       {categories.map((category) => (
@@ -19,7 +20,12 @@ export function PartSelector({ selection }: Props) {
               .map((part) => {
                 const active = selection[category.id] === part.id;
                 return (
-                  <button className={`part-card ${active ? "is-active" : ""}`} data-tone={part.tone} key={part.id}>
+                  <button
+                    className={`part-card ${active ? "is-active" : ""}`}
+                    data-tone={part.tone}
+                    key={part.id}
+                    onClick={() => onSelect(category.id, part.id)}
+                  >
                     <span>{part.name}</span>
                     <small>{part.short}</small>
                   </button>
