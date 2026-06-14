@@ -5,7 +5,11 @@
   --color-muted: #60736b;
   --color-line: #dce5dd;
   --color-primary: #1f8a70;
+  --color-accent: #ff6b5f;
+  --color-good: #d9f99d;
+  --color-warn: #ffe0d8;
   --radius-card: 8px;
+  --radius-control: 6px;
   --space-1: 6px;
   --space-2: 10px;
   --space-3: 16px;
