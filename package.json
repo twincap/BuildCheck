@@ -7,6 +7,7 @@
   "scripts": {
     "dev": "vite --host 127.0.0.1 --port 5171",
     "build": "tsc -b && vite build",
+    "crawl:danawa": "node scripts/crawl-danawa.mjs",
     "preview": "vite preview --host 127.0.0.1 --port 4173"
   },
   "dependencies": {

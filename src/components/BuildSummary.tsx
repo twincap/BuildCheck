@@ -1,4 +1,4 @@
-import { formatWon, getSelectedParts, type Selection } from "../constants/data";
+import { formatWon, getCategoryLabel, getSelectedParts, type Selection } from "../constants/data";
 
 type Props = {
   selection: Selection;
@@ -11,16 +11,20 @@ export function BuildSummary({ selection }: Props) {
 
   return (
     <aside className="summary-panel" aria-label="견적 요약">
-      <p className="eyebrow">Live quote</p>
+      <p className="eyebrow">견적 요약</p>
       <h2>{formatWon(total)}</h2>
       <div className="summary-stat">
         <span>예상 소비전력</span>
         <strong>{watts}W</strong>
       </div>
+      <div className="summary-stat">
+        <span>선택 부품</span>
+        <strong>{selectedParts.length}개</strong>
+      </div>
       <div className="selected-list">
         {selectedParts.map((part) => (
           <div key={part.id}>
-            <span>{part.category}</span>
+            <span>{getCategoryLabel(part.category)}</span>
             <strong>{part.name}</strong>
           </div>
         ))}
