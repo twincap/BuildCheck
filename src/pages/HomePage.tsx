@@ -14,12 +14,9 @@ const tabLabels: Record<Category, string> = {
   case: "케이스"
 };
 
-type PreviewMode = "2d" | "3d";
-
 export function HomePage() {
   const [selection, setSelection] = useState<Selection>(initialSelection);
   const [activeCategory, setActiveCategory] = useState<Category>("cpu");
-  const [previewMode, setPreviewMode] = useState<PreviewMode>("3d");
 
   function handleSelect(category: Category, id: string) {
     setSelection((current) => ({ ...current, [category]: id }));
@@ -28,12 +25,12 @@ export function HomePage() {
   return (
     <main className="app-shell">
       <section className="hero">
-        <div>
+        <div className="hero-content">
           <p className="eyebrow">빌드체크</p>
           <h1>PC 부품 견적 빌더</h1>
           <p>장착 공간과 소비 전력을 한눈에 비교합니다.</p>
         </div>
-        <BuildPreview mode={previewMode} onModeChange={setPreviewMode} onNavigate={setActiveCategory} selection={selection} />
+        <BuildPreview onNavigate={setActiveCategory} selection={selection} />
       </section>
 
       <div className="category-tabs" aria-label="부품 카테고리 선택">

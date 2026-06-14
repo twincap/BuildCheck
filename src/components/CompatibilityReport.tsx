@@ -16,8 +16,10 @@ export function CompatibilityReport({ selection }: Props) {
       </div>
       <div className="report-list">
         {report.map((item) => (
-          <article className={`report-card ${item.status}`} key={item.title}>
-            <span>{item.status === "good" ? "정상" : item.status === "warn" ? "확인" : "정보"}</span>
+          <article 
+            className={`report-card report-${item.status}`} 
+            key={item.title}
+          >
             <div>
               <strong>{item.title}</strong>
               <p>{item.detail}</p>
