@@ -30,9 +30,9 @@ type Props = {
 };
 
 const boardBoxes: Record<MotherboardPart["formFactor"], PreviewBox> = {
-  ATX: { width: 50, height: 40, depth: 7 },
-  "M-ATX": { width: 40, height: 40, depth: 7 },
-  "M-ITX": { width: 29, height: 29, depth: 7 }
+  ATX: { width: 50, height: 40, depth: 18 },
+  "M-ATX": { width: 40, height: 40, depth: 18 },
+  "M-ITX": { width: 29, height: 29, depth: 16 }
 };
 
 const defaultPositions: Record<PreviewKey, Position> = {
@@ -74,21 +74,21 @@ export function BuildPreview({ mode, selection, onModeChange, onNavigate }: Prop
 
     return {
       motherboard: board,
-      cpu: { width: 13, height: 17, depth: clamp(cpu.tdpWatts / 8, 8, 24) },
+      cpu: { width: 13, height: 17, depth: clamp(cpu.tdpWatts / 4, 18, 34) },
       memory: {
         width: laptopRam ? 27 : clamp(memory.modules * 5 + 10, 15, 29),
         height: laptopRam ? 12 : 31,
-        depth: laptopRam ? 6 : 18
+        depth: laptopRam ? 12 : 28
       },
       gpu: {
         width: clamp((gpu.lengthMm / pcCase.gpuClearanceMm) * 72, 30, 82),
         height: clamp(10 + gpu.vramGb * 0.35, 12, 22),
-        depth: clamp(9 + gpu.vramGb * 0.65, 10, 30)
+        depth: clamp(16 + gpu.vramGb * 0.75, 18, 40)
       },
       psu: {
         width: clamp((psu.depthMm / pcCase.psuClearanceMm) * 34, 20, 38),
         height: 15,
-        depth: psu.formFactor === "SFX" ? 12 : 20
+        depth: psu.formFactor === "SFX" ? 18 : 30
       }
     };
   }, [cpu.tdpWatts, gpu.lengthMm, gpu.vramGb, memory.moduleType, memory.modules, motherboard.formFactor, pcCase.gpuClearanceMm, pcCase.psuClearanceMm, psu.depthMm, psu.formFactor]);
@@ -189,6 +189,13 @@ export function BuildPreview({ mode, selection, onModeChange, onNavigate }: Prop
       </div>
 
       <div className="preview-case">
+        <div className="case-cuboid" aria-hidden="true">
+          <i className="case-floor" />
+          <i className="case-wall case-wall-top" />
+          <i className="case-wall case-wall-right" />
+          <i className="case-wall case-wall-bottom" />
+          <i className="case-wall case-wall-left" />
+        </div>
         <button className="preview-case-label" onClick={() => onNavigate("case")} type="button">
           케이스 GPU 공간 {pcCase.gpuClearanceMm}mm
         </button>

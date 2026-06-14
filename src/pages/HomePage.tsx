@@ -19,7 +19,7 @@ type PreviewMode = "2d" | "3d";
 export function HomePage() {
   const [selection, setSelection] = useState<Selection>(initialSelection);
   const [activeCategory, setActiveCategory] = useState<Category>("cpu");
-  const [previewMode, setPreviewMode] = useState<PreviewMode>("2d");
+  const [previewMode, setPreviewMode] = useState<PreviewMode>("3d");
 
   function handleSelect(category: Category, id: string) {
     setSelection((current) => ({ ...current, [category]: id }));
@@ -52,10 +52,8 @@ export function HomePage() {
 
       <div className="workspace">
         <PartSelector activeCategory={activeCategory} selection={selection} onSelect={handleSelect} />
-        <div className="side-stack">
-          <CompatibilityReport selection={selection} />
-          <BuildSummary selection={selection} />
-        </div>
+        <CompatibilityReport selection={selection} />
+        <BuildSummary selection={selection} />
       </div>
     </main>
   );

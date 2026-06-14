@@ -15,17 +15,17 @@ button {
 }
 
 .app-shell {
-  width: min(1320px, calc(100% - 28px));
+  width: min(1520px, calc(100% - 18px));
   margin: 0 auto;
-  padding: 20px 0 32px;
+  padding: 14px 0 32px;
 }
 
 .hero {
   display: grid;
-  grid-template-columns: minmax(0, 0.8fr) minmax(360px, 1fr);
+  grid-template-columns: minmax(220px, 0.34fr) minmax(720px, 1fr);
   gap: var(--space-3);
   align-items: center;
-  min-height: 250px;
+  min-height: 300px;
 }
 
 .hero h1 {
@@ -44,7 +44,7 @@ button {
 
 .build-preview {
   width: 100%;
-  min-height: 280px;
+  min-height: 330px;
   border-radius: var(--radius-card);
   border: 1px solid var(--color-line);
   background: linear-gradient(180deg, #ffffff 0%, #f3f7f4 100%);
@@ -108,7 +108,7 @@ button {
 
 .preview-case {
   position: relative;
-  height: clamp(210px, 28vw, 260px);
+  height: clamp(245px, 30vw, 315px);
   border: 2px solid var(--color-ink);
   border-radius: var(--radius-control);
   background:
@@ -119,6 +119,11 @@ button {
   overflow: hidden;
   transition: transform 180ms ease, box-shadow 180ms ease;
   transform-style: preserve-3d;
+}
+
+.build-preview.is-3d .preview-case {
+  border-color: rgb(16 35 29 / 42%);
+  background: linear-gradient(180deg, #f9fcfa 0%, #ecf3ef 100%);
 }
 
 .preview-case-label {
@@ -141,10 +146,83 @@ button {
   inset: 0;
   transform-style: preserve-3d;
   transition: transform 180ms ease;
+  z-index: 2;
 }
 
-.build-preview.is-3d .preview-stage {
-  transform: rotateX(58deg) rotateZ(-26deg) translate(20px, 16px) scale(0.94);
+.case-cuboid {
+  --case-wall: 28px;
+  position: absolute;
+  display: none;
+  transform-style: preserve-3d;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.build-preview.is-3d .preview-stage,
+.build-preview.is-3d .case-cuboid {
+  inset: 34px 44px 38px 44px;
+  transform: rotateX(56deg) rotateZ(-24deg) translate(8px, 22px) scale(0.92);
+  transform-origin: center;
+}
+
+.build-preview.is-3d .case-cuboid {
+  display: block;
+}
+
+.case-cuboid i {
+  position: absolute;
+  display: block;
+  border: 2px solid #10231d;
+  background: rgb(255 255 255 / 78%);
+}
+
+.case-floor {
+  inset: 0;
+  border-radius: var(--radius-control);
+  background:
+    linear-gradient(90deg, rgb(16 35 29 / 13%) 1px, transparent 1px),
+    linear-gradient(0deg, rgb(16 35 29 / 13%) 1px, transparent 1px),
+    #fbfdfb;
+  background-size: 22px 22px;
+  transform: translateZ(0);
+}
+
+.case-wall {
+  background: linear-gradient(135deg, rgb(31 138 112 / 14%), rgb(16 35 29 / 7%));
+}
+
+.case-wall-top,
+.case-wall-bottom {
+  left: 0;
+  width: 100%;
+  height: var(--case-wall);
+}
+
+.case-wall-left,
+.case-wall-right {
+  top: 0;
+  width: var(--case-wall);
+  height: 100%;
+}
+
+.case-wall-top {
+  top: 0;
+  transform: translateZ(var(--case-wall));
+}
+
+.case-wall-right {
+  right: 0;
+  transform: translateZ(var(--case-wall));
+}
+
+.case-wall-bottom {
+  bottom: 0;
+  transform: translateZ(var(--case-wall));
+}
+
+.case-wall-left {
+  left: 0;
+  transform: translateZ(var(--case-wall));
 }
 
 .preview-part {
@@ -175,14 +253,20 @@ button {
 }
 
 .preview-board {
+  --part-side: #a9dd63;
+  --part-edge: #6ba324;
   background: #d9f99d;
 }
 
 .preview-cpu {
+  --part-side: #f2c85f;
+  --part-edge: #a66b00;
   background: #ffe8a3;
 }
 
 .preview-ram {
+  --part-side: #a8d9f0;
+  --part-edge: #1f8a70;
   background: #dff3ff;
 }
 
@@ -207,6 +291,8 @@ button {
 }
 
 .preview-gpu {
+  --part-side: #f0a18c;
+  --part-edge: #7c2d12;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -219,6 +305,8 @@ button {
 }
 
 .preview-psu {
+  --part-side: #aebac4;
+  --part-edge: #2e3a45;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -227,7 +315,8 @@ button {
 }
 
 .build-preview.is-3d .preview-part {
-  box-shadow: var(--shadow-x) var(--shadow-y) 0 rgb(16 35 29 / 14%);
+  border-color: var(--part-edge, #1f8a70);
+  box-shadow: var(--shadow-x) var(--shadow-y) 0 rgb(16 35 29 / 18%);
   transform: translateZ(var(--z));
   overflow: visible;
 }
@@ -235,17 +324,19 @@ button {
 .build-preview.is-3d .preview-part::before,
 .build-preview.is-3d .preview-part::after {
   position: absolute;
-  background: rgb(16 35 29 / 16%);
+  border: 1px solid var(--part-edge, #1f8a70);
+  background: var(--part-side, rgb(16 35 29 / 16%));
   content: "";
 }
 
 .build-preview.is-3d .preview-part::before {
-  top: 5px;
+  top: 0;
   right: var(--depth-neg);
   width: var(--depth);
   height: 100%;
   transform: skewY(45deg);
   transform-origin: left top;
+  filter: brightness(0.86);
 }
 
 .build-preview.is-3d .preview-part::after {
@@ -255,6 +346,7 @@ button {
   height: var(--depth);
   transform: skewX(45deg);
   transform-origin: left top;
+  filter: brightness(0.76);
 }
 
 .category-tabs {
@@ -298,7 +390,7 @@ button {
 
 .workspace {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 360px;
+  grid-template-columns: minmax(500px, 1fr) minmax(290px, 0.45fr) minmax(330px, 0.5fr);
   gap: var(--space-3);
   align-items: start;
 }
@@ -473,6 +565,12 @@ button {
 .side-stack {
   display: grid;
   gap: var(--space-3);
+  position: sticky;
+  top: 12px;
+}
+
+.report-panel,
+.summary-panel {
   position: sticky;
   top: 12px;
 }
